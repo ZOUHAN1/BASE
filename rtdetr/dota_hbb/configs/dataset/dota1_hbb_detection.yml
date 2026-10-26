@@ -1,0 +1,31 @@
+task: detection
+num_classes: 15
+remap_mscoco_category: false
+train_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: ./data/dota1_hbb_split1024_gap200/images/train
+    ann_file: ./data/dota1_hbb_split1024_gap200/annotations/instances_train.json
+    transforms:
+      type: Compose
+      ops: null
+  shuffle: true
+  batch_size: 8
+  num_workers: 0
+  drop_last: true
+  collate_fn: default_collate_fn
+val_dataloader:
+  type: DataLoader
+  dataset:
+    type: CocoDetection
+    img_folder: ./data/dota1_hbb_split1024_gap200/images/val
+    ann_file: ./data/dota1_hbb_split1024_gap200/annotations/instances_val.json
+    transforms:
+      type: Compose
+      ops: null
+  shuffle: false
+  batch_size: 8
+  num_workers: 0
+  drop_last: false
+  collate_fn: default_collate_fn

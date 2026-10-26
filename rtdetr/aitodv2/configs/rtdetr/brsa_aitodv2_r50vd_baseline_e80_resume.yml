@@ -1,0 +1,3 @@
+__include__:
+- ./brsa_aitodv2_r50vd_baseline.yml
+epoches: 80

@@ -1,0 +1,4 @@
+__include__:
+- ./brsa_aitodv2_r50vd_brsa_enhance_aux_detached_s0.yml
+output_dir: ./runs/brsa-rtdetr-aitodv2-brsa-enhance-aux-detached-e72
+epoches: 72

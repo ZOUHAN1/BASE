@@ -1,0 +1,14 @@
+__include__:
+- ./dota1_hbb_r50vd_baseline_e100.yml
+output_dir: ./runs/smoke_baseline_final_v2
+epoches: 1
+checkpoint_step: 1
+log_step: 1
+train_dataloader:
+  dataset:
+    ann_file: ./data/dota1_hbb_split1024_gap200/annotations/instances_train_smoke.json
+  batch_size: 2
+val_dataloader:
+  dataset:
+    ann_file: ./data/dota1_hbb_split1024_gap200/annotations/instances_val_smoke.json
+  batch_size: 2

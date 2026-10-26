@@ -1,0 +1,3 @@
+__include__:
+- ./brsa_aitodv2_r50vd_brsa_enhance_aux_detached_e72.yml
+epoches: 80

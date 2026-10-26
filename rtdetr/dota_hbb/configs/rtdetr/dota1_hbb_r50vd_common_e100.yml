@@ -1,0 +1,160 @@
+__include__:
+- ../dataset/dota1_hbb_detection.yml
+- ../runtime.yml
+- ./include/optimizer.yml
+task: detection
+model: RTDETR
+criterion: SetCriterion
+postprocessor: RTDETRPostProcessor
+sync_bn: true
+find_unused_parameters: true
+use_ema: true
+use_amp: true
+epoches: 100
+checkpoint_step: 1
+log_step: 50
+clip_max_norm: 0.1
+scaler:
+  type: GradScaler
+  enabled: true
+  init_scale: 512.0
+RTDETR:
+  backbone: PResNet
+  encoder: HybridEncoder
+  decoder: RTDETRTransformer
+  multi_scale: null
+PResNet:
+  depth: 50
+  variant: d
+  freeze_at: 0
+  return_idx:
+  - 1
+  - 2
+  - 3
+  num_stages: 4
+  freeze_norm: true
+  pretrained: false
+  expose_c2: false
+HybridEncoder:
+  in_channels:
+  - 512
+  - 1024
+  - 2048
+  feat_strides:
+  - 8
+  - 16
+  - 32
+  hidden_dim: 256
+  use_encoder_idx:
+  - 2
+  num_encoder_layers: 1
+  nhead: 8
+  dim_feedforward: 1024
+  dropout: 0.0
+  enc_act: gelu
+  pe_temperature: 10000
+  expansion: 1.0
+  depth_mult: 1
+  act: silu
+  eval_spatial_size:
+  - 640
+  - 640
+  use_brsa: false
+  use_asymmetric_neck: false
+RTDETRTransformer:
+  feat_channels:
+  - 256
+  - 256
+  - 256
+  feat_strides:
+  - 8
+  - 16
+  - 32
+  hidden_dim: 256
+  num_levels: 3
+  num_queries: 300
+  num_decoder_layers: 6
+  num_denoising: 100
+  eval_idx: -1
+  eval_spatial_size:
+  - 640
+  - 640
+use_focal_loss: true
+RTDETRPostProcessor:
+  num_top_queries: 300
+SetCriterion:
+  weight_dict:
+    loss_vfl: 1
+    loss_bbox: 5
+    loss_giou: 2
+  losses:
+  - vfl
+  - boxes
+  alpha: 0.75
+  gamma: 2.0
+  matcher:
+    type: HungarianMatcher
+    weight_dict:
+      cost_class: 2
+      cost_bbox: 5
+      cost_giou: 2
+    alpha: 0.25
+    gamma: 2.0
+train_dataloader:
+  dataset:
+    return_masks: false
+    transforms:
+      ops:
+      - type: RandomPhotometricDistort
+        p: 0.5
+      - type: RandomZoomOut
+        fill: 0
+      - type: RandomIoUCrop
+        p: 0.8
+      - type: SanitizeBoundingBox
+        min_size: 1
+      - type: RandomHorizontalFlip
+      - type: Resize
+        size:
+        - 640
+        - 640
+      - type: ToImageTensor
+      - type: ConvertDtype
+      - type: SanitizeBoundingBox
+        min_size: 1
+      - type: ConvertBox
+        out_fmt: cxcywh
+        normalize: true
+  batch_size: 8
+  num_workers: 0
+val_dataloader:
+  dataset:
+    transforms:
+      ops:
+      - type: Resize
+        size:
+        - 640
+        - 640
+      - type: ToImageTensor
+      - type: ConvertDtype
+  batch_size: 8
+  num_workers: 0
+optimizer:
+  type: AdamW
+  params:
+  - params: backbone
+    lr: 1.0e-05
+  - params: ^(?=.*encoder(?=.*bias|.*norm.*weight)).*$
+    weight_decay: 0.0
+  - params: ^(?=.*decoder(?=.*bias|.*norm.*weight)).*$
+    weight_decay: 0.0
+  lr: 0.0001
+  betas:
+  - 0.9
+  - 0.999
+  weight_decay: 0.0001
+lr_scheduler:
+  type: MultiStepLR
+  milestones:
+  - 1000
+  gamma: 0.1

@@ -1,0 +1,15 @@
+__include__:
+- ./dota1_hbb_r50vd_common_e100.yml
+output_dir: ./runs/rtdetr_r50vd_brr_brsa_arr_hbb_640_e100_s0
+PResNet:
+  expose_c2: true
+HybridEncoder:
+  use_asymmetric_neck: true
+  asymmetric:
+    shallow_channels: 256
+SetCriterion:
+  weight_dict:
+    loss_vfl: 1
+    loss_bbox: 5
+    loss_giou: 2
+    loss_brsa_fg: 0.1

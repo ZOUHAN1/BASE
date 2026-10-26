@@ -1,0 +1,43 @@
+train_dataloader:
+  dataset:
+    return_masks: false
+    transforms:
+      ops:
+      - type: RandomPhotometricDistort
+        p: 0.5
+      - type: RandomZoomOut
+        fill: 0
+      - type: RandomIoUCrop
+        p: 0.8
+      - type: SanitizeBoundingBox
+        min_size: 1
+      - type: RandomHorizontalFlip
+      - type: Resize
+        size:
+        - 640
+        - 640
+      - type: ToImageTensor
+      - type: ConvertDtype
+      - type: SanitizeBoundingBox
+        min_size: 1
+      - type: ConvertBox
+        out_fmt: cxcywh
+        normalize: true
+  shuffle: true
+  batch_size: 8
+  num_workers: 2
+  collate_fn: default_collate_fn
+val_dataloader:
+  dataset:
+    transforms:
+      ops:
+      - type: Resize
+        size:
+        - 640
+        - 640
+      - type: ToImageTensor
+      - type: ConvertDtype
+  shuffle: false
+  batch_size: 8
+  num_workers: 2
+  collate_fn: default_collate_fn

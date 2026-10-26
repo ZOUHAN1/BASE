@@ -1,0 +1,27 @@
+__include__:
+- ./brsa_aitodv2_r50vd_brsa.yml
+output_dir: ./runs/brsa-rtdetr-aitodv2-brsa-fixedscale-s0
+HybridEncoder:
+  use_brsa: true
+  brsa:
+    cr: 32
+    block_size: 4
+    groups: 4
+    semantic_channels: 16
+    windows:
+    - 3
+    - 5
+    lambda_fg: 0.1
+    residual_scale: 0.01
+SetCriterion:
+  weight_dict:
+    loss_vfl: 1
+    loss_bbox: 5
+    loss_giou: 2
+    loss_brsa_fg: 1.0
+train_dataloader:
+  batch_size: 4
+  num_workers: 0
+val_dataloader:
+  batch_size: 4
+  num_workers: 0

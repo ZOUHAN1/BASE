@@ -1,0 +1,211 @@
+schema_version: 1
+model:
+  name: YOLOv8m
+  prediction_levels:
+  - P3
+  - P4
+  - P5
+  prediction_strides:
+  - 8
+  - 16
+  - 32
+  assignment: native_TAL
+  box_loss: native_DFL
+initialization:
+  type: full_COCO_detector
+  path: historical/weights/yolov8m.pt
+  sha256: 5d4a90cdc7a21786cc59cd19778e9eafff836df9e2da32524737c7ee6efe4fe5
+common_training:
+  seed: 0
+  distributed:
+    gpus_per_run: 2
+    backend: DDP
+  batch:
+    per_gpu: 8
+    global: 16
+    accumulation: 1
+  workers_per_process: 4
+  optimizer:
+    type: AdamW
+    lr0: 0.001
+    betas:
+    - 0.9
+    - 0.999
+    eps: 1.0e-08
+    weight_decay: 0.0005
+  scheduler:
+    warmup:
+      type: linear
+      epochs: 3
+      start_factor: 0.0
+    after_warmup:
+      type: cosine
+      final_lr: 1.0e-05
+  amp: true
+  ema: true
+  gradient_clip_norm: 10
+  augmentation:
+    fliplr: 0.5
+    flipud: 0.0
+    hsv_h: 0.015
+    hsv_s: 0.7
+    hsv_v: 0.4
+    translate: 0.1
+    scale: 0.5
+    degrees: 0.0
+    shear: 0.0
+    perspective: 0.0
+    mosaic: 1.0
+    close_mosaic_epochs: 10
+    mixup: 0.0
+    copy_paste: 0.0
+    multi_scale: false
+    rect: false
+  checkpoint_branch_for_validation: EMA
+datasets:
+  AI-TODv2:
+    task: HBB_detection
+    classes: 8
+    split:
+      train_images: 11214
+      val_images: 2804
+      policy: official
+    image_size:
+    - 800
+    - 800
+    epochs: 300
+    data:
+      train_manifest: historical/data/aitodv2/train.json
+      val_manifest: historical/data/aitodv2/val.json
+      train_manifest_sha256_in_run_config: 6ce04d3c5d0289e82d8d15285a8f260fece7e1ca35827824414815398ed24d83
+      source_train_annotation_sha256: ed7b37a1187b496b96943fa46c15aab39656d59eaf501192d85178354b637b2e
+      source_val_annotation_sha256: d0439ba687db66bb38584a3398a906f15c47e055cdd84bb9060496a91f30d7cf
+    variants:
+      baseline:
+        experiment_id: A2_aitodv2_yolov8m_native_s0
+        variant: native
+        lambda_fg: 0.0
+        protocol_id: d657933c95b866e2
+      BRSA:
+        experiment_id: A2_aitodv2_yolov8m_brsa_s0
+        variant: brsa
+        lambda_fg: 0.1
+        protocol_id: 94fe951f9019d837
+        insertion: shallow_stride4_to_P3_semantic
+        adds_P2_detection_head: false
+    evaluation:
+      evaluator: cocoapi-aitod
+      score_threshold: 0.001
+      nms:
+        type: class_aware
+        iou: 0.7
+        pre_topk: 30000
+      max_det: 1500
+      multi_label: true
+      validation_interval_epochs: 1
+  VisDrone2019-DET:
+    task: HBB_detection
+    classes: 10
+    split:
+      train_images: 6471
+      val_images: 548
+      test_dev_images: 1610
+      policy: official
+    image_size:
+    - 640
+    - 640
+    epochs: 100
+    data:
+      train_manifest: historical/data/visdrone2019/train.json
+      val_manifest: historical/data/visdrone2019/val.json
+      test_dev_manifest: historical/data/visdrone2019/test-dev.json
+      train_sha256: ef9d2f6d6203b57669662794577b2657aa9660a5a1d0eb337775114afb090167
+      val_sha256: 5e52e547e4c1d06552359858ea80f64a28f0ff00b643ed7865e59e13d6146f49
+      test_dev_sha256: 127b808deab33b77350ccbe26e0a8c355865708b1de6f1c6236a0df442a4683e
+    variants:
+      baseline:
+        experiment_id: A2_visdrone2019_yolov8m_native_640_e100_s0_20260908
+        variant: native
+        lambda_fg: 0.0
+        protocol_id: visdrone_v8m_native_640_e100_s0_20260908
+      BRSA:
+        experiment_id: A2_visdrone2019_yolov8m_brsa_640_e100_s0_20260908
+        variant: brsa
+        lambda_fg: 0.1
+        protocol_id: visdrone_v8m_brsa_640_e100_s0_20260908
+    evaluation:
+      evaluator: VisDrone2018-DET-toolkit_Python_port
+      evaluator_commit: 005445782213e20cb91bc50a597db3dd949e749a
+      score_threshold: 0.001
+      nms:
+        type: class_aware
+        iou: 0.7
+        pre_topk: 30000
+      max_det: 500
+      multi_label: true
+      ignored_regions: official_integral_image_rule
+      validation_interval_epochs: 1
+      selection_config: ../selection/visdrone.yaml
+  DOTA1.0-Task2-HBB:
+    task: Task2_HBB
+    classes: 15
+    image_size:
+    - 640
+    - 640
+    epochs: 100
+    split:
+      train_policy: official_train_minus_P1393_P1466
+      excluded_train_scene_ids:
+      - P1393
+      - P1466
+      train_scenes: 1409
+      train_patches: 15629
+      val_policy: official_full_val
+      val_scenes: 458
+    slicing:
+      patch_size:
+      - 1024
+      - 1024
+      overlap: 200
+      stride: 824
+      scale_rates:
+      - 1.0
+      boundary_object_rule:
+        intersect_OBB_polygon_with_patch_first: true
+        positive_if_visible_fraction_gte: 0.7
+        otherwise: ignore
+        hbb_after_intersection: true
+      padding: zero_on_right_and_bottom
+    protocol_id: dota10_hbb_png_split1024_gap200_input640_adamw_e100_s0_train1409_v2
+    variants:
+      baseline:
+        experiment_id: yolov8m_dota10_hbb_native_640_e100_s0_20260908_train1409
+        variant: native
+        lambda_fg: 0.0
+      BRSA:
+        experiment_id: yolov8m_dota10_hbb_brsa_640_e100_s0_20260908_train1409
+        variant: brsa
+        lambda_fg: 0.1
+        brsa_defaults:
+          cr: 32
+          block_size: 4
+          groups: 4
+          windows:
+          - 3
+          - 5
+    evaluation:
+      patch_score_threshold: 0.001
+      patch_nms:
+        type: class_aware
+        iou: 0.7
+        pre_topk: 30000
+        max_det: 2000
+      multi_label: true
+      scene_merge_nms:
+        type: per_class_HBB_NMS
+        iou: 0.5
+        inclusive_plus_one: true
+      scene_max_det: null
+      multi_scale_test: false
+      flip_test: false
+      selection_config: ../selection/dota1_hbb.yaml

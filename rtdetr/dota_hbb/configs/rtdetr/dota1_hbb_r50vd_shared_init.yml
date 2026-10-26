@@ -1,0 +1,4 @@
+__include__:
+- ./dota1_hbb_r50vd_baseline_e100.yml
+PResNet:
+  pretrained: true

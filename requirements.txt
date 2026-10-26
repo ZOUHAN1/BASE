@@ -1,0 +1,19 @@
+# Install a matching torch/torchvision wheel pair for your CUDA runtime first.
+# Packaging validation uses torch 2.4.1 / torchvision 0.19.1.
+numpy<2
+PyYAML>=6
+Pillow
+opencv-python
+scipy
+matplotlib
+pandas
+seaborn
+requests
+psutil
+tqdm
+py-cpuinfo
+pycocotools
+cython
+pytest
+shapely
+ultralytics-thop

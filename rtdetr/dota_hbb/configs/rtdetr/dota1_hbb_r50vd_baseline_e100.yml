@@ -1,0 +1,3 @@
+__include__:
+- ./dota1_hbb_r50vd_common_e100.yml
+output_dir: ./runs/rtdetr_r50vd_baseline_hbb_640_e100_s0

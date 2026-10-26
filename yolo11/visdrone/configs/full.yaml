@@ -1,0 +1,13 @@
+pair_id: brsa_asym_visdrone640_s0_e100_20261003
+arm: full_asymmetric
+data_root: ./data/visdrone
+epochs: 100
+imgsz: 640
+nc: 10
+output_group: runs
+run_name: full_asymmetric
+smoke_name: full_asymmetric
+port: 29772
+devices:
+- 0
+- 1

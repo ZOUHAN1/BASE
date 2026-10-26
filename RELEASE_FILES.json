@@ -1,0 +1,4809 @@
+{
+  "files": [
+    {
+      "file": ".github/workflows/source-check.yml",
+      "size": 702,
+      "sha256": "9ddde25eb24fd317e69773bb43e1294d562bab5d2736be510a1ec32de587297e"
+    },
+    {
+      "file": ".gitignore",
+      "size": 337,
+      "sha256": "11c4a619b2308f98839a02e970aafc04ce6d0110ebbd8bc04092229539575195"
+    },
+    {
+      "file": "README.md",
+      "size": 4317,
+      "sha256": "299fa92790324fa4ece930be5f702877f1b30fb8532392c2239375af12ed07f0"
+    },
+    {
+      "file": "SOURCE_MANIFEST.json",
+      "size": 205145,
+      "sha256": "3f6dc185cb0ca958339adb3e8ca9896d2146afc36a6b7e2a00daafb56ee7cc28"
+    },
+    {
+      "file": "THIRD_PARTY_NOTICES.md",
+      "size": 1118,
+      "sha256": "104f98c8ba6f0926691d0cefaa25e844b39bf06c6705877d9db036c87c9c94bc"
+    },
+    {
+      "file": "configs/historical_yolov8m.yaml",
+      "size": 5533,
+      "sha256": "ed1cc6e46755faf93b46437575b4f6ccf6398842bd0a162910848520f7e2c349"
+    },
+    {
+      "file": "configs/selection/dota1_hbb.yaml",
+      "size": 1886,
+      "sha256": "5bfcd5f43bdb23baf0df54c1c4d9d07eb9e4d65230d438418add79f6a332be29"
+    },
+    {
+      "file": "configs/selection/visdrone.yaml",
+      "size": 936,
+      "sha256": "f74f74fa4f23af3b32703043ccb33a9c9828db6f48e6f7cc7ef4318dd7011c50"
+    },
+    {
+      "file": "docs/MODEL_MAP.md",
+      "size": 3033,
+      "sha256": "2fe5051992581ca5c1c5ef130eb099e2c145c0f3a22667464ac444fabf65009c"
+    },
+    {
+      "file": "docs/RELEASE_NOTES.md",
+      "size": 2041,
+      "sha256": "38def637f9acabd462bac52106d78aa09f0090af5f22ead96aa26b5621641239"
+    },
+    {
+      "file": "docs/REPRODUCIBILITY.md",
+      "size": 6128,
+      "sha256": "b2b399061c02c2ce8f9b9e1c6317fea73d25d244d2471d2b8d46f2fb3a8824f3"
+    },
+    {
+      "file": "docs/VALIDATION.md",
+      "size": 2198,
+      "sha256": "e94256859538c2dcd5fe8e41146b2511b8339d447d75c320e9e9b0a11ba54d80"
+    },
+    {
+      "file": "requirements.txt",
+      "size": 295,
+      "sha256": "3e7ab32fc1661659083c8d348078696abb46d5842bd3740e779ed263b030efae"
+    },
+    {
+      "file": "rtdetr/aitodv2/LICENSE",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/dataset/aitodv2_detection.yml",
+      "size": 650,
+      "sha256": "0fd065f8e1caec4bc0b5f094834e6f48f57d6d4bcbb151a8e5a436e67fa789fc"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/dataset/coco_detection.yml",
+      "size": 654,
+      "sha256": "f92ce0577a59415eeb4b172fc1aefd6bc0e8b89f4b1332c6bc28ce6d188488db"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_baseline.yml",
+      "size": 2358,
+      "sha256": "0477346d052b1baa36d9ebf372b1c03cb0eb7e9229a0cea0743d79258fdf8f2c"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_baseline_e80_resume.yml",
+      "size": 61,
+      "sha256": "f8412bb234266d92a79c2388d94d6836800bcc86afe204c22e7841becf1a462e"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa.yml",
+      "size": 381,
+      "sha256": "b6f47989a6bbbd651b7555c7fdda111431a9e8bf1b3cbeacf9dee6917188ffc3"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_aux_grad_only_s0.yml",
+      "size": 554,
+      "sha256": "9239560f2c877748947b41d2e56eccf95c13a12060fada05121ff3ac55b0d2cf"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_auxonly_detached_s0.yml",
+      "size": 556,
+      "sha256": "02c4d0e27e25dcbb4051fded9cc7eaad6c88efe248e8dbc77a8bcbea18944f0b"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_e20.yml",
+      "size": 150,
+      "sha256": "acb23180a4c8f644fd972a52a02e7f4e0b8cd1db3983819dc223051d346b11fb"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_e72.yml",
+      "size": 150,
+      "sha256": "a33c6aa0ebe3f1727127128c042fc47c12aed981a8f34fa05390471cdf24d8c6"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_e80_resume.yml",
+      "size": 82,
+      "sha256": "e9ef22810ee25bd82682c4c8157d793e4ad026565a6e0f6d4109bbccfb772525"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_s0.yml",
+      "size": 560,
+      "sha256": "0e785b48b165defc9b4bd92fa7d31d8d7990ef719e3dbfda194c3f66f2152127"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_only_s0.yml",
+      "size": 552,
+      "sha256": "17a0e023df67acac5900392235145a0cb3ab27797028c38f5e1c3e298b63ed99"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/brsa_aitodv2_r50vd_brsa_fixedscale_s0.yml",
+      "size": 486,
+      "sha256": "f64fc27c83f9a9570fb7e541244c29ac62ed3b1f01208c5e824cfa0c0a092d70"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/include/dataloader.yml",
+      "size": 892,
+      "sha256": "e19e6c1bc0aae33b5e2946e70f152a8c58398693d46455dbf5fbc0295c36ab41"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/include/dataloader_regnet.yml",
+      "size": 892,
+      "sha256": "2275a1aca8160047fadb91d2728edcb4d6f3746e849f50ce2c2440a004533b71"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/include/optimizer.yml",
+      "size": 487,
+      "sha256": "6bdf488c1aff452a989fc9f975835a1412bf65ed1bf58decefde1c6be977d1f0"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/include/optimizer_regnet.yml",
+      "size": 450,
+      "sha256": "d2c21f172b140545c913a07782f31a83d739cb02153121ab947301b20e4dff58"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/include/rtdetr_dla34.yml",
+      "size": 1279,
+      "sha256": "1b0046b0b1b50a7ffcce1532929118a8d24dd8cacfcd91ae7ea271b68b2a1812"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/include/rtdetr_r50vd.yml",
+      "size": 1346,
+      "sha256": "0720ab51f657ed853e39ada770dd26f4ae8395b048bee5be64fdbe5e77848f43"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/include/rtdetr_regnet.yml",
+      "size": 1280,
+      "sha256": "e34d8e1ac3487ede72d8bf4418178f4a4a94ec449465891d978e08735ebd12c3"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/rtdetr_dla34_6x_coco.yml",
+      "size": 186,
+      "sha256": "934dcb65c3b0b818ef6c276dadab8473fa1651d625cb67bfcc7d984f39f9eb15"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/rtdetr_r101vd_6x_coco.yml",
+      "size": 355,
+      "sha256": "8781a3c7c23d1c23213879d8a8194fd0492e9c1877e7f6e28333c4392c7ab078"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/rtdetr_r18vd_6x_coco.yml",
+      "size": 748,
+      "sha256": "b82eb93d2e0d2fd8906b13f930598f320e14e6e16ad96a9c5fbd9caaf90d7a61"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/rtdetr_r34vd_6x_coco.yml",
+      "size": 721,
+      "sha256": "b6c2da2a66329112d815c4ce5707368cf35eb102f5363fb52fb28591bd1b5b4b"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/rtdetr_r50vd_6x_coco.yml",
+      "size": 186,
+      "sha256": "09d1689fdcbcd8b8956e628f3641328df7d06f2a6fa3f8b43b6cbf2ac1410e66"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/rtdetr_r50vd_m_6x_coco.yml",
+      "size": 253,
+      "sha256": "d04e6a3654edd4ccbea8c20c7deb4a64ce5511ee739d0c080c26081e1ca6bbf9"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/rtdetr/rtdetr_regnet_6x_coco.yml",
+      "size": 202,
+      "sha256": "7217ef6ccdd61dc52efc0a5600c19a9e7a4dc935c47324eb0192b270fa11fb48"
+    },
+    {
+      "file": "rtdetr/aitodv2/configs/runtime.yml",
+      "size": 171,
+      "sha256": "897c3c622c0b04330792dc1c5e07fc3d0d899e8577181c6c49b13a01c02d869c"
+    },
+    {
+      "file": "rtdetr/aitodv2/requirements-upstream.txt",
+      "size": 104,
+      "sha256": "cc9fbf68a2371db3f050c68c4383b249a11b08044ea423c595aa599078396e6f"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/__init__.py",
+      "size": 76,
+      "sha256": "53f649be07662ea2f9548aee8cc405a0528a18cea04e72939e486af399c59543"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/core/__init__.py",
+      "size": 195,
+      "sha256": "60e7bb7a220ac7866a3e22bb095aab9043cefe3fedd7a7e2024b1ef7dd9cbf31"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/core/config.py",
+      "size": 7783,
+      "sha256": "a95d5c5f183c47a799af303205da14a07d84e051afc3f2f577a26f9ee2f3f5ea"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/core/yaml_config.py",
+      "size": 5070,
+      "sha256": "55fa4d904b94c252991c7c64cf624f1d3717c1b285aaaac04c439b12021ec915"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/core/yaml_utils.py",
+      "size": 5462,
+      "sha256": "2e4fac6a333ff868122e005c1764971722979ca49b14f975ae5ccdd4fe0eabe4"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/__init__.py",
+      "size": 104,
+      "sha256": "e66db1a9d8abbb014a7599af8f3861170d1d8fa0e5a6a67cfc3c16dc3df388aa"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/cifar10/__init__.py",
+      "size": 450,
+      "sha256": "3cfa2b9668f260f160ab95a0b455a9f972312e169c912cdce2c0dc3253ccb9ab"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/coco/__init__.py",
+      "size": 205,
+      "sha256": "cbd456965d95140eb94a06ed14d22845e61d2da9389dd18aad71cbc4a7db6c21"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/coco/coco_dataset.py",
+      "size": 7302,
+      "sha256": "bc93c75fe5a719d23be55b911383d0576aa864e7adf72e9ef72a5c8d75d4a975"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/coco/coco_eval.py",
+      "size": 9038,
+      "sha256": "dcc44980c31777e3dd47570e832a5cc2a8a3986d4839230907bd4d305fe1e8cc"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/coco/coco_utils.py",
+      "size": 6442,
+      "sha256": "0128ab0c3614fcf6be8e8a4489c1407c4196f85be1252d982058a99f24509483"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/dataloader.py",
+      "size": 694,
+      "sha256": "2a1376a3ebdee77a1c839768cb2428a9c3f10892deb1029758fcc59763de2443"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/functional.py",
+      "size": 5792,
+      "sha256": "ca64c65a7c9d4888afc1a3cf534176562f2223ce3b98704b20591dcf60aa365d"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/data/transforms.py",
+      "size": 5946,
+      "sha256": "54add6c451815f08496a5a7648c7f6b84aaf67116eeab45fd138a842289a5b52"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/misc/__init__.py",
+      "size": 49,
+      "sha256": "643ece3c144d7fcf94846563684444cdc679bd338db97ff15fee6b400ab1aabf"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/misc/dist.py",
+      "size": 4687,
+      "sha256": "510fc6b6c1d5b5392bb687d52693dcdc00df9c6e7d2181d28921ed1f10a639cd"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/misc/logger.py",
+      "size": 7725,
+      "sha256": "646a285de632f95b8dca04f40a0d36c89459f8acab177ed30b1dd9a8aee3bd37"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/misc/visualizer.py",
+      "size": 839,
+      "sha256": "bafbcf567d9e0c479aacb93044fe14d105abe2d06ee989dd7ed8f741b9c3e396"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/__init__.py",
+      "size": 75,
+      "sha256": "de01346f1c30d08d510cdf0df0fbfb5ddefbd4253fe8a3e852215632f988da9b"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/arch/__init__.py",
+      "size": 30,
+      "sha256": "950efc3eba1ea5fa88c42294945fa372e65679679c6e70e0bf9e5a9df5a51a42"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/arch/classification.py",
+      "size": 903,
+      "sha256": "cfe15c187ae553df8f1c2f8b553b444dc50d6d2fc860d5e3e8491ea01cbcd12a"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/backbone/__init__.py",
+      "size": 113,
+      "sha256": "883a1c21e27454cd9579620760d335842bb3d855a78b353458578d7619b7c0e2"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/backbone/common.py",
+      "size": 3028,
+      "sha256": "29ca34ee34f53ccab66e4a1d985df08ede3df9a686d4f84f861010b8f7513d44"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/backbone/dla.py",
+      "size": 13509,
+      "sha256": "9ecaaff42c3a50ea9c58d6a133ca8ad16b6eef94f35f2685ebe8b14068d5a91c"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/backbone/presnet.py",
+      "size": 6900,
+      "sha256": "8c04287c78aa799bf655c0e56ae295f4b87baa0bae5ace99cff585c5d42e546c"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/backbone/regnet.py",
+      "size": 533,
+      "sha256": "856d7204aaf0d872227c18576fed681934e8c5c6d7bd2e1b145e48b7393fd83a"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/backbone/test_resnet.py",
+      "size": 2696,
+      "sha256": "6669b01de6ba5524229cf892fdf4889565aa03625cb80224628fd581fd511e8a"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/backbone/utils.py",
+      "size": 1869,
+      "sha256": "b660c229b50a4dca781808fa58661ec96d8cb7209471f2102481ecbb83f0d500"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/criterion/__init__.py",
+      "size": 105,
+      "sha256": "c5027423a503a0097588c4e46a6b4f9ee3002d8e227f565ea5fa2c57a5e737d9"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/nn/criterion/utils.py",
+      "size": 523,
+      "sha256": "86e97bc7afeeca65417ac33cf1fb6abfd1c6021ba0ad3d5eb83b0b4abcd04daf"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/optim/__init__.py",
+      "size": 59,
+      "sha256": "3e46a11a6776eb1b4f33ea09f10567c5616af37476dcd8844f0c9b16146e2834"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/optim/amp.py",
+      "size": 205,
+      "sha256": "0456acb8b882ed037659970ebeef6192263d37d762b175760770871c4834cac4"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/optim/ema.py",
+      "size": 3883,
+      "sha256": "9ea3e2d870adb531d19da8f33d2603ee884a65f3ff57583aaaac7321e23f0083"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/optim/optim.py",
+      "size": 533,
+      "sha256": "0c1c19055f3a6309119ca86fe69396dd2b3f7430a8c7b9ded53543519de6b6ed"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/solver/__init__.py",
+      "size": 175,
+      "sha256": "16cf1c8ac9fd6035c1aa469fbc9de8de260ac3dddc62c909d239bb38a0ff661b"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/solver/det_engine.py",
+      "size": 7239,
+      "sha256": "1c6ac4728bffd622b7f00c40695d0883124af0c0e0d9afe3d27648570614bb8a"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/solver/det_solver.py",
+      "size": 4083,
+      "sha256": "291035eab2de3ac6f31e257b49b7c17a9bc6aed1ced7cdad2fd2519b873ba8ae"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/solver/solver.py",
+      "size": 5707,
+      "sha256": "0a385f3ceba430678a0b8d68047c91e39e3befa66eb5be09a933252437a1d1b7"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/__init__.py",
+      "size": 23,
+      "sha256": "ebed801c7982f9ed30f6d99066c71d7939acec81cfdad7a34579a0d7bec73fff"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/__init__.py",
+      "size": 196,
+      "sha256": "13207a9e06c5e188b647d39ab2334fe09052edd6b81b89030f6106d1f2d32446"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/box_ops.py",
+      "size": 2578,
+      "sha256": "a670ce02bce95c3b2304a6708c7c609f281237a7bbe8d63bcef56393a80baa4c"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/denoising.py",
+      "size": 5810,
+      "sha256": "2254d6b781879f54684e5726ada5e9c99414873398cf0a42c2e11d691bece595"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/hybrid_encoder.py",
+      "size": 19497,
+      "sha256": "b730f667e11daab7149bd0efed3a505f2c32d42f0e727d42b8509eb673e0feb6"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/matcher.py",
+      "size": 4870,
+      "sha256": "7e364fbba500b0ab23e3e33b7430780cd8dcf4738bd3b961118a3b1f8acd020e"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/rtdetr.py",
+      "size": 1181,
+      "sha256": "f9798f0be67f17a1075f7cb27c93c7977e7f4f4038b9848919d95a5827534266"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/rtdetr_criterion.py",
+      "size": 15837,
+      "sha256": "ac2a749f5f97bbb905d697a134ecd7820fe558f83906f1814693b5ef83e924d4"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/rtdetr_decoder.py",
+      "size": 22727,
+      "sha256": "c2837740cb66f128b72e802463db57ee3653e15d964baa3b9cf58cc27a817588"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/rtdetr_postprocessor.py",
+      "size": 2868,
+      "sha256": "a33a3afbc955866eb08587fdc77da0ae446153af952f42b721abc981f413444c"
+    },
+    {
+      "file": "rtdetr/aitodv2/src/zoo/rtdetr/utils.py",
+      "size": 3005,
+      "sha256": "dc7f50339c308651b24a236718789e1575e7fc6a4c9f2915b15470bfc393c1ad"
+    },
+    {
+      "file": "rtdetr/aitodv2/tools/README.md",
+      "size": 737,
+      "sha256": "8f6f436c9d434797c8e746b9af393cbdea451f87771c32d89b80a265bd8fbbae"
+    },
+    {
+      "file": "rtdetr/aitodv2/tools/export_onnx.py",
+      "size": 4542,
+      "sha256": "9cf982617b8aa8194bd268bc9a65ca2387066de41a5ee057eef7e841c9d09d86"
+    },
+    {
+      "file": "rtdetr/aitodv2/tools/infer.py",
+      "size": 7804,
+      "sha256": "bc22cfc1fc6c2f1dd39a62eb110ccdafb62e01713d70a471fec5507a9664f5af"
+    },
+    {
+      "file": "rtdetr/aitodv2/tools/make_paired_native_init.py",
+      "size": 870,
+      "sha256": "f3ba5d66a5afb4fd66b6641ef3e86b65588d64c373ce11726f48643733c52820"
+    },
+    {
+      "file": "rtdetr/aitodv2/tools/train.py",
+      "size": 1233,
+      "sha256": "ed660af7b10ee4597e4a4b18bb5f4dfcdf9a3d294ba4fa4613988b16e2a360eb"
+    },
+    {
+      "file": "rtdetr/data_tools/prepare_dota_hbb.py",
+      "size": 9266,
+      "sha256": "62187596563a2b9be7ca8e3a2e3f2f32d0999dd2e1d94a2fc8a9778fa4c770f7"
+    },
+    {
+      "file": "rtdetr/data_tools/run_pair.py",
+      "size": 4125,
+      "sha256": "a1272240241174f5bd08c8a3ff1c60c215f59703ff86318d2a337bf9ac234799"
+    },
+    {
+      "file": "rtdetr/data_tools/run_pair_seed1.py",
+      "size": 4218,
+      "sha256": "da81e84d9a5df0d276cdeaa03ea6cd0e849413f13fc9bc913b5ad38b8297a7c1"
+    },
+    {
+      "file": "rtdetr/dota_hbb/LICENSE",
+      "size": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/dataset/aitodv2_detection.yml",
+      "size": 650,
+      "sha256": "0fd065f8e1caec4bc0b5f094834e6f48f57d6d4bcbb151a8e5a436e67fa789fc"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/dataset/coco_detection.yml",
+      "size": 654,
+      "sha256": "f92ce0577a59415eeb4b172fc1aefd6bc0e8b89f4b1332c6bc28ce6d188488db"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/dataset/dota1_hbb_detection.yml",
+      "size": 793,
+      "sha256": "d48a810ced316efbbeb868711c4467f4f1ddaed02d1eee3f4b47ba38c896b53a"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_baseline.yml",
+      "size": 2358,
+      "sha256": "0477346d052b1baa36d9ebf372b1c03cb0eb7e9229a0cea0743d79258fdf8f2c"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_baseline_e80_resume.yml",
+      "size": 61,
+      "sha256": "f8412bb234266d92a79c2388d94d6836800bcc86afe204c22e7841becf1a462e"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa.yml",
+      "size": 381,
+      "sha256": "b6f47989a6bbbd651b7555c7fdda111431a9e8bf1b3cbeacf9dee6917188ffc3"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_aux_grad_only_s0.yml",
+      "size": 554,
+      "sha256": "9239560f2c877748947b41d2e56eccf95c13a12060fada05121ff3ac55b0d2cf"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_auxonly_detached_s0.yml",
+      "size": 556,
+      "sha256": "02c4d0e27e25dcbb4051fded9cc7eaad6c88efe248e8dbc77a8bcbea18944f0b"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_e20.yml",
+      "size": 150,
+      "sha256": "acb23180a4c8f644fd972a52a02e7f4e0b8cd1db3983819dc223051d346b11fb"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_e72.yml",
+      "size": 150,
+      "sha256": "a33c6aa0ebe3f1727127128c042fc47c12aed981a8f34fa05390471cdf24d8c6"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_e80_resume.yml",
+      "size": 82,
+      "sha256": "e9ef22810ee25bd82682c4c8157d793e4ad026565a6e0f6d4109bbccfb772525"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_aux_detached_s0.yml",
+      "size": 560,
+      "sha256": "0e785b48b165defc9b4bd92fa7d31d8d7990ef719e3dbfda194c3f66f2152127"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_enhance_only_s0.yml",
+      "size": 552,
+      "sha256": "17a0e023df67acac5900392235145a0cb3ab27797028c38f5e1c3e298b63ed99"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/brsa_aitodv2_r50vd_brsa_fixedscale_s0.yml",
+      "size": 486,
+      "sha256": "f64fc27c83f9a9570fb7e541244c29ac62ed3b1f01208c5e824cfa0c0a092d70"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_baseline_e100.yml",
+      "size": 106,
+      "sha256": "b5a3102a2997ecece1b075c446d9b5adabef86bddbd3c939a754af3eb0fb5256"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_baseline_e100_s1.yml",
+      "size": 108,
+      "sha256": "790f3343d171fd5fc3b5a740044710693a7edc507477dedf1f028732cc2c2e51"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_baseline_smoke.yml",
+      "size": 396,
+      "sha256": "ddb85dcd5fe93b5f38665aa9ccfe553e53d3ed377deea9e0b0a9c07212837bc3"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_common_e100.yml",
+      "size": 2757,
+      "sha256": "ec3854bf921b8be07f6d10641b1adfe04a22cdd9a965f605aabfd55feb90dd41"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_full_e100.yml",
+      "size": 321,
+      "sha256": "219bbc75182f37efdadff3336d39db843a20d17849ce32a4b1ef58120e23a6dd"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_full_e100_s1.yml",
+      "size": 108,
+      "sha256": "cde244ccee3a3de39f63703c809032ad89748111c38fbb27b1a4082eaf22b263"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_full_smoke.yml",
+      "size": 388,
+      "sha256": "6b98460e4def962937801c4de88aa197b20a2bdc7cf4473e94237235cc12610d"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/dota1_hbb_r50vd_shared_init.yml",
+      "size": 79,
+      "sha256": "25a1de7b5a5b086703d6f4b804a0331f82d5c910f05fd1d192badd2737cb5385"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/include/dataloader.yml",
+      "size": 892,
+      "sha256": "e19e6c1bc0aae33b5e2946e70f152a8c58398693d46455dbf5fbc0295c36ab41"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/include/dataloader_regnet.yml",
+      "size": 892,
+      "sha256": "2275a1aca8160047fadb91d2728edcb4d6f3746e849f50ce2c2440a004533b71"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/include/optimizer.yml",
+      "size": 487,
+      "sha256": "6bdf488c1aff452a989fc9f975835a1412bf65ed1bf58decefde1c6be977d1f0"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/include/optimizer_regnet.yml",
+      "size": 450,
+      "sha256": "d2c21f172b140545c913a07782f31a83d739cb02153121ab947301b20e4dff58"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/include/rtdetr_dla34.yml",
+      "size": 1279,
+      "sha256": "1b0046b0b1b50a7ffcce1532929118a8d24dd8cacfcd91ae7ea271b68b2a1812"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/include/rtdetr_r50vd.yml",
+      "size": 1346,
+      "sha256": "0720ab51f657ed853e39ada770dd26f4ae8395b048bee5be64fdbe5e77848f43"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/include/rtdetr_regnet.yml",
+      "size": 1280,
+      "sha256": "e34d8e1ac3487ede72d8bf4418178f4a4a94ec449465891d978e08735ebd12c3"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/rtdetr_dla34_6x_coco.yml",
+      "size": 186,
+      "sha256": "934dcb65c3b0b818ef6c276dadab8473fa1651d625cb67bfcc7d984f39f9eb15"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/rtdetr_r101vd_6x_coco.yml",
+      "size": 355,
+      "sha256": "8781a3c7c23d1c23213879d8a8194fd0492e9c1877e7f6e28333c4392c7ab078"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/rtdetr_r18vd_6x_coco.yml",
+      "size": 748,
+      "sha256": "b82eb93d2e0d2fd8906b13f930598f320e14e6e16ad96a9c5fbd9caaf90d7a61"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/rtdetr_r34vd_6x_coco.yml",
+      "size": 721,
+      "sha256": "b6c2da2a66329112d815c4ce5707368cf35eb102f5363fb52fb28591bd1b5b4b"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/rtdetr_r50vd_6x_coco.yml",
+      "size": 186,
+      "sha256": "09d1689fdcbcd8b8956e628f3641328df7d06f2a6fa3f8b43b6cbf2ac1410e66"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/rtdetr_r50vd_m_6x_coco.yml",
+      "size": 253,
+      "sha256": "d04e6a3654edd4ccbea8c20c7deb4a64ce5511ee739d0c080c26081e1ca6bbf9"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/rtdetr/rtdetr_regnet_6x_coco.yml",
+      "size": 202,
+      "sha256": "7217ef6ccdd61dc52efc0a5600c19a9e7a4dc935c47324eb0192b270fa11fb48"
+    },
+    {
+      "file": "rtdetr/dota_hbb/configs/runtime.yml",
+      "size": 171,
+      "sha256": "897c3c622c0b04330792dc1c5e07fc3d0d899e8577181c6c49b13a01c02d869c"
+    },
+    {
+      "file": "rtdetr/dota_hbb/requirements-upstream.txt",
+      "size": 104,
+      "sha256": "cc9fbf68a2371db3f050c68c4383b249a11b08044ea423c595aa599078396e6f"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/__init__.py",
+      "size": 76,
+      "sha256": "53f649be07662ea2f9548aee8cc405a0528a18cea04e72939e486af399c59543"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/core/__init__.py",
+      "size": 195,
+      "sha256": "60e7bb7a220ac7866a3e22bb095aab9043cefe3fedd7a7e2024b1ef7dd9cbf31"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/core/config.py",
+      "size": 7783,
+      "sha256": "a95d5c5f183c47a799af303205da14a07d84e051afc3f2f577a26f9ee2f3f5ea"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/core/yaml_config.py",
+      "size": 5070,
+      "sha256": "55fa4d904b94c252991c7c64cf624f1d3717c1b285aaaac04c439b12021ec915"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/core/yaml_utils.py",
+      "size": 5462,
+      "sha256": "2e4fac6a333ff868122e005c1764971722979ca49b14f975ae5ccdd4fe0eabe4"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/__init__.py",
+      "size": 104,
+      "sha256": "e66db1a9d8abbb014a7599af8f3861170d1d8fa0e5a6a67cfc3c16dc3df388aa"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/cifar10/__init__.py",
+      "size": 450,
+      "sha256": "3cfa2b9668f260f160ab95a0b455a9f972312e169c912cdce2c0dc3253ccb9ab"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/coco/__init__.py",
+      "size": 205,
+      "sha256": "cbd456965d95140eb94a06ed14d22845e61d2da9389dd18aad71cbc4a7db6c21"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/coco/coco_dataset.py",
+      "size": 8134,
+      "sha256": "87b15e93be2650951fc413b287d4f3b8b6b6ee498db0c2fe8cbaa2442034014d"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/coco/coco_eval.py",
+      "size": 9038,
+      "sha256": "dcc44980c31777e3dd47570e832a5cc2a8a3986d4839230907bd4d305fe1e8cc"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/coco/coco_utils.py",
+      "size": 6442,
+      "sha256": "0128ab0c3614fcf6be8e8a4489c1407c4196f85be1252d982058a99f24509483"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/dataloader.py",
+      "size": 694,
+      "sha256": "2a1376a3ebdee77a1c839768cb2428a9c3f10892deb1029758fcc59763de2443"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/dota_hbb_eval.py",
+      "size": 7116,
+      "sha256": "752504172ec8991308e21a73e4e3f51185f84d47b6c8033cc398593ebd9f8ed2"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/functional.py",
+      "size": 5792,
+      "sha256": "ca64c65a7c9d4888afc1a3cf534176562f2223ce3b98704b20591dcf60aa365d"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/data/transforms.py",
+      "size": 6611,
+      "sha256": "8d0c911d44780faf2f0e100d77598a74482a6f037332dac3e9bb4c4751c34ae4"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/misc/__init__.py",
+      "size": 49,
+      "sha256": "643ece3c144d7fcf94846563684444cdc679bd338db97ff15fee6b400ab1aabf"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/misc/dist.py",
+      "size": 4687,
+      "sha256": "510fc6b6c1d5b5392bb687d52693dcdc00df9c6e7d2181d28921ed1f10a639cd"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/misc/logger.py",
+      "size": 7725,
+      "sha256": "646a285de632f95b8dca04f40a0d36c89459f8acab177ed30b1dd9a8aee3bd37"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/misc/visualizer.py",
+      "size": 839,
+      "sha256": "bafbcf567d9e0c479aacb93044fe14d105abe2d06ee989dd7ed8f741b9c3e396"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/__init__.py",
+      "size": 75,
+      "sha256": "de01346f1c30d08d510cdf0df0fbfb5ddefbd4253fe8a3e852215632f988da9b"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/arch/__init__.py",
+      "size": 30,
+      "sha256": "950efc3eba1ea5fa88c42294945fa372e65679679c6e70e0bf9e5a9df5a51a42"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/arch/classification.py",
+      "size": 903,
+      "sha256": "cfe15c187ae553df8f1c2f8b553b444dc50d6d2fc860d5e3e8491ea01cbcd12a"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/backbone/__init__.py",
+      "size": 113,
+      "sha256": "883a1c21e27454cd9579620760d335842bb3d855a78b353458578d7619b7c0e2"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/backbone/common.py",
+      "size": 3028,
+      "sha256": "29ca34ee34f53ccab66e4a1d985df08ede3df9a686d4f84f861010b8f7513d44"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/backbone/dla.py",
+      "size": 13509,
+      "sha256": "9ecaaff42c3a50ea9c58d6a133ca8ad16b6eef94f35f2685ebe8b14068d5a91c"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/backbone/presnet.py",
+      "size": 6900,
+      "sha256": "8c04287c78aa799bf655c0e56ae295f4b87baa0bae5ace99cff585c5d42e546c"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/backbone/regnet.py",
+      "size": 533,
+      "sha256": "856d7204aaf0d872227c18576fed681934e8c5c6d7bd2e1b145e48b7393fd83a"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/backbone/test_resnet.py",
+      "size": 2696,
+      "sha256": "6669b01de6ba5524229cf892fdf4889565aa03625cb80224628fd581fd511e8a"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/backbone/utils.py",
+      "size": 1869,
+      "sha256": "b660c229b50a4dca781808fa58661ec96d8cb7209471f2102481ecbb83f0d500"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/criterion/__init__.py",
+      "size": 105,
+      "sha256": "c5027423a503a0097588c4e46a6b4f9ee3002d8e227f565ea5fa2c57a5e737d9"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/nn/criterion/utils.py",
+      "size": 523,
+      "sha256": "86e97bc7afeeca65417ac33cf1fb6abfd1c6021ba0ad3d5eb83b0b4abcd04daf"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/optim/__init__.py",
+      "size": 59,
+      "sha256": "3e46a11a6776eb1b4f33ea09f10567c5616af37476dcd8844f0c9b16146e2834"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/optim/amp.py",
+      "size": 577,
+      "sha256": "286a5e56897a69e3505fe13fdf6b8d817e671977a417106fa5c842c04eb50a79"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/optim/ema.py",
+      "size": 3883,
+      "sha256": "9ea3e2d870adb531d19da8f33d2603ee884a65f3ff57583aaaac7321e23f0083"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/optim/optim.py",
+      "size": 533,
+      "sha256": "0c1c19055f3a6309119ca86fe69396dd2b3f7430a8c7b9ded53543519de6b6ed"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/solver/__init__.py",
+      "size": 175,
+      "sha256": "16cf1c8ac9fd6035c1aa469fbc9de8de260ac3dddc62c909d239bb38a0ff661b"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/solver/det_engine.py",
+      "size": 7859,
+      "sha256": "d1c017d7a148a696bf0aa9717e288399d4c1f59caa790255da8824ae6819dad3"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/solver/det_solver.py",
+      "size": 4793,
+      "sha256": "3fbffb27689a42c22f8f58335ac414aa702dc7286c0e6229754462665a6a8319"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/solver/solver.py",
+      "size": 5885,
+      "sha256": "603c0de1c2f529e669d315c61fba43218ac639357f14ff47f77c178f992413e4"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/__init__.py",
+      "size": 23,
+      "sha256": "ebed801c7982f9ed30f6d99066c71d7939acec81cfdad7a34579a0d7bec73fff"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/__init__.py",
+      "size": 196,
+      "sha256": "13207a9e06c5e188b647d39ab2334fe09052edd6b81b89030f6106d1f2d32446"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/asymmetric_neck.py",
+      "size": 14858,
+      "sha256": "10cf15826aacfb6d415beb84b4b35772c2fff7a54252a9eefe3952cae55d6646"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/box_ops.py",
+      "size": 2578,
+      "sha256": "a670ce02bce95c3b2304a6708c7c609f281237a7bbe8d63bcef56393a80baa4c"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/denoising.py",
+      "size": 6351,
+      "sha256": "342e7540f4141d59447590668ed0f7eb66c5fcf4d526c0c0b71e9188d70d2b9e"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/hybrid_encoder.py",
+      "size": 22151,
+      "sha256": "4d18b055b69db126a9a3ea7b8029b92c1f01752a7335b81cd3aa1a7a8bf49b78"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/matcher.py",
+      "size": 4870,
+      "sha256": "7e364fbba500b0ab23e3e33b7430780cd8dcf4738bd3b961118a3b1f8acd020e"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/rtdetr.py",
+      "size": 1181,
+      "sha256": "f9798f0be67f17a1075f7cb27c93c7977e7f4f4038b9848919d95a5827534266"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/rtdetr_criterion.py",
+      "size": 15837,
+      "sha256": "ac2a749f5f97bbb905d697a134ecd7820fe558f83906f1814693b5ef83e924d4"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/rtdetr_decoder.py",
+      "size": 22727,
+      "sha256": "c2837740cb66f128b72e802463db57ee3653e15d964baa3b9cf58cc27a817588"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/rtdetr_postprocessor.py",
+      "size": 2868,
+      "sha256": "a33a3afbc955866eb08587fdc77da0ae446153af952f42b721abc981f413444c"
+    },
+    {
+      "file": "rtdetr/dota_hbb/src/zoo/rtdetr/utils.py",
+      "size": 3005,
+      "sha256": "dc7f50339c308651b24a236718789e1575e7fc6a4c9f2915b15470bfc393c1ad"
+    },
+    {
+      "file": "rtdetr/dota_hbb/tools/README.md",
+      "size": 737,
+      "sha256": "8f6f436c9d434797c8e746b9af393cbdea451f87771c32d89b80a265bd8fbbae"
+    },
+    {
+      "file": "rtdetr/dota_hbb/tools/export_onnx.py",
+      "size": 4542,
+      "sha256": "9cf982617b8aa8194bd268bc9a65ca2387066de41a5ee057eef7e841c9d09d86"
+    },
+    {
+      "file": "rtdetr/dota_hbb/tools/infer.py",
+      "size": 7804,
+      "sha256": "bc22cfc1fc6c2f1dd39a62eb110ccdafb62e01713d70a471fec5507a9664f5af"
+    },
+    {
+      "file": "rtdetr/dota_hbb/tools/make_paired_native_init.py",
+      "size": 870,
+      "sha256": "f3ba5d66a5afb4fd66b6641ef3e86b65588d64c373ce11726f48643733c52820"
+    },
+    {
+      "file": "rtdetr/dota_hbb/tools/test_distributed_denoising.py",
+      "size": 2078,
+      "sha256": "33cd249a2d5c20264dd30240fadaffe5074ded2ff05607c20e474abba44e9125"
+    },
+    {
+      "file": "rtdetr/dota_hbb/tools/train.py",
+      "size": 1258,
+      "sha256": "fa0d52b9ad8c5b002c8a6612329f6aa68f2d65672fea645f229203874581df90"
+    },
+    {
+      "file": "scripts/audit_release.py",
+      "size": 4286,
+      "sha256": "474e70dcdcb75a3aa20c2a3908ff1305cc1e4d9a11df98118ed89eed6173c11b"
+    },
+    {
+      "file": "scripts/launch_yolo11.py",
+      "size": 4772,
+      "sha256": "2b6f71b94dc9c5f15d1715f046fd2c49969640e0795828f9269f859eefa9cc41"
+    },
+    {
+      "file": "scripts/smoke_models.py",
+      "size": 4580,
+      "sha256": "ccfb11cab71dc96e3c5a7d45c17f60884b0ba67043f9c1ba3df3bed8a4b1f150"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/MANIFEST.in",
+      "size": 78,
+      "sha256": "d5bce54e74f83fbb59f24efa12bcc6d427443a50a9a13acdbbe754885079bc5b"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/Makefile",
+      "size": 200,
+      "sha256": "b8cb458be2f5721a32813ccd2b0eaf340890368b6cbc5a73bc9a7e5a37d7fd8f"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/aitodpycocotools/__init__.py",
+      "size": 44,
+      "sha256": "d7e2d11ea4fddb3cb4dd3ec95848c96c38897a23fd5beec71e44c266b98a78c4"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/aitodpycocotools/_mask.pyx",
+      "size": 11437,
+      "sha256": "dee39de13e169e885b44cb54611be09b21d8fcb00010d297c9549926bc593679"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/aitodpycocotools/coco.py",
+      "size": 20636,
+      "sha256": "ebc2121fa38435988101555f5db72914b69de8cb19eb14c75063099c13c7225d"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/aitodpycocotools/cocoeval.py",
+      "size": 31541,
+      "sha256": "610433e6a4a609e2722aa2280a64eb70d1f5406d9bae1d50a8fca2de4422d069"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/aitodpycocotools/mask.py",
+      "size": 4635,
+      "sha256": "740b28dcd153da3ff576186995179510acfbfef3c058b93e0e318221045bc035"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/common/gason.cpp",
+      "size": 9540,
+      "sha256": "87b51aeb1080825adce3599664559241ffe932d451812090a2f8f0314bfb7ec0"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/common/gason.h",
+      "size": 3483,
+      "sha256": "27c94844d04a4b3735878eb5ec2f81ff6eaa54618e3ae7c3e1556a88bed8e3c9"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/common/maskApi.c",
+      "size": 8308,
+      "sha256": "c629b3a9116b75f79bf04174c0d9b826ffe73bb885bf44c83139a1cb9e7defe4"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/common/maskApi.h",
+      "size": 2176,
+      "sha256": "c9876e28a962d9022b14bf2936377ce6ea604d6665bb8497621e61fc3fa1d017"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/license.txt",
+      "size": 1529,
+      "sha256": "913c83fb80fa51685590ba3ea3b7e54b9e9852d9dcd198f3f1ade65e501247d1"
+    },
+    {
+      "file": "third_party/cocoapi_aitod/setup.py",
+      "size": 950,
+      "sha256": "c45c3d9f36406856c6bc7e52f183ad252a30edc7ef965dae54fe084ca7e2c77a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/LICENSE",
+      "size": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/README.md",
+      "size": 30467,
+      "sha256": "c0bf48fb906472fe8708d02b8e6b5c567c0987989fbce14bf5e270e35283f85c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/pyproject.toml",
+      "size": 7821,
+      "sha256": "3a03bb68293ebe017bee18c02c1b22c6b393b848d0fdc96fbbc098755c1524b2"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/__init__.py",
+      "size": 693,
+      "sha256": "dd93ad5c6a07c221b104cb693eabee4958118a4d3d9c5abf572af89b7015ba6d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/__init__.py",
+      "size": 33145,
+      "sha256": "74b6ea3647d75a78308a26efaf11fac0c7bfa191b8388b31848892be4ac26c49"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/Argoverse.yaml",
+      "size": 3134,
+      "sha256": "1727ae253e421eaffd7788657c07f49296659db50c3b44bef94275c88a9c74a9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/DOTAv1.5.yaml",
+      "size": 1195,
+      "sha256": "4157e9fd0a7ee2bba4ba271a078ab1f3a37148733c32bcf29bc97f7c80e8f20c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/DOTAv1.yaml",
+      "size": 1165,
+      "sha256": "b317b63fb9d8f9c08fb9f1f71b5a729a7415b4da061f5cb41131b90b259f2bd8"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
+      "size": 2060,
+      "sha256": "7f1589bf41213104c20ba369735dd9611860f8479d2e650ec514177ded46aee4"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/ImageNet.yaml",
+      "size": 42507,
+      "sha256": "3f9b74af030d657da2bbba28064779c528bbe66eba71c0733b45e20400461a15"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/Objects365.yaml",
+      "size": 9323,
+      "sha256": "66bc849de08822b85b8803e27919722f166fcd2e901b552cfb188306820adee1"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/SKU-110K.yaml",
+      "size": 2493,
+      "sha256": "81e46471c05197678a81f3584ce3d8c03f664dfaa4b5304688c2681373d91270"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/VOC.yaml",
+      "size": 3657,
+      "sha256": "a3205c238c9b3632947355324bcae0863686b335cc01bbd92f508ae6ccdf1aa8"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/VisDrone.yaml",
+      "size": 3081,
+      "sha256": "5d1c8bc35ea7a223989c45b8303094e61aa319658c2aaeafa6afbaa064dc5394"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/african-wildlife.yaml",
+      "size": 901,
+      "sha256": "64cb6135c42c93dedac04be76a9f0ec9d777497b837e963f3a38179f0f229ea7"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/brain-tumor.yaml",
+      "size": 827,
+      "sha256": "1d34000bcdeb3cb1722c1b5d56f861d00ecb05b3eba5d55f0f7dae3925010c14"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/carparts-seg.yaml",
+      "size": 1239,
+      "sha256": "f1774a7961fe2d2175084958b0a4ae4226bc5364a3f2eadb03cf1a4ee132c9f1"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/coco-pose.yaml",
+      "size": 1605,
+      "sha256": "abc5c24daf813cea779421438197564c346d9e40654bf30e5d5b247761049ca4"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/coco.yaml",
+      "size": 2586,
+      "sha256": "bd6f98a2e18775c39a4d5214080c87fcb163d367c18a2fcf2609371bab00c0b8"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/coco128-seg.yaml",
+      "size": 1957,
+      "sha256": "53b38b0097caf73add88beec54307eec2a700b6144b9c5cad831c9be7fdec21f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/coco128.yaml",
+      "size": 1940,
+      "sha256": "5e5fdd672914b033e0a1fcbda3e16310cf9d9007f64f6b0666392c001a03ed13"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/coco8-pose.yaml",
+      "size": 993,
+      "sha256": "8746507c71a8786ef6e27de34ef1e42ce6e76197cd0e568e65224ba0f015f34d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/coco8-seg.yaml",
+      "size": 1897,
+      "sha256": "b053114c96b6011a6a02dafee74492fd1901e0aa1cce601a98ae82eea21f01df"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/coco8.yaml",
+      "size": 1872,
+      "sha256": "dff94d94ca38d117f9da8c4e9c023269fed939d574fb3f8672ffae316980134b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/crack-seg.yaml",
+      "size": 823,
+      "sha256": "ac9da76f17251e3ac43193f05027473b6ca37ee0190687a4b87e34a0fe477cd0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/dota8.yaml",
+      "size": 1044,
+      "sha256": "77ae454c6089cd93c855eb5f792fbf7deb212a3a180ec7755ea6d6a02deeead2"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/hand-keypoints.yaml",
+      "size": 960,
+      "sha256": "bb1e54337dab87f4248c6fcaa63637f52b9deca1a83065c9d1d9b04c368966da"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/lvis.yaml",
+      "size": 29691,
+      "sha256": "af2b30726df6bc3019dfef2b5b1d185b352fe2474e10f620d8e851b7e52cc291"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/open-images-v7.yaml",
+      "size": 12493,
+      "sha256": "82c3742572d27508258a8d36e29e8d11e80d6d7d3a90950dba3d1b87da048be5"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/package-seg.yaml",
+      "size": 833,
+      "sha256": "ea23e964e3f4c60ad370ef0301934f185949c2b627e5b0e0c7e169127bf652df"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/signature.yaml",
+      "size": 760,
+      "sha256": "a933942d97f427d852ed95d577fb0f27cba835599b2a7a99e8a826fc48e65e96"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/tiger-pose.yaml",
+      "size": 896,
+      "sha256": "b54f3cc5d280a0dd831570e4d8d30757bcbd6c2d87189085d0bbd356f09a08d1"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/datasets/xView.yaml",
+      "size": 5217,
+      "sha256": "ae340f44d93efa395837dc1c553bb529ba2981922459786bfecd5491275c111b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/default.yaml",
+      "size": 8314,
+      "sha256": "b64067ddce9db8a185c8436e50b9167acb00a9a6b1a3d6adb8ec57ab75db22d3"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/11/yolo11-cls.yaml",
+      "size": 1329,
+      "sha256": "da80667ac61406c9dab69bc486621627502b8bde9f7b0d54f4d915e99b0fd02b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/11/yolo11-obb.yaml",
+      "size": 1936,
+      "sha256": "379a334d86b2f8bfc5e2bc910c58d7fafea6319f689c2135b870c40d639954b7"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/11/yolo11-pose.yaml",
+      "size": 2015,
+      "sha256": "8797ec517a3136a49f04c86d1f23031340ea159e7e0ee46bfba497852d9d115e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/11/yolo11-seg.yaml",
+      "size": 1932,
+      "sha256": "13215703e646f21dff3eb159b421fac6657903b40bd9981f6e3583b1d291c07f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/11/yolo11.yaml",
+      "size": 1918,
+      "sha256": "94cf4eb9ac55aec23513b447626a6d637300f7462244e413e59ea4b68885c4a5"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/README.md",
+      "size": 3348,
+      "sha256": "7ea7c0ecabcbfc61c34da681d5364448a7302f9fc07c19b2ef8e4bf7435a926c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-l.yaml",
+      "size": 1934,
+      "sha256": "35bce2f77b40261070ebd8543419335da78c316c16ead59e02c74df329ebcae5"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-resnet101.yaml",
+      "size": 1512,
+      "sha256": "a349d6a0a7224febf2a42d9e4b9a8811635269cd0beafc0bb5b2bdb9c425b86e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-resnet50.yaml",
+      "size": 1510,
+      "sha256": "adbeb85902beddafcf79b51ccba09ba6c92f942ef81fd337b4c22bdd1e6f1c35"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-x.yaml",
+      "size": 2141,
+      "sha256": "139bada8d2fba0dcedc8f2b24863e85444fc44851ea80a9c85d6ac96ee596f98"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v10/yolov10b.yaml",
+      "size": 1404,
+      "sha256": "ac44a04727c4cafc39410dea05b3e6cc14642997ab1c9a117e364c1d301cec00"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v10/yolov10l.yaml",
+      "size": 1404,
+      "sha256": "151e92943ad9e53547da3431a192d41278e85765999ed6e60e8b13562375bd0c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v10/yolov10m.yaml",
+      "size": 1395,
+      "sha256": "b7845e93a11c9772fce9387145042bcc9985054419849c029f5771e6fb9ea0b8"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v10/yolov10n.yaml",
+      "size": 1390,
+      "sha256": "b5ac79313c284256529aacb65b4f0222d6dac3426a0919cdc3beec44c3796412"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v10/yolov10s.yaml",
+      "size": 1399,
+      "sha256": "b06125bb417decd46446931ff4c22a124afd3262e6c4798cbe6528954f5b32d9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v10/yolov10x.yaml",
+      "size": 1407,
+      "sha256": "13d77523a40a72ef17aa440ac850003dc20b72cef5ee5aa46ab87daa17b7069e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v3/yolov3-spp.yaml",
+      "size": 1525,
+      "sha256": "35f289781a438034b05e8edf48df26c90510ebc60b07dc51b6a7418069553c7b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v3/yolov3-tiny.yaml",
+      "size": 1229,
+      "sha256": "e669c618237e98d0efaaf3b3d80cc685fc04834d5ec7378734f4b7340de9a226"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v3/yolov3.yaml",
+      "size": 1512,
+      "sha256": "fbde29e2d78f743b5da67cfbf6eeced6c0a157af644e2d35945c5c546a09f0c6"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v5/yolov5-p6.yaml",
+      "size": 1894,
+      "sha256": "dac9822ae193f10dbade2d0898924d53c3abf975e6b8b31ff496a7066e138e21"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v5/yolov5.yaml",
+      "size": 1526,
+      "sha256": "b1139057cb60bfa94b460c70043228f4c6b3ecd509818651fc8e0c6ccf4ed414"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v6/yolov6.yaml",
+      "size": 1718,
+      "sha256": "49bd279a6b5daaa1c216e131c93f878a9d7464be26e776e16252a07b49051826"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-cls-resnet101.yaml",
+      "size": 883,
+      "sha256": "b82ea49742efbe56fc6e820e47b05d02a6134bc62e707ffdd591b7a4e5884bb4"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-cls-resnet50.yaml",
+      "size": 882,
+      "sha256": "16090d99c80b8c0414df8ba41f82cc23acdcd6968ef23ee3caaaf1fb7aa38bd0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-cls.yaml",
+      "size": 913,
+      "sha256": "fae37821a0871419b2275659d3d87677ccf771e5684965c3e3875b151b0179a0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost-p2.yaml",
+      "size": 2288,
+      "sha256": "6e7e431f0c19de603152f6b2c2aefaff824d81669b3053029c23684e92d20ca9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost-p6.yaml",
+      "size": 2356,
+      "sha256": "92a81b10a36e6bb5f01fde73b5e5ba2335da0238da580d258f3982008edbf04f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost.yaml",
+      "size": 2096,
+      "sha256": "5941ce235f1a035d648003430966c30f2de3b303653ff9c8929597d3d05f06e2"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-obb.yaml",
+      "size": 1899,
+      "sha256": "4efe490d94cb3ab7f2063de082ab1ef528630e933e9c8148c618ac7902b02440"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-p2.yaml",
+      "size": 1731,
+      "sha256": "b5f1e4915002d1f90273b01b8ac4f31a95d6dc57e4dbe2b9fb08d17926e6ec6c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-p6.yaml",
+      "size": 2296,
+      "sha256": "9401404b01618ef5297c2773ae7199894e05cbd1306c9e506c986b472526db5d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-pose-p6.yaml",
+      "size": 1927,
+      "sha256": "cb3c48db46cc05da3a7f991de7755fb841e6fd0a84fd5deec00bc5244d136ebd"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-pose.yaml",
+      "size": 1563,
+      "sha256": "0c7a0977babb1f0f3d2415f98a6f8cdcd586f2681edd574f54d6f82b88d3cc84"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-rtdetr.yaml",
+      "size": 1896,
+      "sha256": "a1fba37fbecb5b7b2d5d2ebe95e54cfc4c5139689f27ce03e56a9186e8f25492"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-seg-p6.yaml",
+      "size": 1845,
+      "sha256": "39f30b30704e63a76de3f62c36e3c03463f033704f05fee2fd5ded40fc84c581"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-seg.yaml",
+      "size": 1474,
+      "sha256": "7cdf399bf6833021f8a13277cfe7edf7c3dd87a764d29661e280752c89e826b0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-world.yaml",
+      "size": 2019,
+      "sha256": "4574e9fed822c7c75b9d51e9adaa7188ad9a6b1eccdaa21f9ae47e680bdee2c5"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8-worldv2.yaml",
+      "size": 1956,
+      "sha256": "7ef195531be504e8cde8b52289a886b278cae592a3c18196c60909e3d84698c8"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v8/yolov8.yaml",
+      "size": 1889,
+      "sha256": "56349efd5d869fd66926bc13b73d00ebfe88329e94bae80d891eda112851e6b7"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v9/yolov9c-seg.yaml",
+      "size": 1346,
+      "sha256": "06579df554ff5f700619ef4e0135c603c6ababf5126c651cf298eccbaf3803bc"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v9/yolov9c.yaml",
+      "size": 1326,
+      "sha256": "bcf7d86dd0c38366839b6c9545fca35cd3a016bc93516146eb495c1d08cba6e0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v9/yolov9e-seg.yaml",
+      "size": 2277,
+      "sha256": "c9c31ec41daa29db5efa1928ed217d3d8e2a3a78359a8228abeb2c8386b7b5e0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v9/yolov9e.yaml",
+      "size": 2256,
+      "sha256": "761691e3b5b1b8b3ab6560c271e4b86d01b4d2c41dacc73c150e4ade62ac9da5"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v9/yolov9m.yaml",
+      "size": 1311,
+      "sha256": "97a0a68afccdbb8e2c4559a4417938fad5df95b5759d69e4e4c49cf2cbb6be1b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v9/yolov9s.yaml",
+      "size": 1291,
+      "sha256": "94f59cbbeeae6f5902043eb3203170b61619dd1bdd25f38358acb7bc4416463a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/models/v9/yolov9t.yaml",
+      "size": 1275,
+      "sha256": "a8bfff92be86a1e7e94163f88d5d23773c13a78e9b74551caad3d19df0db918f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/trackers/botsort.yaml",
+      "size": 916,
+      "sha256": "f01d3135b9c6fc4fbd0c25296a9ef63d69148016f5023b80a449fb8078959e01"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/cfg/trackers/bytetrack.yaml",
+      "size": 721,
+      "sha256": "f2fa53676c7d9a14572729a826fb351bc9135e8fc7c5b4b01eea7615000b4f70"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/__init__.py",
+      "size": 616,
+      "sha256": "5467be0131bb8f7e45e00e2bf099b37df8e586f7b824024f8116b96a1293535f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/annotator.py",
+      "size": 2489,
+      "sha256": "3e788ec47d8c49c58aa79dfdbeeb9f93af6e1b526c96d0c1e4e302521c67d906"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/augment.py",
+      "size": 121877,
+      "sha256": "61bb1f9caa4c92aa3511af3b3899cbec096c2fb7aeac4262b59f8f26fa0ad4cb"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/base.py",
+      "size": 13835,
+      "sha256": "ce2ff59e725bdbd801a98de3aef6cc0b087a44fa5786bd3c0d0d81436fdd853a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/build.py",
+      "size": 7261,
+      "sha256": "01f326cf4b072189b0af2ffdd2d10915193f933d12dd2a2549c557a981e24f4f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/converter.py",
+      "size": 21385,
+      "sha256": "0e32746ad92ed9a296d224b53d93cd5fc57a593ad9f821d94fa868a44d474a32"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/dataset.py",
+      "size": 22874,
+      "sha256": "212d3bba593bad73d9f925bfae3605f664be4f13d7398f5b6e8e63a9f7303ea3"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/explorer/__init__.py",
+      "size": 113,
+      "sha256": "f98de6d5979d7a939052ffca5bcdb3686c6f53f3d21dcbb051316a1bd06102be"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/explorer/explorer.py",
+      "size": 18881,
+      "sha256": "25698b1c7869ebc876ab7bf1e29a01a2ee51628017dd1f3dca2851e7460b0dbd"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/explorer/gui/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/explorer/gui/dash.py",
+      "size": 10498,
+      "sha256": "bd9e3be8d6941f814a534f2b009d4af563722ad834b28332249c6a835efac967"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/explorer/utils.py",
+      "size": 7085,
+      "sha256": "12fbee91089051306bb19ce798c9f2117d84a93bb0668fc67b273cc9f8bc3480"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/loaders.py",
+      "size": 24094,
+      "sha256": "245d99fc448ae91c1e6af3ae6167a3612189c26a8835be61370c026f70007f43"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/scripts/download_weights.sh",
+      "size": 568,
+      "sha256": "33bd9240e5cfd768ada0d61c9be6f286294dead3612f24a8a84c483847faf766"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/scripts/get_coco.sh",
+      "size": 1729,
+      "sha256": "51ddd560587b270b792b74963e6e5015330a83d68748ca6b650af99addad3854"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/scripts/get_coco128.sh",
+      "size": 621,
+      "sha256": "d3cc97705b6c829f314d0c827e12c651a9be88b7e64258092c49a67001c12c6c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/scripts/get_imagenet.sh",
+      "size": 1672,
+      "sha256": "38e27e1d211592ece2761076b3f4674028ac1a1e4c62bebb84ef3ebbbdd451e7"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/split_dota.py",
+      "size": 10680,
+      "sha256": "c8eb72a47a18e47bc85412998055dd7e3dadb822cb1019ccc0d7c0786f781229"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/data/utils.py",
+      "size": 31042,
+      "sha256": "1954ed665144f10f5194d275f44aff09dc5e9e37836ef41ead4d6328eb3be92e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/exporter.py",
+      "size": 57019,
+      "sha256": "04562fbfbeb791b126e6ad3e018221f7bf6f2f471c53844dbce376c3caad9b5b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/model.py",
+      "size": 51583,
+      "sha256": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/predictor.py",
+      "size": 17471,
+      "sha256": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/results.py",
+      "size": 75043,
+      "sha256": "f1126537c27effdc3e9ab0d99bdc02f836494cf052eefd5cfebfd1d7bdd0c913"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/trainer.py",
+      "size": 37087,
+      "sha256": "053251e5f5c8aab22fa63188f936591d45dc470bd4b6bfa358004dea49a75768"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/tuner.py",
+      "size": 11838,
+      "sha256": "80fa834c71fbbd10763b76321f6ea6d418d529b5f1b80d970253d1cd328566c7"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/engine/validator.py",
+      "size": 14650,
+      "sha256": "e3cdc077cec8ae4ec806524d2eed9240026c6fb62b8802d35fd18882b8829918"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/hub/__init__.py",
+      "size": 5644,
+      "sha256": "dd22af6796918a76b787de3130f4080770f899a17adaa15cc88a8f3c74473407"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/hub/auth.py",
+      "size": 5545,
+      "sha256": "9032da9066b635bcef30079773651dcd9eb9af4007f9778cfc97ec0d8f7b5869"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/hub/google/__init__.py",
+      "size": 7504,
+      "sha256": "b9c94db3eff9bc0cd032040a825f1e06f9a5d5cc7a21961745486b179eefebf9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/hub/session.py",
+      "size": 16411,
+      "sha256": "d8ace73b9917d781c5676f82b7d2e81b7d76b1d1ee8a04122d96f9f0c1af6c96"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/hub/utils.py",
+      "size": 9715,
+      "sha256": "23b3404c6e8efd0470ec453b10791d4d5bdb0a4c0a0b251ee7804feb44e8feca"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/__init__.py",
+      "size": 265,
+      "sha256": "4d3f622c22ff9fd63cd1d714ab4168fa9f86459092536beb5973370a8330aaa1"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/fastsam/__init__.py",
+      "size": 203,
+      "sha256": "5b4ad1489337bddc5cb277ae88debf6a3914c3cea4ebea2950a74bc5584a3a84"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/fastsam/model.py",
+      "size": 2008,
+      "sha256": "8a4a8e52845b713607d3462a03b58a7465e7adf7f547c39d062d8e1b49fdb9a0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/fastsam/predict.py",
+      "size": 7377,
+      "sha256": "cfbdd678840db520c0768644f089fa8f36dd324eb09409953477663ab740a6c3"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/fastsam/utils.py",
+      "size": 714,
+      "sha256": "c07ea91234761b8e4b60aaa6b397bc709af9f90fb46cac94f18732b43027edde"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/fastsam/val.py",
+      "size": 1967,
+      "sha256": "20b2a6c3753c1589a642c3bdc24f7e6c9f4fca9fd9b6124cdfa6fad4bef9b376"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/nas/__init__.py",
+      "size": 179,
+      "sha256": "77af964eb60b5ef6cfb39f1e6c0d3ee7cdce0e2f95cb35dcfade1a1880d02ba3"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/nas/model.py",
+      "size": 3234,
+      "sha256": "085d7150eaeb888f25b2b92bb1c5be5c3ec4d182119f9e2c9cbfe39b610fd2f9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/nas/predict.py",
+      "size": 2096,
+      "sha256": "e0a0f2b635b368331273f8ebdd6deceb3e849fa9b029f18fef44905f1fc5db03"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/nas/val.py",
+      "size": 1695,
+      "sha256": "ea5b75c1ff090983beadcd06d038d85150e082f4c05e4b367aee509f02f4f12e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/rtdetr/__init__.py",
+      "size": 197,
+      "sha256": "01981ad42dea9464ed82902ea435b87688a3ab9699950785f1ee79fc33f651ab"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/rtdetr/model.py",
+      "size": 1988,
+      "sha256": "d95929a45d7fe7cd57990d1423b968f1f5fb32a84024f5d532bda3c8c1d7b5b9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/rtdetr/predict.py",
+      "size": 3568,
+      "sha256": "73150b7490332fd44cd75636e2d220b8a70d2595f0ca736cad64425be8d46044"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/rtdetr/train.py",
+      "size": 3685,
+      "sha256": "dd08dc840bcb337821d6c353395495be9caaaac652629ad4435d9ee28010b3f0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/rtdetr/val.py",
+      "size": 5566,
+      "sha256": "c558d94a167502f112f7bc157a4976abfd60db43eaf8820786425d5adc4c9dcb"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/__init__.py",
+      "size": 176,
+      "sha256": "a38fc3eb2f1826539720aecbc28f511e720927dc6814d8b8ccaf7d41273591d3"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/amg.py",
+      "size": 8709,
+      "sha256": "1ab98effc61f203b7f4243c4305fd61633d9921c217fb8b0c7b8a0f0980e5271"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/build.py",
+      "size": 12233,
+      "sha256": "ccd41bae0487520cf58325d0c0b2864e96ba09212379a7af70fdf0d59d65de6a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/model.py",
+      "size": 7382,
+      "sha256": "d8a154a7c4878aa3a0c148e476a75abb4a1db89c0a4319b837d1875a3761505a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/blocks.py",
+      "size": 45919,
+      "sha256": "43e2b08456ddc99865d6d8c6fe43f62dc42465bce836deb5f22f8d46b28dc766"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/decoders.py",
+      "size": 25830,
+      "sha256": "98e0ecaa74cdfc28c4dc7d1287d71df0f7d39c700d3e3181d5b8ea1f17decd28"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/encoders.py",
+      "size": 34824,
+      "sha256": "032dec61e5289c27fa5115c1741d1d0f0ca7828bdebd6f215038142d19cd2280"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/memory_attention.py",
+      "size": 9722,
+      "sha256": "5e295606745f1fcc19c48a0bdbec8493e751ca90ac4b425fffdb7c589c572a0d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/sam.py",
+      "size": 50003,
+      "sha256": "7dab718d7a0ae060f953f960c17fa56f7ef66b6f6ff1f71edf96749664b62900"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/tiny_encoder.py",
+      "size": 41332,
+      "sha256": "372cde14c2e79aac1c15016cf8904cf4f0964ac628619ffa879f549f50de0d5d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/transformer.py",
+      "size": 16081,
+      "sha256": "9ee845ff5e0b1abaf9b980803fd5c25e9b3ece555c4f83963b47af5d60f13f02"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/modules/utils.py",
+      "size": 12315,
+      "sha256": "637e95e81572e8679a02f284f201e6a0321af9fe4b8c9a66495c32c0d92fdb29"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/sam/predict.py",
+      "size": 38556,
+      "sha256": "ba7b2836b131ea97b1283dbcf874e900b6b4d8fb4db44e1ed8445dcecf6a6d8c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/utils/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/utils/loss.py",
+      "size": 15840,
+      "sha256": "3b38b4529edc98f01e85782a1ae55202d512e17431697efa2aa13c43454793b1"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/utils/ops.py",
+      "size": 13221,
+      "sha256": "68f00fc1630b24b5aaf88d38c12fd8aea27f572ff1057b6a42ee80a31d796030"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/__init__.py",
+      "size": 247,
+      "sha256": "7b5719afda5b49b7f761ad8ebe44e3191c03fc4d986697bad74c6c90133c8049"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/classify/__init__.py",
+      "size": 355,
+      "sha256": "b7ee295079a023682385cfa5ddba8d11c12d283d5d3b8d270f855ce98db10faa"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/classify/predict.py",
+      "size": 2444,
+      "sha256": "d02109e01e1f5db38c527272efd811bc6faa76cccecd348b39bd71c6482c29e9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/classify/train.py",
+      "size": 6358,
+      "sha256": "4c75d2910550541bb0d50c5c11503c32d2c761875a004a9ea4e6c9097a0b719f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/classify/val.py",
+      "size": 4909,
+      "sha256": "4f38b3869dde6f33efc097a3ac4f2d6fe4ee5f0e0c764108f66380355ef87974"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/detect/__init__.py",
+      "size": 229,
+      "sha256": "251f206495a7ef03016e1fb48ffd3bde7c495594cc1595564ce1b95a7be4eb0d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/detect/predict.py",
+      "size": 1471,
+      "sha256": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/detect/train.py",
+      "size": 6363,
+      "sha256": "7079424e3dfd4ebe9bbad40e411ade0859d53832b622a6a8801a53010b8600f1"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/detect/val.py",
+      "size": 15154,
+      "sha256": "35ad72f7818b7c5ef6fbd263eae36d3e4fc20a92e934f9a831582e9113d59ae9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/model.py",
+      "size": 4233,
+      "sha256": "08c877fea6029b699d1475726490ccbbc785093303d33d593e633c1a6c1353b1"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/obb/__init__.py",
+      "size": 193,
+      "sha256": "b7159b3c62d8d7f33b67094b423af01a34c13a5b2ff4fdf2939644832b138a75"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/obb/predict.py",
+      "size": 2037,
+      "sha256": "571a4a08a5797569ceaf41b2575ac9187e52cf3468b82616ffc4f6eb127c314f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/obb/train.py",
+      "size": 1473,
+      "sha256": "fc55580af1c9e440a2d9a37c93b02654bc5152eba7eda712ab05ad08146e2fa4"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/obb/val.py",
+      "size": 9329,
+      "sha256": "7602899c629f741a58317b0cd7f30dd9c84e35dd8ee84de1127213b935f0f365"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/pose/__init__.py",
+      "size": 199,
+      "sha256": "386bf13772ea268b7687c197d5cb09d4a12bb079c32ac9b7dc27ba64153d2ebe"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/pose/predict.py",
+      "size": 2365,
+      "sha256": "7294dee2f4c8ddeb6718283231cbf16c5d1c30d7ad8965d4c21b22a44157f8a4"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/pose/train.py",
+      "size": 2926,
+      "sha256": "9940b519a6264414ef5d0b0bfae35d71d00da085dd78618145d80e2a4a912112"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/pose/val.py",
+      "size": 12390,
+      "sha256": "e1221f1e2a0f64bd9056186f14489b8abd1b033bc887292cc0a7352a5e466f00"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/segment/__init__.py",
+      "size": 247,
+      "sha256": "9926ca384f019c72fb3cbda708e546edd44cec223a8497b314f3f06458c49b2f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/segment/predict.py",
+      "size": 2468,
+      "sha256": "500cd221cef19592abf4f54c592eb75f8c92520f5098c87cb47b5d7ddec3fa79"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/segment/train.py",
+      "size": 2298,
+      "sha256": "5131864889eaff2b90b8d9b4c1dad5aeeca219ed387c066fe6fd5632a425f58b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/segment/val.py",
+      "size": 14060,
+      "sha256": "aaabe1745123a23e6e5d6f0ccf71530e9c4eeef92b4ec4d11fb76818c36e18af"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/world/__init__.py",
+      "size": 103,
+      "sha256": "dd54c7d2ae0d3add84591a26d79c82ca6be6be6d04b69d9b9844c9521b154c12"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/world/train.py",
+      "size": 3686,
+      "sha256": "81a0eb0262c9a60f6a0ed98be5ebc0e47b15db26f84534527e4d840d8ac77518"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/models/yolo/world/train_world.py",
+      "size": 4857,
+      "sha256": "22c9c2115b7a0dc33d954b2408a98837e33c30cefdc4ba704d1a91a001d49d9e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/__init__.py",
+      "size": 587,
+      "sha256": "e013cb1d8f3dc4433f6a5e6e2b468e98582230be823061196decf13af4e3384b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/autobackend.py",
+      "size": 31573,
+      "sha256": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/modules/__init__.py",
+      "size": 2625,
+      "sha256": "c615b605e9e74fd53f55a31756946ef9b74b829d415edf4bf2690850113789d5"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/modules/activation.py",
+      "size": 895,
+      "sha256": "721867e3af709d11c4b3904c18d0585f03d865cffbfaeaeca534fc7e705dfb10"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/modules/block.py",
+      "size": 41832,
+      "sha256": "b617083dc9c6451c430c3b30cb026c7f36dec2bf577d3af397f52f4a5f9b2777"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/modules/conv.py",
+      "size": 12705,
+      "sha256": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/modules/head.py",
+      "size": 26627,
+      "sha256": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/modules/transformer.py",
+      "size": 18069,
+      "sha256": "b4688af0d98f7ecc305b5adb176d6be482d4924650e8d938b3c8f5eaf1419a9b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/modules/utils.py",
+      "size": 3195,
+      "sha256": "6bcf1c2a5db0cf59cc55210189a8edbda09b0c140890449638a4d9fd6009cbdd"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/nn/tasks.py",
+      "size": 48342,
+      "sha256": "9899ae2677002b68909be94216322b16bb60b13e6ddc3a0e7ad451a5f2d110f9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/__init__.py",
+      "size": 648,
+      "sha256": "e910de5d63b541268c802abc62b5976a3db1bcfc36b09c092ff6b47608c2bf3d"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/ai_gym.py",
+      "size": 4719,
+      "sha256": "3200ffe037220aa5eab8cd98eb28c8211906588837acd7d2b97ac5a98cce09a2"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/analytics.py",
+      "size": 11568,
+      "sha256": "6c6b997acd750fb0cd893b07770bba3c9d10034bc28aa30c02d67b372124b216"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/distance_calculation.py",
+      "size": 5228,
+      "sha256": "a3f0c01e4e095fc9f656dec4ebc317ebb99110e059bb2e6c91b5ed559ea2bbfe"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/heatmap.py",
+      "size": 10375,
+      "sha256": "a04562bc0e0a00aeb3d3003909afdadaa4dc91037cb42b7d302a6c3d111e3679"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/object_counter.py",
+      "size": 9982,
+      "sha256": "53aeaebefffa412a25e3e2d8d44f493999d84586de9392b3dcdec283387a16e0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/parking_management.py",
+      "size": 9049,
+      "sha256": "560632868484a3b7e73de80884d52a9c52f48e53047af00bc744106f3277bc62"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/queue_management.py",
+      "size": 4869,
+      "sha256": "c8a3c6736f9f37e94ca4d75d9318cdef1606209c0c76853e5480d1c50d4a3e8c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/speed_estimation.py",
+      "size": 4623,
+      "sha256": "73d38f1a90d4f71e838f84a86cd73eb0ef741194cf4c678a916e6ee82e998fb8"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/solutions/streamlit_inference.py",
+      "size": 5703,
+      "sha256": "30a7f93f73b9a09c082aeda1fd446fcda423316a1210c0cc070a2b76995f471a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/README.md",
+      "size": 13534,
+      "sha256": "6d44d70d7bd5017658bad8de0c33ed476c262d4037feead17fc196ce79dae73b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/__init__.py",
+      "size": 227,
+      "sha256": "8fbd88807d9d647400acc3cae18c1c57989e230f787d8be519d42307d70e40ac"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/basetrack.py",
+      "size": 4423,
+      "sha256": "7579d75b7731c5dee53e6db424908d3b6be8088ad0e2f85b348d60e181209fe6"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/bot_sort.py",
+      "size": 10494,
+      "sha256": "efaea0ad5404c6fa276f4f3b5b2f92077d934b0618b1310cdb6ca859e43f104a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/byte_tracker.py",
+      "size": 20818,
+      "sha256": "8e5dde817948b5fa8f7db9b1b0b79bbc0ede29959ad46863d9073dc0d4ed79b4"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/track.py",
+      "size": 3874,
+      "sha256": "05f91d99d813be823c45acfacae0d032b6c2ad63869bd2dfbb76814d762fda3f"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/utils/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/utils/gmc.py",
+      "size": 14557,
+      "sha256": "55c511b98d38d6a1827965063311d906bd744f5e8bb5c32acafec09937c4d4c6"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/utils/kalman_filter.py",
+      "size": 21349,
+      "sha256": "707f730f77f092e7b33fdec7f66c3c71204dedaf211cac7f4b1d63eedde8606b"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/trackers/utils/matching.py",
+      "size": 7162,
+      "sha256": "dc87b558d351678feadf7eb9174dd70fb36bf63b9907fd3c9b0e3250a0b7c3be"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/__init__.py",
+      "size": 48238,
+      "sha256": "565d273729e229d14962441fc079d0dc2152f06c2a6a3664e626369bb9758ab0"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/autobatch.py",
+      "size": 4194,
+      "sha256": "0176e861f3529d31ac623e459a01983d077472b7e47a57b29ace905d07d9190e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/benchmarks.py",
+      "size": 25101,
+      "sha256": "20de99a94fb50d51e7c11b1d812fef70186783c0d43112048c412076b97599d6"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/__init__.py",
+      "size": 214,
+      "sha256": "62b5aa0b705555a4cba1be2208f47a237ea65312143a93c95bb07f2e34fbf10c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/base.py",
+      "size": 5775,
+      "sha256": "3c78d0e91213c02d9dca50904c1d1b74f800b078f155eb836f937534f4db1c67"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/clearml.py",
+      "size": 5923,
+      "sha256": "33d162d4e7dd5aa726f2e5646aeb97df3248621361e93a7b268e027c0d2ed27c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/comet.py",
+      "size": 13743,
+      "sha256": "0135a36498a02f2f25255623970c8285afa527e42531f5f0fb313d3c0ed4c6a6"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/dvc.py",
+      "size": 5045,
+      "sha256": "5880a532cbaf8628b2af046fe41b192f18ecc58349dd8f15abbccdd01b61b6ba"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/hub.py",
+      "size": 3997,
+      "sha256": "10f7b0b0b8a015073db9c4d7d9ec4a4a528189a04d858632182fe7476ada809a"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/mlflow.py",
+      "size": 5391,
+      "sha256": "fdb5331f23dbd27a677b4585946ce5182cbe5f9b31190842ff10377596c5d3c2"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/neptune.py",
+      "size": 3756,
+      "sha256": "e59dee6b96014d44b9e851fc5502901b569a228f5f1fc184cb30b9abba788a94"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/raytune.py",
+      "size": 705,
+      "sha256": "383558cf2f82a0ce1481ed338e48771e787d9c5d8cd2f843ad27a75e7bdc8b3c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/tensorboard.py",
+      "size": 4135,
+      "sha256": "d249f8211d749e8f7d5022217a88d646e8e0c9b9941d2c797cf23a56caba97f8"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/callbacks/wb.py",
+      "size": 6747,
+      "sha256": "f7e7e340874b8ebddbef70d3137ac73b5ef52af6c7d55c1e27e6e66effaba93c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/checks.py",
+      "size": 28910,
+      "sha256": "3e674de365c9ec821435b7a263cce33c87c971e6b100ed389dcefcd04a18c537"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/dist.py",
+      "size": 2358,
+      "sha256": "3431606beb8ac64057db32f114749e9defdc0a2190268c8e7825dc37d2483889"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/downloads.py",
+      "size": 21998,
+      "sha256": "f7b262b62859aaf20c4bafd35f9ac9006ec123c7981e5bb983c617948d11911e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/errors.py",
+      "size": 816,
+      "sha256": "1aa3ff2608ff9f4a5ac67f0e3219f70d30a0a0d901d968d47146aab3e33a4909"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/files.py",
+      "size": 8240,
+      "sha256": "cf128d687e9826f18aac3e0354f934924a28e3843b5e2fa7ff5172e3c4f34f1c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/instance.py",
+      "size": 16249,
+      "sha256": "4129acee63c76797bc246b8960ba212d696dcc8d1a044f1da1bdab3942b846d3"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/loss.py",
+      "size": 34174,
+      "sha256": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/metrics.py",
+      "size": 53927,
+      "sha256": "5202c6b9d5a9e7bb970cc94c509cb882ccfa71f56372aeed6261deb68dd3aaf3"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/ops.py",
+      "size": 32888,
+      "sha256": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/patches.py",
+      "size": 3594,
+      "sha256": "3a8dc390fecc6d79cd1af3dfa054a8700915bda3e1f64c0c4fff514147e35612"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/plotting.py",
+      "size": 61629,
+      "sha256": "942c7d8b751240ad8a1ac803fa5d9c6dd6efdf7737f7a808c0c16c67d88e6b5c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/tal.py",
+      "size": 16877,
+      "sha256": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/torch_utils.py",
+      "size": 29928,
+      "sha256": "c74bacf91e7e7bf4b07f06e39703635a6833a66e72ccdbb84d7be73918ab476e"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/triton.py",
+      "size": 3936,
+      "sha256": "820d5f8a7c67a3fb58d867bd3cc866bbb3c8f70be8159a2289c753e0186abf7c"
+    },
+    {
+      "file": "third_party/yolo11_ultralytics/ultralytics/utils/tuner.py",
+      "size": 6250,
+      "sha256": "02d12d2baa4eb7dc554f2c7ceb83a935157135d031cf968a1f3bde897c240f50"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/LICENSE",
+      "size": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/README.md",
+      "size": 30467,
+      "sha256": "c0bf48fb906472fe8708d02b8e6b5c567c0987989fbce14bf5e270e35283f85c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/pyproject.toml",
+      "size": 7821,
+      "sha256": "3a03bb68293ebe017bee18c02c1b22c6b393b848d0fdc96fbbc098755c1524b2"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/__init__.py",
+      "size": 693,
+      "sha256": "dd93ad5c6a07c221b104cb693eabee4958118a4d3d9c5abf572af89b7015ba6d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/__init__.py",
+      "size": 33145,
+      "sha256": "74b6ea3647d75a78308a26efaf11fac0c7bfa191b8388b31848892be4ac26c49"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/Argoverse.yaml",
+      "size": 3134,
+      "sha256": "1727ae253e421eaffd7788657c07f49296659db50c3b44bef94275c88a9c74a9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/DOTAv1.5.yaml",
+      "size": 1195,
+      "sha256": "4157e9fd0a7ee2bba4ba271a078ab1f3a37148733c32bcf29bc97f7c80e8f20c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/DOTAv1.yaml",
+      "size": 1165,
+      "sha256": "b317b63fb9d8f9c08fb9f1f71b5a729a7415b4da061f5cb41131b90b259f2bd8"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
+      "size": 2060,
+      "sha256": "7f1589bf41213104c20ba369735dd9611860f8479d2e650ec514177ded46aee4"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/ImageNet.yaml",
+      "size": 42507,
+      "sha256": "3f9b74af030d657da2bbba28064779c528bbe66eba71c0733b45e20400461a15"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/Objects365.yaml",
+      "size": 9323,
+      "sha256": "66bc849de08822b85b8803e27919722f166fcd2e901b552cfb188306820adee1"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/SKU-110K.yaml",
+      "size": 2493,
+      "sha256": "81e46471c05197678a81f3584ce3d8c03f664dfaa4b5304688c2681373d91270"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/VOC.yaml",
+      "size": 3657,
+      "sha256": "a3205c238c9b3632947355324bcae0863686b335cc01bbd92f508ae6ccdf1aa8"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/VisDrone.yaml",
+      "size": 3081,
+      "sha256": "5d1c8bc35ea7a223989c45b8303094e61aa319658c2aaeafa6afbaa064dc5394"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/african-wildlife.yaml",
+      "size": 901,
+      "sha256": "64cb6135c42c93dedac04be76a9f0ec9d777497b837e963f3a38179f0f229ea7"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/brain-tumor.yaml",
+      "size": 827,
+      "sha256": "1d34000bcdeb3cb1722c1b5d56f861d00ecb05b3eba5d55f0f7dae3925010c14"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/carparts-seg.yaml",
+      "size": 1239,
+      "sha256": "f1774a7961fe2d2175084958b0a4ae4226bc5364a3f2eadb03cf1a4ee132c9f1"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/coco-pose.yaml",
+      "size": 1605,
+      "sha256": "abc5c24daf813cea779421438197564c346d9e40654bf30e5d5b247761049ca4"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/coco.yaml",
+      "size": 2586,
+      "sha256": "bd6f98a2e18775c39a4d5214080c87fcb163d367c18a2fcf2609371bab00c0b8"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/coco128-seg.yaml",
+      "size": 1957,
+      "sha256": "53b38b0097caf73add88beec54307eec2a700b6144b9c5cad831c9be7fdec21f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/coco128.yaml",
+      "size": 1940,
+      "sha256": "5e5fdd672914b033e0a1fcbda3e16310cf9d9007f64f6b0666392c001a03ed13"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/coco8-pose.yaml",
+      "size": 993,
+      "sha256": "8746507c71a8786ef6e27de34ef1e42ce6e76197cd0e568e65224ba0f015f34d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/coco8-seg.yaml",
+      "size": 1897,
+      "sha256": "b053114c96b6011a6a02dafee74492fd1901e0aa1cce601a98ae82eea21f01df"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/coco8.yaml",
+      "size": 1872,
+      "sha256": "dff94d94ca38d117f9da8c4e9c023269fed939d574fb3f8672ffae316980134b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/crack-seg.yaml",
+      "size": 823,
+      "sha256": "ac9da76f17251e3ac43193f05027473b6ca37ee0190687a4b87e34a0fe477cd0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/dota8.yaml",
+      "size": 1044,
+      "sha256": "77ae454c6089cd93c855eb5f792fbf7deb212a3a180ec7755ea6d6a02deeead2"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/hand-keypoints.yaml",
+      "size": 960,
+      "sha256": "bb1e54337dab87f4248c6fcaa63637f52b9deca1a83065c9d1d9b04c368966da"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/lvis.yaml",
+      "size": 29691,
+      "sha256": "af2b30726df6bc3019dfef2b5b1d185b352fe2474e10f620d8e851b7e52cc291"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/open-images-v7.yaml",
+      "size": 12493,
+      "sha256": "82c3742572d27508258a8d36e29e8d11e80d6d7d3a90950dba3d1b87da048be5"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/package-seg.yaml",
+      "size": 833,
+      "sha256": "ea23e964e3f4c60ad370ef0301934f185949c2b627e5b0e0c7e169127bf652df"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/signature.yaml",
+      "size": 760,
+      "sha256": "a933942d97f427d852ed95d577fb0f27cba835599b2a7a99e8a826fc48e65e96"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/tiger-pose.yaml",
+      "size": 896,
+      "sha256": "b54f3cc5d280a0dd831570e4d8d30757bcbd6c2d87189085d0bbd356f09a08d1"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/datasets/xView.yaml",
+      "size": 5217,
+      "sha256": "ae340f44d93efa395837dc1c553bb529ba2981922459786bfecd5491275c111b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/default.yaml",
+      "size": 8314,
+      "sha256": "b64067ddce9db8a185c8436e50b9167acb00a9a6b1a3d6adb8ec57ab75db22d3"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/11/yolo11-cls.yaml",
+      "size": 1329,
+      "sha256": "da80667ac61406c9dab69bc486621627502b8bde9f7b0d54f4d915e99b0fd02b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/11/yolo11-obb.yaml",
+      "size": 1936,
+      "sha256": "379a334d86b2f8bfc5e2bc910c58d7fafea6319f689c2135b870c40d639954b7"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/11/yolo11-pose.yaml",
+      "size": 2015,
+      "sha256": "8797ec517a3136a49f04c86d1f23031340ea159e7e0ee46bfba497852d9d115e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/11/yolo11-seg.yaml",
+      "size": 1932,
+      "sha256": "13215703e646f21dff3eb159b421fac6657903b40bd9981f6e3583b1d291c07f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/11/yolo11.yaml",
+      "size": 1918,
+      "sha256": "94cf4eb9ac55aec23513b447626a6d637300f7462244e413e59ea4b68885c4a5"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/README.md",
+      "size": 3348,
+      "sha256": "7ea7c0ecabcbfc61c34da681d5364448a7302f9fc07c19b2ef8e4bf7435a926c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-l.yaml",
+      "size": 1934,
+      "sha256": "35bce2f77b40261070ebd8543419335da78c316c16ead59e02c74df329ebcae5"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-resnet101.yaml",
+      "size": 1512,
+      "sha256": "a349d6a0a7224febf2a42d9e4b9a8811635269cd0beafc0bb5b2bdb9c425b86e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-resnet50.yaml",
+      "size": 1510,
+      "sha256": "adbeb85902beddafcf79b51ccba09ba6c92f942ef81fd337b4c22bdd1e6f1c35"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-x.yaml",
+      "size": 2141,
+      "sha256": "139bada8d2fba0dcedc8f2b24863e85444fc44851ea80a9c85d6ac96ee596f98"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v10/yolov10b.yaml",
+      "size": 1404,
+      "sha256": "ac44a04727c4cafc39410dea05b3e6cc14642997ab1c9a117e364c1d301cec00"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v10/yolov10l.yaml",
+      "size": 1404,
+      "sha256": "151e92943ad9e53547da3431a192d41278e85765999ed6e60e8b13562375bd0c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v10/yolov10m.yaml",
+      "size": 1395,
+      "sha256": "b7845e93a11c9772fce9387145042bcc9985054419849c029f5771e6fb9ea0b8"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v10/yolov10n.yaml",
+      "size": 1390,
+      "sha256": "b5ac79313c284256529aacb65b4f0222d6dac3426a0919cdc3beec44c3796412"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v10/yolov10s.yaml",
+      "size": 1399,
+      "sha256": "b06125bb417decd46446931ff4c22a124afd3262e6c4798cbe6528954f5b32d9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v10/yolov10x.yaml",
+      "size": 1407,
+      "sha256": "13d77523a40a72ef17aa440ac850003dc20b72cef5ee5aa46ab87daa17b7069e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v3/yolov3-spp.yaml",
+      "size": 1525,
+      "sha256": "35f289781a438034b05e8edf48df26c90510ebc60b07dc51b6a7418069553c7b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v3/yolov3-tiny.yaml",
+      "size": 1229,
+      "sha256": "e669c618237e98d0efaaf3b3d80cc685fc04834d5ec7378734f4b7340de9a226"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v3/yolov3.yaml",
+      "size": 1512,
+      "sha256": "fbde29e2d78f743b5da67cfbf6eeced6c0a157af644e2d35945c5c546a09f0c6"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v5/yolov5-p6.yaml",
+      "size": 1894,
+      "sha256": "dac9822ae193f10dbade2d0898924d53c3abf975e6b8b31ff496a7066e138e21"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v5/yolov5.yaml",
+      "size": 1526,
+      "sha256": "b1139057cb60bfa94b460c70043228f4c6b3ecd509818651fc8e0c6ccf4ed414"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v6/yolov6.yaml",
+      "size": 1718,
+      "sha256": "49bd279a6b5daaa1c216e131c93f878a9d7464be26e776e16252a07b49051826"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-cls-resnet101.yaml",
+      "size": 883,
+      "sha256": "b82ea49742efbe56fc6e820e47b05d02a6134bc62e707ffdd591b7a4e5884bb4"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-cls-resnet50.yaml",
+      "size": 882,
+      "sha256": "16090d99c80b8c0414df8ba41f82cc23acdcd6968ef23ee3caaaf1fb7aa38bd0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-cls.yaml",
+      "size": 913,
+      "sha256": "fae37821a0871419b2275659d3d87677ccf771e5684965c3e3875b151b0179a0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost-p2.yaml",
+      "size": 2288,
+      "sha256": "6e7e431f0c19de603152f6b2c2aefaff824d81669b3053029c23684e92d20ca9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost-p6.yaml",
+      "size": 2356,
+      "sha256": "92a81b10a36e6bb5f01fde73b5e5ba2335da0238da580d258f3982008edbf04f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost.yaml",
+      "size": 2096,
+      "sha256": "5941ce235f1a035d648003430966c30f2de3b303653ff9c8929597d3d05f06e2"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-obb.yaml",
+      "size": 1899,
+      "sha256": "4efe490d94cb3ab7f2063de082ab1ef528630e933e9c8148c618ac7902b02440"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-p2.yaml",
+      "size": 1731,
+      "sha256": "b5f1e4915002d1f90273b01b8ac4f31a95d6dc57e4dbe2b9fb08d17926e6ec6c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-p6.yaml",
+      "size": 2296,
+      "sha256": "9401404b01618ef5297c2773ae7199894e05cbd1306c9e506c986b472526db5d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-pose-p6.yaml",
+      "size": 1927,
+      "sha256": "cb3c48db46cc05da3a7f991de7755fb841e6fd0a84fd5deec00bc5244d136ebd"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-pose.yaml",
+      "size": 1563,
+      "sha256": "0c7a0977babb1f0f3d2415f98a6f8cdcd586f2681edd574f54d6f82b88d3cc84"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-rtdetr.yaml",
+      "size": 1896,
+      "sha256": "a1fba37fbecb5b7b2d5d2ebe95e54cfc4c5139689f27ce03e56a9186e8f25492"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-seg-p6.yaml",
+      "size": 1845,
+      "sha256": "39f30b30704e63a76de3f62c36e3c03463f033704f05fee2fd5ded40fc84c581"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-seg.yaml",
+      "size": 1474,
+      "sha256": "7cdf399bf6833021f8a13277cfe7edf7c3dd87a764d29661e280752c89e826b0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-world.yaml",
+      "size": 2019,
+      "sha256": "4574e9fed822c7c75b9d51e9adaa7188ad9a6b1eccdaa21f9ae47e680bdee2c5"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8-worldv2.yaml",
+      "size": 1956,
+      "sha256": "7ef195531be504e8cde8b52289a886b278cae592a3c18196c60909e3d84698c8"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v8/yolov8.yaml",
+      "size": 1889,
+      "sha256": "56349efd5d869fd66926bc13b73d00ebfe88329e94bae80d891eda112851e6b7"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v9/yolov9c-seg.yaml",
+      "size": 1346,
+      "sha256": "06579df554ff5f700619ef4e0135c603c6ababf5126c651cf298eccbaf3803bc"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v9/yolov9c.yaml",
+      "size": 1326,
+      "sha256": "bcf7d86dd0c38366839b6c9545fca35cd3a016bc93516146eb495c1d08cba6e0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v9/yolov9e-seg.yaml",
+      "size": 2277,
+      "sha256": "c9c31ec41daa29db5efa1928ed217d3d8e2a3a78359a8228abeb2c8386b7b5e0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v9/yolov9e.yaml",
+      "size": 2256,
+      "sha256": "761691e3b5b1b8b3ab6560c271e4b86d01b4d2c41dacc73c150e4ade62ac9da5"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v9/yolov9m.yaml",
+      "size": 1311,
+      "sha256": "97a0a68afccdbb8e2c4559a4417938fad5df95b5759d69e4e4c49cf2cbb6be1b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v9/yolov9s.yaml",
+      "size": 1291,
+      "sha256": "94f59cbbeeae6f5902043eb3203170b61619dd1bdd25f38358acb7bc4416463a"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/models/v9/yolov9t.yaml",
+      "size": 1275,
+      "sha256": "a8bfff92be86a1e7e94163f88d5d23773c13a78e9b74551caad3d19df0db918f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/trackers/botsort.yaml",
+      "size": 916,
+      "sha256": "f01d3135b9c6fc4fbd0c25296a9ef63d69148016f5023b80a449fb8078959e01"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/cfg/trackers/bytetrack.yaml",
+      "size": 721,
+      "sha256": "f2fa53676c7d9a14572729a826fb351bc9135e8fc7c5b4b01eea7615000b4f70"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/__init__.py",
+      "size": 616,
+      "sha256": "5467be0131bb8f7e45e00e2bf099b37df8e586f7b824024f8116b96a1293535f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/annotator.py",
+      "size": 2489,
+      "sha256": "3e788ec47d8c49c58aa79dfdbeeb9f93af6e1b526c96d0c1e4e302521c67d906"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/augment.py",
+      "size": 121877,
+      "sha256": "61bb1f9caa4c92aa3511af3b3899cbec096c2fb7aeac4262b59f8f26fa0ad4cb"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/base.py",
+      "size": 13835,
+      "sha256": "ce2ff59e725bdbd801a98de3aef6cc0b087a44fa5786bd3c0d0d81436fdd853a"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/build.py",
+      "size": 7261,
+      "sha256": "01f326cf4b072189b0af2ffdd2d10915193f933d12dd2a2549c557a981e24f4f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/converter.py",
+      "size": 21385,
+      "sha256": "0e32746ad92ed9a296d224b53d93cd5fc57a593ad9f821d94fa868a44d474a32"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/dataset.py",
+      "size": 22874,
+      "sha256": "212d3bba593bad73d9f925bfae3605f664be4f13d7398f5b6e8e63a9f7303ea3"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/explorer/__init__.py",
+      "size": 113,
+      "sha256": "f98de6d5979d7a939052ffca5bcdb3686c6f53f3d21dcbb051316a1bd06102be"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/explorer/explorer.py",
+      "size": 18881,
+      "sha256": "25698b1c7869ebc876ab7bf1e29a01a2ee51628017dd1f3dca2851e7460b0dbd"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/explorer/gui/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/explorer/gui/dash.py",
+      "size": 10498,
+      "sha256": "bd9e3be8d6941f814a534f2b009d4af563722ad834b28332249c6a835efac967"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/explorer/utils.py",
+      "size": 7085,
+      "sha256": "12fbee91089051306bb19ce798c9f2117d84a93bb0668fc67b273cc9f8bc3480"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/loaders.py",
+      "size": 24094,
+      "sha256": "245d99fc448ae91c1e6af3ae6167a3612189c26a8835be61370c026f70007f43"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/scripts/download_weights.sh",
+      "size": 568,
+      "sha256": "33bd9240e5cfd768ada0d61c9be6f286294dead3612f24a8a84c483847faf766"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/scripts/get_coco.sh",
+      "size": 1729,
+      "sha256": "51ddd560587b270b792b74963e6e5015330a83d68748ca6b650af99addad3854"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/scripts/get_coco128.sh",
+      "size": 621,
+      "sha256": "d3cc97705b6c829f314d0c827e12c651a9be88b7e64258092c49a67001c12c6c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/scripts/get_imagenet.sh",
+      "size": 1672,
+      "sha256": "38e27e1d211592ece2761076b3f4674028ac1a1e4c62bebb84ef3ebbbdd451e7"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/split_dota.py",
+      "size": 10680,
+      "sha256": "c8eb72a47a18e47bc85412998055dd7e3dadb822cb1019ccc0d7c0786f781229"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/data/utils.py",
+      "size": 31042,
+      "sha256": "1954ed665144f10f5194d275f44aff09dc5e9e37836ef41ead4d6328eb3be92e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/exporter.py",
+      "size": 57019,
+      "sha256": "04562fbfbeb791b126e6ad3e018221f7bf6f2f471c53844dbce376c3caad9b5b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/model.py",
+      "size": 51583,
+      "sha256": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/predictor.py",
+      "size": 17471,
+      "sha256": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/results.py",
+      "size": 75043,
+      "sha256": "f1126537c27effdc3e9ab0d99bdc02f836494cf052eefd5cfebfd1d7bdd0c913"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/trainer.py",
+      "size": 37087,
+      "sha256": "053251e5f5c8aab22fa63188f936591d45dc470bd4b6bfa358004dea49a75768"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/tuner.py",
+      "size": 11838,
+      "sha256": "80fa834c71fbbd10763b76321f6ea6d418d529b5f1b80d970253d1cd328566c7"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/engine/validator.py",
+      "size": 14650,
+      "sha256": "e3cdc077cec8ae4ec806524d2eed9240026c6fb62b8802d35fd18882b8829918"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/hub/__init__.py",
+      "size": 5644,
+      "sha256": "dd22af6796918a76b787de3130f4080770f899a17adaa15cc88a8f3c74473407"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/hub/auth.py",
+      "size": 5545,
+      "sha256": "9032da9066b635bcef30079773651dcd9eb9af4007f9778cfc97ec0d8f7b5869"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/hub/google/__init__.py",
+      "size": 7504,
+      "sha256": "b9c94db3eff9bc0cd032040a825f1e06f9a5d5cc7a21961745486b179eefebf9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/hub/session.py",
+      "size": 16411,
+      "sha256": "d8ace73b9917d781c5676f82b7d2e81b7d76b1d1ee8a04122d96f9f0c1af6c96"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/hub/utils.py",
+      "size": 9715,
+      "sha256": "23b3404c6e8efd0470ec453b10791d4d5bdb0a4c0a0b251ee7804feb44e8feca"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/__init__.py",
+      "size": 265,
+      "sha256": "4d3f622c22ff9fd63cd1d714ab4168fa9f86459092536beb5973370a8330aaa1"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/fastsam/__init__.py",
+      "size": 203,
+      "sha256": "5b4ad1489337bddc5cb277ae88debf6a3914c3cea4ebea2950a74bc5584a3a84"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/fastsam/model.py",
+      "size": 2008,
+      "sha256": "8a4a8e52845b713607d3462a03b58a7465e7adf7f547c39d062d8e1b49fdb9a0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/fastsam/predict.py",
+      "size": 7377,
+      "sha256": "cfbdd678840db520c0768644f089fa8f36dd324eb09409953477663ab740a6c3"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/fastsam/utils.py",
+      "size": 714,
+      "sha256": "c07ea91234761b8e4b60aaa6b397bc709af9f90fb46cac94f18732b43027edde"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/fastsam/val.py",
+      "size": 1967,
+      "sha256": "20b2a6c3753c1589a642c3bdc24f7e6c9f4fca9fd9b6124cdfa6fad4bef9b376"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/nas/__init__.py",
+      "size": 179,
+      "sha256": "77af964eb60b5ef6cfb39f1e6c0d3ee7cdce0e2f95cb35dcfade1a1880d02ba3"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/nas/model.py",
+      "size": 3234,
+      "sha256": "085d7150eaeb888f25b2b92bb1c5be5c3ec4d182119f9e2c9cbfe39b610fd2f9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/nas/predict.py",
+      "size": 2096,
+      "sha256": "e0a0f2b635b368331273f8ebdd6deceb3e849fa9b029f18fef44905f1fc5db03"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/nas/val.py",
+      "size": 1695,
+      "sha256": "ea5b75c1ff090983beadcd06d038d85150e082f4c05e4b367aee509f02f4f12e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/rtdetr/__init__.py",
+      "size": 197,
+      "sha256": "01981ad42dea9464ed82902ea435b87688a3ab9699950785f1ee79fc33f651ab"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/rtdetr/model.py",
+      "size": 1988,
+      "sha256": "d95929a45d7fe7cd57990d1423b968f1f5fb32a84024f5d532bda3c8c1d7b5b9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/rtdetr/predict.py",
+      "size": 3568,
+      "sha256": "73150b7490332fd44cd75636e2d220b8a70d2595f0ca736cad64425be8d46044"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/rtdetr/train.py",
+      "size": 3685,
+      "sha256": "dd08dc840bcb337821d6c353395495be9caaaac652629ad4435d9ee28010b3f0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/rtdetr/val.py",
+      "size": 5566,
+      "sha256": "c558d94a167502f112f7bc157a4976abfd60db43eaf8820786425d5adc4c9dcb"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/__init__.py",
+      "size": 176,
+      "sha256": "a38fc3eb2f1826539720aecbc28f511e720927dc6814d8b8ccaf7d41273591d3"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/amg.py",
+      "size": 8709,
+      "sha256": "1ab98effc61f203b7f4243c4305fd61633d9921c217fb8b0c7b8a0f0980e5271"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/build.py",
+      "size": 12233,
+      "sha256": "ccd41bae0487520cf58325d0c0b2864e96ba09212379a7af70fdf0d59d65de6a"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/model.py",
+      "size": 7382,
+      "sha256": "d8a154a7c4878aa3a0c148e476a75abb4a1db89c0a4319b837d1875a3761505a"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/blocks.py",
+      "size": 45919,
+      "sha256": "43e2b08456ddc99865d6d8c6fe43f62dc42465bce836deb5f22f8d46b28dc766"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/decoders.py",
+      "size": 25830,
+      "sha256": "98e0ecaa74cdfc28c4dc7d1287d71df0f7d39c700d3e3181d5b8ea1f17decd28"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/encoders.py",
+      "size": 34824,
+      "sha256": "032dec61e5289c27fa5115c1741d1d0f0ca7828bdebd6f215038142d19cd2280"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/memory_attention.py",
+      "size": 9722,
+      "sha256": "5e295606745f1fcc19c48a0bdbec8493e751ca90ac4b425fffdb7c589c572a0d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/sam.py",
+      "size": 50003,
+      "sha256": "7dab718d7a0ae060f953f960c17fa56f7ef66b6f6ff1f71edf96749664b62900"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/tiny_encoder.py",
+      "size": 41332,
+      "sha256": "372cde14c2e79aac1c15016cf8904cf4f0964ac628619ffa879f549f50de0d5d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/transformer.py",
+      "size": 16081,
+      "sha256": "9ee845ff5e0b1abaf9b980803fd5c25e9b3ece555c4f83963b47af5d60f13f02"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/modules/utils.py",
+      "size": 12315,
+      "sha256": "637e95e81572e8679a02f284f201e6a0321af9fe4b8c9a66495c32c0d92fdb29"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/sam/predict.py",
+      "size": 38556,
+      "sha256": "ba7b2836b131ea97b1283dbcf874e900b6b4d8fb4db44e1ed8445dcecf6a6d8c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/utils/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/utils/loss.py",
+      "size": 15840,
+      "sha256": "3b38b4529edc98f01e85782a1ae55202d512e17431697efa2aa13c43454793b1"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/utils/ops.py",
+      "size": 13221,
+      "sha256": "68f00fc1630b24b5aaf88d38c12fd8aea27f572ff1057b6a42ee80a31d796030"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/__init__.py",
+      "size": 247,
+      "sha256": "7b5719afda5b49b7f761ad8ebe44e3191c03fc4d986697bad74c6c90133c8049"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/classify/__init__.py",
+      "size": 355,
+      "sha256": "b7ee295079a023682385cfa5ddba8d11c12d283d5d3b8d270f855ce98db10faa"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/classify/predict.py",
+      "size": 2444,
+      "sha256": "d02109e01e1f5db38c527272efd811bc6faa76cccecd348b39bd71c6482c29e9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/classify/train.py",
+      "size": 6358,
+      "sha256": "4c75d2910550541bb0d50c5c11503c32d2c761875a004a9ea4e6c9097a0b719f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/classify/val.py",
+      "size": 4909,
+      "sha256": "4f38b3869dde6f33efc097a3ac4f2d6fe4ee5f0e0c764108f66380355ef87974"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/detect/__init__.py",
+      "size": 229,
+      "sha256": "251f206495a7ef03016e1fb48ffd3bde7c495594cc1595564ce1b95a7be4eb0d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/detect/predict.py",
+      "size": 1471,
+      "sha256": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/detect/train.py",
+      "size": 6363,
+      "sha256": "7079424e3dfd4ebe9bbad40e411ade0859d53832b622a6a8801a53010b8600f1"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/detect/val.py",
+      "size": 15154,
+      "sha256": "35ad72f7818b7c5ef6fbd263eae36d3e4fc20a92e934f9a831582e9113d59ae9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/model.py",
+      "size": 4233,
+      "sha256": "08c877fea6029b699d1475726490ccbbc785093303d33d593e633c1a6c1353b1"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/obb/__init__.py",
+      "size": 193,
+      "sha256": "b7159b3c62d8d7f33b67094b423af01a34c13a5b2ff4fdf2939644832b138a75"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/obb/predict.py",
+      "size": 2037,
+      "sha256": "571a4a08a5797569ceaf41b2575ac9187e52cf3468b82616ffc4f6eb127c314f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/obb/train.py",
+      "size": 1473,
+      "sha256": "fc55580af1c9e440a2d9a37c93b02654bc5152eba7eda712ab05ad08146e2fa4"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/obb/val.py",
+      "size": 9329,
+      "sha256": "7602899c629f741a58317b0cd7f30dd9c84e35dd8ee84de1127213b935f0f365"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/pose/__init__.py",
+      "size": 199,
+      "sha256": "386bf13772ea268b7687c197d5cb09d4a12bb079c32ac9b7dc27ba64153d2ebe"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/pose/predict.py",
+      "size": 2365,
+      "sha256": "7294dee2f4c8ddeb6718283231cbf16c5d1c30d7ad8965d4c21b22a44157f8a4"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/pose/train.py",
+      "size": 2926,
+      "sha256": "9940b519a6264414ef5d0b0bfae35d71d00da085dd78618145d80e2a4a912112"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/pose/val.py",
+      "size": 12390,
+      "sha256": "e1221f1e2a0f64bd9056186f14489b8abd1b033bc887292cc0a7352a5e466f00"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/segment/__init__.py",
+      "size": 247,
+      "sha256": "9926ca384f019c72fb3cbda708e546edd44cec223a8497b314f3f06458c49b2f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/segment/predict.py",
+      "size": 2468,
+      "sha256": "500cd221cef19592abf4f54c592eb75f8c92520f5098c87cb47b5d7ddec3fa79"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/segment/train.py",
+      "size": 2298,
+      "sha256": "5131864889eaff2b90b8d9b4c1dad5aeeca219ed387c066fe6fd5632a425f58b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/segment/val.py",
+      "size": 14060,
+      "sha256": "aaabe1745123a23e6e5d6f0ccf71530e9c4eeef92b4ec4d11fb76818c36e18af"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/world/__init__.py",
+      "size": 103,
+      "sha256": "dd54c7d2ae0d3add84591a26d79c82ca6be6be6d04b69d9b9844c9521b154c12"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/world/train.py",
+      "size": 3686,
+      "sha256": "81a0eb0262c9a60f6a0ed98be5ebc0e47b15db26f84534527e4d840d8ac77518"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/models/yolo/world/train_world.py",
+      "size": 4857,
+      "sha256": "22c9c2115b7a0dc33d954b2408a98837e33c30cefdc4ba704d1a91a001d49d9e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/__init__.py",
+      "size": 587,
+      "sha256": "e013cb1d8f3dc4433f6a5e6e2b468e98582230be823061196decf13af4e3384b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/autobackend.py",
+      "size": 31573,
+      "sha256": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/modules/__init__.py",
+      "size": 2625,
+      "sha256": "c615b605e9e74fd53f55a31756946ef9b74b829d415edf4bf2690850113789d5"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/modules/activation.py",
+      "size": 895,
+      "sha256": "721867e3af709d11c4b3904c18d0585f03d865cffbfaeaeca534fc7e705dfb10"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/modules/block.py",
+      "size": 41832,
+      "sha256": "b617083dc9c6451c430c3b30cb026c7f36dec2bf577d3af397f52f4a5f9b2777"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/modules/conv.py",
+      "size": 12705,
+      "sha256": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/modules/head.py",
+      "size": 26627,
+      "sha256": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/modules/transformer.py",
+      "size": 18069,
+      "sha256": "b4688af0d98f7ecc305b5adb176d6be482d4924650e8d938b3c8f5eaf1419a9b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/modules/utils.py",
+      "size": 3195,
+      "sha256": "6bcf1c2a5db0cf59cc55210189a8edbda09b0c140890449638a4d9fd6009cbdd"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/nn/tasks.py",
+      "size": 48342,
+      "sha256": "9899ae2677002b68909be94216322b16bb60b13e6ddc3a0e7ad451a5f2d110f9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/__init__.py",
+      "size": 648,
+      "sha256": "e910de5d63b541268c802abc62b5976a3db1bcfc36b09c092ff6b47608c2bf3d"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/ai_gym.py",
+      "size": 4719,
+      "sha256": "3200ffe037220aa5eab8cd98eb28c8211906588837acd7d2b97ac5a98cce09a2"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/analytics.py",
+      "size": 11568,
+      "sha256": "6c6b997acd750fb0cd893b07770bba3c9d10034bc28aa30c02d67b372124b216"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/distance_calculation.py",
+      "size": 5228,
+      "sha256": "a3f0c01e4e095fc9f656dec4ebc317ebb99110e059bb2e6c91b5ed559ea2bbfe"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/heatmap.py",
+      "size": 10375,
+      "sha256": "a04562bc0e0a00aeb3d3003909afdadaa4dc91037cb42b7d302a6c3d111e3679"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/object_counter.py",
+      "size": 9982,
+      "sha256": "53aeaebefffa412a25e3e2d8d44f493999d84586de9392b3dcdec283387a16e0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/parking_management.py",
+      "size": 9049,
+      "sha256": "560632868484a3b7e73de80884d52a9c52f48e53047af00bc744106f3277bc62"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/queue_management.py",
+      "size": 4869,
+      "sha256": "c8a3c6736f9f37e94ca4d75d9318cdef1606209c0c76853e5480d1c50d4a3e8c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/speed_estimation.py",
+      "size": 4623,
+      "sha256": "73d38f1a90d4f71e838f84a86cd73eb0ef741194cf4c678a916e6ee82e998fb8"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/solutions/streamlit_inference.py",
+      "size": 5703,
+      "sha256": "30a7f93f73b9a09c082aeda1fd446fcda423316a1210c0cc070a2b76995f471a"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/README.md",
+      "size": 13534,
+      "sha256": "6d44d70d7bd5017658bad8de0c33ed476c262d4037feead17fc196ce79dae73b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/__init__.py",
+      "size": 227,
+      "sha256": "8fbd88807d9d647400acc3cae18c1c57989e230f787d8be519d42307d70e40ac"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/basetrack.py",
+      "size": 4423,
+      "sha256": "7579d75b7731c5dee53e6db424908d3b6be8088ad0e2f85b348d60e181209fe6"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/bot_sort.py",
+      "size": 10494,
+      "sha256": "efaea0ad5404c6fa276f4f3b5b2f92077d934b0618b1310cdb6ca859e43f104a"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/byte_tracker.py",
+      "size": 20818,
+      "sha256": "8e5dde817948b5fa8f7db9b1b0b79bbc0ede29959ad46863d9073dc0d4ed79b4"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/track.py",
+      "size": 3874,
+      "sha256": "05f91d99d813be823c45acfacae0d032b6c2ad63869bd2dfbb76814d762fda3f"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/utils/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/utils/gmc.py",
+      "size": 14557,
+      "sha256": "55c511b98d38d6a1827965063311d906bd744f5e8bb5c32acafec09937c4d4c6"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/utils/kalman_filter.py",
+      "size": 21349,
+      "sha256": "707f730f77f092e7b33fdec7f66c3c71204dedaf211cac7f4b1d63eedde8606b"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/trackers/utils/matching.py",
+      "size": 7162,
+      "sha256": "dc87b558d351678feadf7eb9174dd70fb36bf63b9907fd3c9b0e3250a0b7c3be"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/__init__.py",
+      "size": 48238,
+      "sha256": "565d273729e229d14962441fc079d0dc2152f06c2a6a3664e626369bb9758ab0"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/autobatch.py",
+      "size": 4194,
+      "sha256": "0176e861f3529d31ac623e459a01983d077472b7e47a57b29ace905d07d9190e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/benchmarks.py",
+      "size": 25101,
+      "sha256": "20de99a94fb50d51e7c11b1d812fef70186783c0d43112048c412076b97599d6"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/__init__.py",
+      "size": 214,
+      "sha256": "62b5aa0b705555a4cba1be2208f47a237ea65312143a93c95bb07f2e34fbf10c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/base.py",
+      "size": 5775,
+      "sha256": "3c78d0e91213c02d9dca50904c1d1b74f800b078f155eb836f937534f4db1c67"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/clearml.py",
+      "size": 5923,
+      "sha256": "33d162d4e7dd5aa726f2e5646aeb97df3248621361e93a7b268e027c0d2ed27c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/comet.py",
+      "size": 13743,
+      "sha256": "0135a36498a02f2f25255623970c8285afa527e42531f5f0fb313d3c0ed4c6a6"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/dvc.py",
+      "size": 5045,
+      "sha256": "5880a532cbaf8628b2af046fe41b192f18ecc58349dd8f15abbccdd01b61b6ba"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/hub.py",
+      "size": 3997,
+      "sha256": "10f7b0b0b8a015073db9c4d7d9ec4a4a528189a04d858632182fe7476ada809a"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/mlflow.py",
+      "size": 5391,
+      "sha256": "fdb5331f23dbd27a677b4585946ce5182cbe5f9b31190842ff10377596c5d3c2"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/neptune.py",
+      "size": 3756,
+      "sha256": "e59dee6b96014d44b9e851fc5502901b569a228f5f1fc184cb30b9abba788a94"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/raytune.py",
+      "size": 705,
+      "sha256": "383558cf2f82a0ce1481ed338e48771e787d9c5d8cd2f843ad27a75e7bdc8b3c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/tensorboard.py",
+      "size": 4135,
+      "sha256": "d249f8211d749e8f7d5022217a88d646e8e0c9b9941d2c797cf23a56caba97f8"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/callbacks/wb.py",
+      "size": 6747,
+      "sha256": "f7e7e340874b8ebddbef70d3137ac73b5ef52af6c7d55c1e27e6e66effaba93c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/checks.py",
+      "size": 28910,
+      "sha256": "3e674de365c9ec821435b7a263cce33c87c971e6b100ed389dcefcd04a18c537"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/dist.py",
+      "size": 2358,
+      "sha256": "3431606beb8ac64057db32f114749e9defdc0a2190268c8e7825dc37d2483889"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/downloads.py",
+      "size": 21998,
+      "sha256": "f7b262b62859aaf20c4bafd35f9ac9006ec123c7981e5bb983c617948d11911e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/errors.py",
+      "size": 816,
+      "sha256": "1aa3ff2608ff9f4a5ac67f0e3219f70d30a0a0d901d968d47146aab3e33a4909"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/files.py",
+      "size": 8240,
+      "sha256": "cf128d687e9826f18aac3e0354f934924a28e3843b5e2fa7ff5172e3c4f34f1c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/instance.py",
+      "size": 16249,
+      "sha256": "4129acee63c76797bc246b8960ba212d696dcc8d1a044f1da1bdab3942b846d3"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/loss.py",
+      "size": 34174,
+      "sha256": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/metrics.py",
+      "size": 53927,
+      "sha256": "5202c6b9d5a9e7bb970cc94c509cb882ccfa71f56372aeed6261deb68dd3aaf3"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/ops.py",
+      "size": 32888,
+      "sha256": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/patches.py",
+      "size": 3594,
+      "sha256": "3a8dc390fecc6d79cd1af3dfa054a8700915bda3e1f64c0c4fff514147e35612"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/plotting.py",
+      "size": 61629,
+      "sha256": "942c7d8b751240ad8a1ac803fa5d9c6dd6efdf7737f7a808c0c16c67d88e6b5c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/tal.py",
+      "size": 16877,
+      "sha256": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/torch_utils.py",
+      "size": 29928,
+      "sha256": "c74bacf91e7e7bf4b07f06e39703635a6833a66e72ccdbb84d7be73918ab476e"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/triton.py",
+      "size": 3936,
+      "sha256": "820d5f8a7c67a3fb58d867bd3cc866bbb3c8f70be8159a2289c753e0186abf7c"
+    },
+    {
+      "file": "third_party/yolo11_visdrone_ultralytics/ultralytics/utils/tuner.py",
+      "size": 6250,
+      "sha256": "02d12d2baa4eb7dc554f2c7ceb83a935157135d031cf968a1f3bde897c240f50"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/LICENSE",
+      "size": 34523,
+      "sha256": "0d96a4ff68ad6d4b6f1f30f713b18d5184912ba8dd389f86aa7710db079abcb0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/README.md",
+      "size": 30467,
+      "sha256": "c0bf48fb906472fe8708d02b8e6b5c567c0987989fbce14bf5e270e35283f85c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/pyproject.toml",
+      "size": 7821,
+      "sha256": "3a03bb68293ebe017bee18c02c1b22c6b393b848d0fdc96fbbc098755c1524b2"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/__init__.py",
+      "size": 693,
+      "sha256": "dd93ad5c6a07c221b104cb693eabee4958118a4d3d9c5abf572af89b7015ba6d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/__init__.py",
+      "size": 33145,
+      "sha256": "74b6ea3647d75a78308a26efaf11fac0c7bfa191b8388b31848892be4ac26c49"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/Argoverse.yaml",
+      "size": 3134,
+      "sha256": "1727ae253e421eaffd7788657c07f49296659db50c3b44bef94275c88a9c74a9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/DOTAv1.5.yaml",
+      "size": 1195,
+      "sha256": "4157e9fd0a7ee2bba4ba271a078ab1f3a37148733c32bcf29bc97f7c80e8f20c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/DOTAv1.yaml",
+      "size": 1165,
+      "sha256": "b317b63fb9d8f9c08fb9f1f71b5a729a7415b4da061f5cb41131b90b259f2bd8"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/GlobalWheat2020.yaml",
+      "size": 2060,
+      "sha256": "7f1589bf41213104c20ba369735dd9611860f8479d2e650ec514177ded46aee4"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/ImageNet.yaml",
+      "size": 42507,
+      "sha256": "3f9b74af030d657da2bbba28064779c528bbe66eba71c0733b45e20400461a15"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/Objects365.yaml",
+      "size": 9323,
+      "sha256": "66bc849de08822b85b8803e27919722f166fcd2e901b552cfb188306820adee1"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/SKU-110K.yaml",
+      "size": 2493,
+      "sha256": "81e46471c05197678a81f3584ce3d8c03f664dfaa4b5304688c2681373d91270"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/VOC.yaml",
+      "size": 3657,
+      "sha256": "a3205c238c9b3632947355324bcae0863686b335cc01bbd92f508ae6ccdf1aa8"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/VisDrone.yaml",
+      "size": 3081,
+      "sha256": "5d1c8bc35ea7a223989c45b8303094e61aa319658c2aaeafa6afbaa064dc5394"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/african-wildlife.yaml",
+      "size": 901,
+      "sha256": "64cb6135c42c93dedac04be76a9f0ec9d777497b837e963f3a38179f0f229ea7"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/brain-tumor.yaml",
+      "size": 827,
+      "sha256": "1d34000bcdeb3cb1722c1b5d56f861d00ecb05b3eba5d55f0f7dae3925010c14"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/carparts-seg.yaml",
+      "size": 1239,
+      "sha256": "f1774a7961fe2d2175084958b0a4ae4226bc5364a3f2eadb03cf1a4ee132c9f1"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/coco-pose.yaml",
+      "size": 1605,
+      "sha256": "abc5c24daf813cea779421438197564c346d9e40654bf30e5d5b247761049ca4"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/coco.yaml",
+      "size": 2586,
+      "sha256": "bd6f98a2e18775c39a4d5214080c87fcb163d367c18a2fcf2609371bab00c0b8"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/coco128-seg.yaml",
+      "size": 1957,
+      "sha256": "53b38b0097caf73add88beec54307eec2a700b6144b9c5cad831c9be7fdec21f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/coco128.yaml",
+      "size": 1940,
+      "sha256": "5e5fdd672914b033e0a1fcbda3e16310cf9d9007f64f6b0666392c001a03ed13"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/coco8-pose.yaml",
+      "size": 993,
+      "sha256": "8746507c71a8786ef6e27de34ef1e42ce6e76197cd0e568e65224ba0f015f34d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/coco8-seg.yaml",
+      "size": 1897,
+      "sha256": "b053114c96b6011a6a02dafee74492fd1901e0aa1cce601a98ae82eea21f01df"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/coco8.yaml",
+      "size": 1872,
+      "sha256": "dff94d94ca38d117f9da8c4e9c023269fed939d574fb3f8672ffae316980134b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/crack-seg.yaml",
+      "size": 823,
+      "sha256": "ac9da76f17251e3ac43193f05027473b6ca37ee0190687a4b87e34a0fe477cd0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/dota8.yaml",
+      "size": 1044,
+      "sha256": "77ae454c6089cd93c855eb5f792fbf7deb212a3a180ec7755ea6d6a02deeead2"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/hand-keypoints.yaml",
+      "size": 960,
+      "sha256": "bb1e54337dab87f4248c6fcaa63637f52b9deca1a83065c9d1d9b04c368966da"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/lvis.yaml",
+      "size": 29691,
+      "sha256": "af2b30726df6bc3019dfef2b5b1d185b352fe2474e10f620d8e851b7e52cc291"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/open-images-v7.yaml",
+      "size": 12493,
+      "sha256": "82c3742572d27508258a8d36e29e8d11e80d6d7d3a90950dba3d1b87da048be5"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/package-seg.yaml",
+      "size": 833,
+      "sha256": "ea23e964e3f4c60ad370ef0301934f185949c2b627e5b0e0c7e169127bf652df"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/signature.yaml",
+      "size": 760,
+      "sha256": "a933942d97f427d852ed95d577fb0f27cba835599b2a7a99e8a826fc48e65e96"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/tiger-pose.yaml",
+      "size": 896,
+      "sha256": "b54f3cc5d280a0dd831570e4d8d30757bcbd6c2d87189085d0bbd356f09a08d1"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/datasets/xView.yaml",
+      "size": 5217,
+      "sha256": "ae340f44d93efa395837dc1c553bb529ba2981922459786bfecd5491275c111b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/default.yaml",
+      "size": 8314,
+      "sha256": "b64067ddce9db8a185c8436e50b9167acb00a9a6b1a3d6adb8ec57ab75db22d3"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/11/yolo11-cls.yaml",
+      "size": 1329,
+      "sha256": "da80667ac61406c9dab69bc486621627502b8bde9f7b0d54f4d915e99b0fd02b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/11/yolo11-obb.yaml",
+      "size": 1936,
+      "sha256": "379a334d86b2f8bfc5e2bc910c58d7fafea6319f689c2135b870c40d639954b7"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/11/yolo11-pose.yaml",
+      "size": 2015,
+      "sha256": "8797ec517a3136a49f04c86d1f23031340ea159e7e0ee46bfba497852d9d115e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/11/yolo11-seg.yaml",
+      "size": 1932,
+      "sha256": "13215703e646f21dff3eb159b421fac6657903b40bd9981f6e3583b1d291c07f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/11/yolo11.yaml",
+      "size": 1918,
+      "sha256": "94cf4eb9ac55aec23513b447626a6d637300f7462244e413e59ea4b68885c4a5"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/README.md",
+      "size": 3348,
+      "sha256": "7ea7c0ecabcbfc61c34da681d5364448a7302f9fc07c19b2ef8e4bf7435a926c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-l.yaml",
+      "size": 1934,
+      "sha256": "35bce2f77b40261070ebd8543419335da78c316c16ead59e02c74df329ebcae5"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-resnet101.yaml",
+      "size": 1512,
+      "sha256": "a349d6a0a7224febf2a42d9e4b9a8811635269cd0beafc0bb5b2bdb9c425b86e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-resnet50.yaml",
+      "size": 1510,
+      "sha256": "adbeb85902beddafcf79b51ccba09ba6c92f942ef81fd337b4c22bdd1e6f1c35"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/rt-detr/rtdetr-x.yaml",
+      "size": 2141,
+      "sha256": "139bada8d2fba0dcedc8f2b24863e85444fc44851ea80a9c85d6ac96ee596f98"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v10/yolov10b.yaml",
+      "size": 1404,
+      "sha256": "ac44a04727c4cafc39410dea05b3e6cc14642997ab1c9a117e364c1d301cec00"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v10/yolov10l.yaml",
+      "size": 1404,
+      "sha256": "151e92943ad9e53547da3431a192d41278e85765999ed6e60e8b13562375bd0c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v10/yolov10m.yaml",
+      "size": 1395,
+      "sha256": "b7845e93a11c9772fce9387145042bcc9985054419849c029f5771e6fb9ea0b8"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v10/yolov10n.yaml",
+      "size": 1390,
+      "sha256": "b5ac79313c284256529aacb65b4f0222d6dac3426a0919cdc3beec44c3796412"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v10/yolov10s.yaml",
+      "size": 1399,
+      "sha256": "b06125bb417decd46446931ff4c22a124afd3262e6c4798cbe6528954f5b32d9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v10/yolov10x.yaml",
+      "size": 1407,
+      "sha256": "13d77523a40a72ef17aa440ac850003dc20b72cef5ee5aa46ab87daa17b7069e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v3/yolov3-spp.yaml",
+      "size": 1525,
+      "sha256": "35f289781a438034b05e8edf48df26c90510ebc60b07dc51b6a7418069553c7b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v3/yolov3-tiny.yaml",
+      "size": 1229,
+      "sha256": "e669c618237e98d0efaaf3b3d80cc685fc04834d5ec7378734f4b7340de9a226"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v3/yolov3.yaml",
+      "size": 1512,
+      "sha256": "fbde29e2d78f743b5da67cfbf6eeced6c0a157af644e2d35945c5c546a09f0c6"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v5/yolov5-p6.yaml",
+      "size": 1894,
+      "sha256": "dac9822ae193f10dbade2d0898924d53c3abf975e6b8b31ff496a7066e138e21"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v5/yolov5.yaml",
+      "size": 1526,
+      "sha256": "b1139057cb60bfa94b460c70043228f4c6b3ecd509818651fc8e0c6ccf4ed414"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v6/yolov6.yaml",
+      "size": 1718,
+      "sha256": "49bd279a6b5daaa1c216e131c93f878a9d7464be26e776e16252a07b49051826"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-cls-resnet101.yaml",
+      "size": 883,
+      "sha256": "b82ea49742efbe56fc6e820e47b05d02a6134bc62e707ffdd591b7a4e5884bb4"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-cls-resnet50.yaml",
+      "size": 882,
+      "sha256": "16090d99c80b8c0414df8ba41f82cc23acdcd6968ef23ee3caaaf1fb7aa38bd0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-cls.yaml",
+      "size": 913,
+      "sha256": "fae37821a0871419b2275659d3d87677ccf771e5684965c3e3875b151b0179a0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost-p2.yaml",
+      "size": 2288,
+      "sha256": "6e7e431f0c19de603152f6b2c2aefaff824d81669b3053029c23684e92d20ca9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost-p6.yaml",
+      "size": 2356,
+      "sha256": "92a81b10a36e6bb5f01fde73b5e5ba2335da0238da580d258f3982008edbf04f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-ghost.yaml",
+      "size": 2096,
+      "sha256": "5941ce235f1a035d648003430966c30f2de3b303653ff9c8929597d3d05f06e2"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-obb.yaml",
+      "size": 1899,
+      "sha256": "4efe490d94cb3ab7f2063de082ab1ef528630e933e9c8148c618ac7902b02440"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-p2.yaml",
+      "size": 1731,
+      "sha256": "b5f1e4915002d1f90273b01b8ac4f31a95d6dc57e4dbe2b9fb08d17926e6ec6c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-p6.yaml",
+      "size": 2296,
+      "sha256": "9401404b01618ef5297c2773ae7199894e05cbd1306c9e506c986b472526db5d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-pose-p6.yaml",
+      "size": 1927,
+      "sha256": "cb3c48db46cc05da3a7f991de7755fb841e6fd0a84fd5deec00bc5244d136ebd"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-pose.yaml",
+      "size": 1563,
+      "sha256": "0c7a0977babb1f0f3d2415f98a6f8cdcd586f2681edd574f54d6f82b88d3cc84"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-rtdetr.yaml",
+      "size": 1896,
+      "sha256": "a1fba37fbecb5b7b2d5d2ebe95e54cfc4c5139689f27ce03e56a9186e8f25492"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-seg-p6.yaml",
+      "size": 1845,
+      "sha256": "39f30b30704e63a76de3f62c36e3c03463f033704f05fee2fd5ded40fc84c581"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-seg.yaml",
+      "size": 1474,
+      "sha256": "7cdf399bf6833021f8a13277cfe7edf7c3dd87a764d29661e280752c89e826b0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-world.yaml",
+      "size": 2019,
+      "sha256": "4574e9fed822c7c75b9d51e9adaa7188ad9a6b1eccdaa21f9ae47e680bdee2c5"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8-worldv2.yaml",
+      "size": 1956,
+      "sha256": "7ef195531be504e8cde8b52289a886b278cae592a3c18196c60909e3d84698c8"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v8/yolov8.yaml",
+      "size": 1889,
+      "sha256": "56349efd5d869fd66926bc13b73d00ebfe88329e94bae80d891eda112851e6b7"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v9/yolov9c-seg.yaml",
+      "size": 1346,
+      "sha256": "06579df554ff5f700619ef4e0135c603c6ababf5126c651cf298eccbaf3803bc"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v9/yolov9c.yaml",
+      "size": 1326,
+      "sha256": "bcf7d86dd0c38366839b6c9545fca35cd3a016bc93516146eb495c1d08cba6e0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v9/yolov9e-seg.yaml",
+      "size": 2277,
+      "sha256": "c9c31ec41daa29db5efa1928ed217d3d8e2a3a78359a8228abeb2c8386b7b5e0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v9/yolov9e.yaml",
+      "size": 2256,
+      "sha256": "761691e3b5b1b8b3ab6560c271e4b86d01b4d2c41dacc73c150e4ade62ac9da5"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v9/yolov9m.yaml",
+      "size": 1311,
+      "sha256": "97a0a68afccdbb8e2c4559a4417938fad5df95b5759d69e4e4c49cf2cbb6be1b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v9/yolov9s.yaml",
+      "size": 1291,
+      "sha256": "94f59cbbeeae6f5902043eb3203170b61619dd1bdd25f38358acb7bc4416463a"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/models/v9/yolov9t.yaml",
+      "size": 1275,
+      "sha256": "a8bfff92be86a1e7e94163f88d5d23773c13a78e9b74551caad3d19df0db918f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/trackers/botsort.yaml",
+      "size": 916,
+      "sha256": "f01d3135b9c6fc4fbd0c25296a9ef63d69148016f5023b80a449fb8078959e01"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/cfg/trackers/bytetrack.yaml",
+      "size": 721,
+      "sha256": "f2fa53676c7d9a14572729a826fb351bc9135e8fc7c5b4b01eea7615000b4f70"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/__init__.py",
+      "size": 616,
+      "sha256": "5467be0131bb8f7e45e00e2bf099b37df8e586f7b824024f8116b96a1293535f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/annotator.py",
+      "size": 2489,
+      "sha256": "3e788ec47d8c49c58aa79dfdbeeb9f93af6e1b526c96d0c1e4e302521c67d906"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/augment.py",
+      "size": 120430,
+      "sha256": "6022ebc31d664467a2760828ffb19e20d6b2f0a771002a911072687d979a4c70"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/base.py",
+      "size": 13835,
+      "sha256": "ce2ff59e725bdbd801a98de3aef6cc0b087a44fa5786bd3c0d0d81436fdd853a"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/build.py",
+      "size": 7261,
+      "sha256": "01f326cf4b072189b0af2ffdd2d10915193f933d12dd2a2549c557a981e24f4f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/converter.py",
+      "size": 21385,
+      "sha256": "0e32746ad92ed9a296d224b53d93cd5fc57a593ad9f821d94fa868a44d474a32"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/dataset.py",
+      "size": 22874,
+      "sha256": "212d3bba593bad73d9f925bfae3605f664be4f13d7398f5b6e8e63a9f7303ea3"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/explorer/__init__.py",
+      "size": 113,
+      "sha256": "f98de6d5979d7a939052ffca5bcdb3686c6f53f3d21dcbb051316a1bd06102be"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/explorer/explorer.py",
+      "size": 18881,
+      "sha256": "25698b1c7869ebc876ab7bf1e29a01a2ee51628017dd1f3dca2851e7460b0dbd"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/explorer/gui/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/explorer/gui/dash.py",
+      "size": 10498,
+      "sha256": "bd9e3be8d6941f814a534f2b009d4af563722ad834b28332249c6a835efac967"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/explorer/utils.py",
+      "size": 7085,
+      "sha256": "12fbee91089051306bb19ce798c9f2117d84a93bb0668fc67b273cc9f8bc3480"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/loaders.py",
+      "size": 24094,
+      "sha256": "245d99fc448ae91c1e6af3ae6167a3612189c26a8835be61370c026f70007f43"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/scripts/download_weights.sh",
+      "size": 568,
+      "sha256": "33bd9240e5cfd768ada0d61c9be6f286294dead3612f24a8a84c483847faf766"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/scripts/get_coco.sh",
+      "size": 1729,
+      "sha256": "51ddd560587b270b792b74963e6e5015330a83d68748ca6b650af99addad3854"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/scripts/get_coco128.sh",
+      "size": 621,
+      "sha256": "d3cc97705b6c829f314d0c827e12c651a9be88b7e64258092c49a67001c12c6c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/scripts/get_imagenet.sh",
+      "size": 1672,
+      "sha256": "38e27e1d211592ece2761076b3f4674028ac1a1e4c62bebb84ef3ebbbdd451e7"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/split_dota.py",
+      "size": 10680,
+      "sha256": "c8eb72a47a18e47bc85412998055dd7e3dadb822cb1019ccc0d7c0786f781229"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/data/utils.py",
+      "size": 31042,
+      "sha256": "1954ed665144f10f5194d275f44aff09dc5e9e37836ef41ead4d6328eb3be92e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/exporter.py",
+      "size": 57019,
+      "sha256": "04562fbfbeb791b126e6ad3e018221f7bf6f2f471c53844dbce376c3caad9b5b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/model.py",
+      "size": 51583,
+      "sha256": "443c6ec4a31390edbfcd3c190f1778ef876135e452a3eed6befa8efc0863cf97"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/predictor.py",
+      "size": 17471,
+      "sha256": "3203161d425d45c54269598ecaf772d868e4fc4c911eff9aaf44921b141ef05e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/results.py",
+      "size": 75043,
+      "sha256": "f1126537c27effdc3e9ab0d99bdc02f836494cf052eefd5cfebfd1d7bdd0c913"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/trainer.py",
+      "size": 36971,
+      "sha256": "94130a243a6ef28c04d1e78d900b18b336c044e93e58e077be5868181d5589c7"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/tuner.py",
+      "size": 11838,
+      "sha256": "80fa834c71fbbd10763b76321f6ea6d418d529b5f1b80d970253d1cd328566c7"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/engine/validator.py",
+      "size": 14650,
+      "sha256": "e3cdc077cec8ae4ec806524d2eed9240026c6fb62b8802d35fd18882b8829918"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/hub/__init__.py",
+      "size": 5644,
+      "sha256": "dd22af6796918a76b787de3130f4080770f899a17adaa15cc88a8f3c74473407"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/hub/auth.py",
+      "size": 5545,
+      "sha256": "9032da9066b635bcef30079773651dcd9eb9af4007f9778cfc97ec0d8f7b5869"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/hub/google/__init__.py",
+      "size": 7504,
+      "sha256": "b9c94db3eff9bc0cd032040a825f1e06f9a5d5cc7a21961745486b179eefebf9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/hub/session.py",
+      "size": 16411,
+      "sha256": "d8ace73b9917d781c5676f82b7d2e81b7d76b1d1ee8a04122d96f9f0c1af6c96"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/hub/utils.py",
+      "size": 9715,
+      "sha256": "23b3404c6e8efd0470ec453b10791d4d5bdb0a4c0a0b251ee7804feb44e8feca"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/__init__.py",
+      "size": 265,
+      "sha256": "4d3f622c22ff9fd63cd1d714ab4168fa9f86459092536beb5973370a8330aaa1"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/fastsam/__init__.py",
+      "size": 203,
+      "sha256": "5b4ad1489337bddc5cb277ae88debf6a3914c3cea4ebea2950a74bc5584a3a84"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/fastsam/model.py",
+      "size": 2008,
+      "sha256": "8a4a8e52845b713607d3462a03b58a7465e7adf7f547c39d062d8e1b49fdb9a0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/fastsam/predict.py",
+      "size": 7377,
+      "sha256": "cfbdd678840db520c0768644f089fa8f36dd324eb09409953477663ab740a6c3"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/fastsam/utils.py",
+      "size": 714,
+      "sha256": "c07ea91234761b8e4b60aaa6b397bc709af9f90fb46cac94f18732b43027edde"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/fastsam/val.py",
+      "size": 1967,
+      "sha256": "20b2a6c3753c1589a642c3bdc24f7e6c9f4fca9fd9b6124cdfa6fad4bef9b376"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/nas/__init__.py",
+      "size": 179,
+      "sha256": "77af964eb60b5ef6cfb39f1e6c0d3ee7cdce0e2f95cb35dcfade1a1880d02ba3"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/nas/model.py",
+      "size": 3234,
+      "sha256": "085d7150eaeb888f25b2b92bb1c5be5c3ec4d182119f9e2c9cbfe39b610fd2f9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/nas/predict.py",
+      "size": 2096,
+      "sha256": "e0a0f2b635b368331273f8ebdd6deceb3e849fa9b029f18fef44905f1fc5db03"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/nas/val.py",
+      "size": 1695,
+      "sha256": "ea5b75c1ff090983beadcd06d038d85150e082f4c05e4b367aee509f02f4f12e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/rtdetr/__init__.py",
+      "size": 197,
+      "sha256": "01981ad42dea9464ed82902ea435b87688a3ab9699950785f1ee79fc33f651ab"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/rtdetr/model.py",
+      "size": 1988,
+      "sha256": "d95929a45d7fe7cd57990d1423b968f1f5fb32a84024f5d532bda3c8c1d7b5b9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/rtdetr/predict.py",
+      "size": 3568,
+      "sha256": "73150b7490332fd44cd75636e2d220b8a70d2595f0ca736cad64425be8d46044"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/rtdetr/train.py",
+      "size": 3685,
+      "sha256": "dd08dc840bcb337821d6c353395495be9caaaac652629ad4435d9ee28010b3f0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/rtdetr/val.py",
+      "size": 5566,
+      "sha256": "c558d94a167502f112f7bc157a4976abfd60db43eaf8820786425d5adc4c9dcb"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/__init__.py",
+      "size": 176,
+      "sha256": "a38fc3eb2f1826539720aecbc28f511e720927dc6814d8b8ccaf7d41273591d3"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/amg.py",
+      "size": 8709,
+      "sha256": "1ab98effc61f203b7f4243c4305fd61633d9921c217fb8b0c7b8a0f0980e5271"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/build.py",
+      "size": 12233,
+      "sha256": "ccd41bae0487520cf58325d0c0b2864e96ba09212379a7af70fdf0d59d65de6a"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/model.py",
+      "size": 7382,
+      "sha256": "d8a154a7c4878aa3a0c148e476a75abb4a1db89c0a4319b837d1875a3761505a"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/blocks.py",
+      "size": 45919,
+      "sha256": "43e2b08456ddc99865d6d8c6fe43f62dc42465bce836deb5f22f8d46b28dc766"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/decoders.py",
+      "size": 25830,
+      "sha256": "98e0ecaa74cdfc28c4dc7d1287d71df0f7d39c700d3e3181d5b8ea1f17decd28"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/encoders.py",
+      "size": 34824,
+      "sha256": "032dec61e5289c27fa5115c1741d1d0f0ca7828bdebd6f215038142d19cd2280"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/memory_attention.py",
+      "size": 9722,
+      "sha256": "5e295606745f1fcc19c48a0bdbec8493e751ca90ac4b425fffdb7c589c572a0d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/sam.py",
+      "size": 50003,
+      "sha256": "7dab718d7a0ae060f953f960c17fa56f7ef66b6f6ff1f71edf96749664b62900"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/tiny_encoder.py",
+      "size": 41332,
+      "sha256": "372cde14c2e79aac1c15016cf8904cf4f0964ac628619ffa879f549f50de0d5d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/transformer.py",
+      "size": 16081,
+      "sha256": "9ee845ff5e0b1abaf9b980803fd5c25e9b3ece555c4f83963b47af5d60f13f02"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/modules/utils.py",
+      "size": 12315,
+      "sha256": "637e95e81572e8679a02f284f201e6a0321af9fe4b8c9a66495c32c0d92fdb29"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/sam/predict.py",
+      "size": 38556,
+      "sha256": "ba7b2836b131ea97b1283dbcf874e900b6b4d8fb4db44e1ed8445dcecf6a6d8c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/utils/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/utils/loss.py",
+      "size": 15840,
+      "sha256": "3b38b4529edc98f01e85782a1ae55202d512e17431697efa2aa13c43454793b1"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/utils/ops.py",
+      "size": 13221,
+      "sha256": "68f00fc1630b24b5aaf88d38c12fd8aea27f572ff1057b6a42ee80a31d796030"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/__init__.py",
+      "size": 247,
+      "sha256": "7b5719afda5b49b7f761ad8ebe44e3191c03fc4d986697bad74c6c90133c8049"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/classify/__init__.py",
+      "size": 355,
+      "sha256": "b7ee295079a023682385cfa5ddba8d11c12d283d5d3b8d270f855ce98db10faa"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/classify/predict.py",
+      "size": 2444,
+      "sha256": "d02109e01e1f5db38c527272efd811bc6faa76cccecd348b39bd71c6482c29e9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/classify/train.py",
+      "size": 6358,
+      "sha256": "4c75d2910550541bb0d50c5c11503c32d2c761875a004a9ea4e6c9097a0b719f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/classify/val.py",
+      "size": 4909,
+      "sha256": "4f38b3869dde6f33efc097a3ac4f2d6fe4ee5f0e0c764108f66380355ef87974"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/detect/__init__.py",
+      "size": 229,
+      "sha256": "251f206495a7ef03016e1fb48ffd3bde7c495594cc1595564ce1b95a7be4eb0d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/detect/predict.py",
+      "size": 1471,
+      "sha256": "fe463afbfc2c3c2b7d64e7fe8b0bac71e8a400ce5357f2a78d876fda4a04e390"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/detect/train.py",
+      "size": 6363,
+      "sha256": "7079424e3dfd4ebe9bbad40e411ade0859d53832b622a6a8801a53010b8600f1"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/detect/val.py",
+      "size": 15154,
+      "sha256": "35ad72f7818b7c5ef6fbd263eae36d3e4fc20a92e934f9a831582e9113d59ae9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/model.py",
+      "size": 4233,
+      "sha256": "08c877fea6029b699d1475726490ccbbc785093303d33d593e633c1a6c1353b1"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/obb/__init__.py",
+      "size": 193,
+      "sha256": "b7159b3c62d8d7f33b67094b423af01a34c13a5b2ff4fdf2939644832b138a75"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/obb/predict.py",
+      "size": 2037,
+      "sha256": "571a4a08a5797569ceaf41b2575ac9187e52cf3468b82616ffc4f6eb127c314f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/obb/train.py",
+      "size": 1473,
+      "sha256": "fc55580af1c9e440a2d9a37c93b02654bc5152eba7eda712ab05ad08146e2fa4"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/obb/val.py",
+      "size": 9329,
+      "sha256": "7602899c629f741a58317b0cd7f30dd9c84e35dd8ee84de1127213b935f0f365"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/pose/__init__.py",
+      "size": 199,
+      "sha256": "386bf13772ea268b7687c197d5cb09d4a12bb079c32ac9b7dc27ba64153d2ebe"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/pose/predict.py",
+      "size": 2365,
+      "sha256": "7294dee2f4c8ddeb6718283231cbf16c5d1c30d7ad8965d4c21b22a44157f8a4"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/pose/train.py",
+      "size": 2926,
+      "sha256": "9940b519a6264414ef5d0b0bfae35d71d00da085dd78618145d80e2a4a912112"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/pose/val.py",
+      "size": 12390,
+      "sha256": "e1221f1e2a0f64bd9056186f14489b8abd1b033bc887292cc0a7352a5e466f00"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/segment/__init__.py",
+      "size": 247,
+      "sha256": "9926ca384f019c72fb3cbda708e546edd44cec223a8497b314f3f06458c49b2f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/segment/predict.py",
+      "size": 2468,
+      "sha256": "500cd221cef19592abf4f54c592eb75f8c92520f5098c87cb47b5d7ddec3fa79"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/segment/train.py",
+      "size": 2298,
+      "sha256": "5131864889eaff2b90b8d9b4c1dad5aeeca219ed387c066fe6fd5632a425f58b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/segment/val.py",
+      "size": 14060,
+      "sha256": "aaabe1745123a23e6e5d6f0ccf71530e9c4eeef92b4ec4d11fb76818c36e18af"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/world/__init__.py",
+      "size": 103,
+      "sha256": "dd54c7d2ae0d3add84591a26d79c82ca6be6be6d04b69d9b9844c9521b154c12"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/world/train.py",
+      "size": 3686,
+      "sha256": "81a0eb0262c9a60f6a0ed98be5ebc0e47b15db26f84534527e4d840d8ac77518"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/models/yolo/world/train_world.py",
+      "size": 4857,
+      "sha256": "22c9c2115b7a0dc33d954b2408a98837e33c30cefdc4ba704d1a91a001d49d9e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/__init__.py",
+      "size": 587,
+      "sha256": "e013cb1d8f3dc4433f6a5e6e2b468e98582230be823061196decf13af4e3384b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/autobackend.py",
+      "size": 31573,
+      "sha256": "f791550effe5e5f6b1e5ff209a16002084b67bff2ee8763135de126b187b135d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/modules/__init__.py",
+      "size": 2625,
+      "sha256": "c615b605e9e74fd53f55a31756946ef9b74b829d415edf4bf2690850113789d5"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/modules/activation.py",
+      "size": 895,
+      "sha256": "721867e3af709d11c4b3904c18d0585f03d865cffbfaeaeca534fc7e705dfb10"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/modules/block.py",
+      "size": 41832,
+      "sha256": "b617083dc9c6451c430c3b30cb026c7f36dec2bf577d3af397f52f4a5f9b2777"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/modules/conv.py",
+      "size": 12705,
+      "sha256": "bce78767a678b1cebef4fac3991193d61164c5205b6d69109b68d16c61a3a6a4"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/modules/head.py",
+      "size": 26627,
+      "sha256": "c7463c953285a980b8a0037525327ec90e37b085c4229df97660b5e2f76d4279"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/modules/transformer.py",
+      "size": 18069,
+      "sha256": "b4688af0d98f7ecc305b5adb176d6be482d4924650e8d938b3c8f5eaf1419a9b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/modules/utils.py",
+      "size": 3195,
+      "sha256": "6bcf1c2a5db0cf59cc55210189a8edbda09b0c140890449638a4d9fd6009cbdd"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/nn/tasks.py",
+      "size": 48342,
+      "sha256": "9899ae2677002b68909be94216322b16bb60b13e6ddc3a0e7ad451a5f2d110f9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/__init__.py",
+      "size": 648,
+      "sha256": "e910de5d63b541268c802abc62b5976a3db1bcfc36b09c092ff6b47608c2bf3d"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/ai_gym.py",
+      "size": 4719,
+      "sha256": "3200ffe037220aa5eab8cd98eb28c8211906588837acd7d2b97ac5a98cce09a2"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/analytics.py",
+      "size": 11568,
+      "sha256": "6c6b997acd750fb0cd893b07770bba3c9d10034bc28aa30c02d67b372124b216"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/distance_calculation.py",
+      "size": 5228,
+      "sha256": "a3f0c01e4e095fc9f656dec4ebc317ebb99110e059bb2e6c91b5ed559ea2bbfe"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/heatmap.py",
+      "size": 10375,
+      "sha256": "a04562bc0e0a00aeb3d3003909afdadaa4dc91037cb42b7d302a6c3d111e3679"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/object_counter.py",
+      "size": 9982,
+      "sha256": "53aeaebefffa412a25e3e2d8d44f493999d84586de9392b3dcdec283387a16e0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/parking_management.py",
+      "size": 9049,
+      "sha256": "560632868484a3b7e73de80884d52a9c52f48e53047af00bc744106f3277bc62"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/queue_management.py",
+      "size": 4869,
+      "sha256": "c8a3c6736f9f37e94ca4d75d9318cdef1606209c0c76853e5480d1c50d4a3e8c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/speed_estimation.py",
+      "size": 4623,
+      "sha256": "73d38f1a90d4f71e838f84a86cd73eb0ef741194cf4c678a916e6ee82e998fb8"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/solutions/streamlit_inference.py",
+      "size": 5703,
+      "sha256": "30a7f93f73b9a09c082aeda1fd446fcda423316a1210c0cc070a2b76995f471a"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/README.md",
+      "size": 13534,
+      "sha256": "6d44d70d7bd5017658bad8de0c33ed476c262d4037feead17fc196ce79dae73b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/__init__.py",
+      "size": 227,
+      "sha256": "8fbd88807d9d647400acc3cae18c1c57989e230f787d8be519d42307d70e40ac"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/basetrack.py",
+      "size": 4423,
+      "sha256": "7579d75b7731c5dee53e6db424908d3b6be8088ad0e2f85b348d60e181209fe6"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/bot_sort.py",
+      "size": 10494,
+      "sha256": "efaea0ad5404c6fa276f4f3b5b2f92077d934b0618b1310cdb6ca859e43f104a"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/byte_tracker.py",
+      "size": 20818,
+      "sha256": "8e5dde817948b5fa8f7db9b1b0b79bbc0ede29959ad46863d9073dc0d4ed79b4"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/track.py",
+      "size": 3874,
+      "sha256": "05f91d99d813be823c45acfacae0d032b6c2ad63869bd2dfbb76814d762fda3f"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/utils/__init__.py",
+      "size": 42,
+      "sha256": "987b49b8ae21c05f1cb95f951c373bb69eaee83d601f3d99ec923c82b9900d3b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/utils/gmc.py",
+      "size": 14557,
+      "sha256": "55c511b98d38d6a1827965063311d906bd744f5e8bb5c32acafec09937c4d4c6"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/utils/kalman_filter.py",
+      "size": 21349,
+      "sha256": "707f730f77f092e7b33fdec7f66c3c71204dedaf211cac7f4b1d63eedde8606b"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/trackers/utils/matching.py",
+      "size": 7162,
+      "sha256": "dc87b558d351678feadf7eb9174dd70fb36bf63b9907fd3c9b0e3250a0b7c3be"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/__init__.py",
+      "size": 48238,
+      "sha256": "565d273729e229d14962441fc079d0dc2152f06c2a6a3664e626369bb9758ab0"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/autobatch.py",
+      "size": 4194,
+      "sha256": "0176e861f3529d31ac623e459a01983d077472b7e47a57b29ace905d07d9190e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/benchmarks.py",
+      "size": 25101,
+      "sha256": "20de99a94fb50d51e7c11b1d812fef70186783c0d43112048c412076b97599d6"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/__init__.py",
+      "size": 214,
+      "sha256": "62b5aa0b705555a4cba1be2208f47a237ea65312143a93c95bb07f2e34fbf10c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/base.py",
+      "size": 5775,
+      "sha256": "3c78d0e91213c02d9dca50904c1d1b74f800b078f155eb836f937534f4db1c67"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/clearml.py",
+      "size": 5923,
+      "sha256": "33d162d4e7dd5aa726f2e5646aeb97df3248621361e93a7b268e027c0d2ed27c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/comet.py",
+      "size": 13743,
+      "sha256": "0135a36498a02f2f25255623970c8285afa527e42531f5f0fb313d3c0ed4c6a6"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/dvc.py",
+      "size": 5045,
+      "sha256": "5880a532cbaf8628b2af046fe41b192f18ecc58349dd8f15abbccdd01b61b6ba"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/hub.py",
+      "size": 3997,
+      "sha256": "10f7b0b0b8a015073db9c4d7d9ec4a4a528189a04d858632182fe7476ada809a"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/mlflow.py",
+      "size": 5391,
+      "sha256": "fdb5331f23dbd27a677b4585946ce5182cbe5f9b31190842ff10377596c5d3c2"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/neptune.py",
+      "size": 3756,
+      "sha256": "e59dee6b96014d44b9e851fc5502901b569a228f5f1fc184cb30b9abba788a94"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/raytune.py",
+      "size": 705,
+      "sha256": "383558cf2f82a0ce1481ed338e48771e787d9c5d8cd2f843ad27a75e7bdc8b3c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/tensorboard.py",
+      "size": 4135,
+      "sha256": "d249f8211d749e8f7d5022217a88d646e8e0c9b9941d2c797cf23a56caba97f8"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/callbacks/wb.py",
+      "size": 6747,
+      "sha256": "f7e7e340874b8ebddbef70d3137ac73b5ef52af6c7d55c1e27e6e66effaba93c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/checks.py",
+      "size": 28910,
+      "sha256": "3e674de365c9ec821435b7a263cce33c87c971e6b100ed389dcefcd04a18c537"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/dist.py",
+      "size": 2358,
+      "sha256": "3431606beb8ac64057db32f114749e9defdc0a2190268c8e7825dc37d2483889"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/downloads.py",
+      "size": 21998,
+      "sha256": "f7b262b62859aaf20c4bafd35f9ac9006ec123c7981e5bb983c617948d11911e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/errors.py",
+      "size": 816,
+      "sha256": "1aa3ff2608ff9f4a5ac67f0e3219f70d30a0a0d901d968d47146aab3e33a4909"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/files.py",
+      "size": 8240,
+      "sha256": "cf128d687e9826f18aac3e0354f934924a28e3843b5e2fa7ff5172e3c4f34f1c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/instance.py",
+      "size": 16249,
+      "sha256": "4129acee63c76797bc246b8960ba212d696dcc8d1a044f1da1bdab3942b846d3"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/loss.py",
+      "size": 34174,
+      "sha256": "496dc5545169f0a8bf2c24fcc087456e6e8a9b23dc427dd198a35cbd50213102"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/metrics.py",
+      "size": 53927,
+      "sha256": "5202c6b9d5a9e7bb970cc94c509cb882ccfa71f56372aeed6261deb68dd3aaf3"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/ops.py",
+      "size": 32888,
+      "sha256": "76c5cd772ad8c7fa7a8a8eb37b38a0f69f387714bb53ed74bdc787355bb620bd"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/patches.py",
+      "size": 3594,
+      "sha256": "3a8dc390fecc6d79cd1af3dfa054a8700915bda3e1f64c0c4fff514147e35612"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/plotting.py",
+      "size": 61629,
+      "sha256": "942c7d8b751240ad8a1ac803fa5d9c6dd6efdf7737f7a808c0c16c67d88e6b5c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/tal.py",
+      "size": 16877,
+      "sha256": "102b2ef79c44a8e22d9b13033786130f716c52222c40d5b2d29642dd37ef15f9"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/torch_utils.py",
+      "size": 29689,
+      "sha256": "7835546446a6e138deaf1fe865ce85ef5957610a135512e04818ab0efaff062e"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/triton.py",
+      "size": 3936,
+      "sha256": "820d5f8a7c67a3fb58d867bd3cc866bbb3c8f70be8159a2289c753e0186abf7c"
+    },
+    {
+      "file": "third_party/yolov8_ultralytics/ultralytics/utils/tuner.py",
+      "size": 6250,
+      "sha256": "02d12d2baa4eb7dc554f2c7ceb83a935157135d031cf968a1f3bde897c240f50"
+    },
+    {
+      "file": "yolo11/aitodv2/bootstrap.py",
+      "size": 432,
+      "sha256": "885e8115a00ed70bf9f541734863f381c9734eb2c27d93d7d1aff54e64c1b127"
+    },
+    {
+      "file": "yolo11/aitodv2/common.py",
+      "size": 1413,
+      "sha256": "3bac08ec2df7bb68f9e7e00f14003df3a38d10fc3f9284d7246e6c3caf0ff483"
+    },
+    {
+      "file": "yolo11/aitodv2/configs/full.yaml",
+      "size": 203,
+      "sha256": "762c12e81d0889ad90647cfe96474d5235ab7228ac5e03bd501709a2c56a5bca"
+    },
+    {
+      "file": "yolo11/aitodv2/configs/native.yaml",
+      "size": 203,
+      "sha256": "5e0d72b5db278a56be3059ae072ce3c7756e691ade0d5e462e8bdf70ec14fb44"
+    },
+    {
+      "file": "yolo11/aitodv2/data_pipeline.py",
+      "size": 4152,
+      "sha256": "289da4622d52d222baf92cfcfd5756e791b0c6826afaf4bbc0141183ab5f0372"
+    },
+    {
+      "file": "yolo11/aitodv2/eval_aitodv2.py",
+      "size": 11619,
+      "sha256": "6646f231e12205b17d2a1fde4f6e3770523aa1daa6ce345c7266ad8660bca122"
+    },
+    {
+      "file": "yolo11/aitodv2/models/__init__.py",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "yolo11/aitodv2/models/adaptive_residual_relay.py",
+      "size": 6146,
+      "sha256": "8978de5a3b31c68a8d8613712527a328f1c93cd5daed308050be5d1ea5a82997"
+    },
+    {
+      "file": "yolo11/aitodv2/models/asymmetric_yolo11.py",
+      "size": 31519,
+      "sha256": "6d2f7090f79d5e7d8e59d2988b67352871880b883cf3157ad88ef6bfcdd67d51"
+    },
+    {
+      "file": "yolo11/aitodv2/models/background_referenced_reading.py",
+      "size": 13424,
+      "sha256": "039bfe2f809df2c0e1752d48c1c4821ea93b1a42ecea3251277662214aba0067"
+    },
+    {
+      "file": "yolo11/aitodv2/models/brsa_original.py",
+      "size": 13291,
+      "sha256": "fd66189a717ac622577736f636da5611f3800c1a58ae54ed0db518c0215cbfac"
+    },
+    {
+      "file": "yolo11/aitodv2/models/cuda_graph_runner.py",
+      "size": 1984,
+      "sha256": "8977742da28735f8085347ab291dc2ebd7ce836840d52f1f9032381ea707f94f"
+    },
+    {
+      "file": "yolo11/aitodv2/models/fused_arr.py",
+      "size": 16834,
+      "sha256": "67ec9b56365504ac635ff52769c5c3f14d87edf6d2d4c627bab570594d6c74ad"
+    },
+    {
+      "file": "yolo11/aitodv2/models/fused_brr.py",
+      "size": 5031,
+      "sha256": "9c0e61151214bf0052d69a99e75485abc5154da3b430bdbfdc18590e1965fdc8"
+    },
+    {
+      "file": "yolo11/aitodv2/models/fused_brsa.py",
+      "size": 31314,
+      "sha256": "0c3b000b244c718d0da8174a6dcf797531cf44067795049c1ca2096d98a9bfee"
+    },
+    {
+      "file": "yolo11/aitodv2/models/fused_c3k2_cpp.py",
+      "size": 14654,
+      "sha256": "900b91726101918f62e5cb4fcadab519fc3c81b42c014b5110258ae90a3bd6e8"
+    },
+    {
+      "file": "yolo11/aitodv2/models/fused_sampling.py",
+      "size": 16273,
+      "sha256": "04a21f548d801543ca9c2675c698675540a0e9ce95889d04fe34f33b10494aee"
+    },
+    {
+      "file": "yolo11/aitodv2/models/geometry.py",
+      "size": 1654,
+      "sha256": "5e6485afd23a17eb767cc3be9b028e58d029eb6a69a6d34e08499b17431b7922"
+    },
+    {
+      "file": "yolo11/aitodv2/prepare.py",
+      "size": 6649,
+      "sha256": "6970793ad51d028f16376c24dc3cda421c9a7b03400dc434c6883a7dacbec64d"
+    },
+    {
+      "file": "yolo11/aitodv2/prepare_existing_data.py",
+      "size": 2020,
+      "sha256": "5dbea30bdd3a89a8c60b1a1a3763af1244266ace4d7eea138f9f91139461440b"
+    },
+    {
+      "file": "yolo11/aitodv2/tests/test_arr.py",
+      "size": 2982,
+      "sha256": "795e6a04085b13253ca1d03abfbb0e88b3b1745879b5281b557d3fd1468accb3"
+    },
+    {
+      "file": "yolo11/aitodv2/tests/test_brsa.py",
+      "size": 6373,
+      "sha256": "a2b278d191aa4256430d224a63ed43d943d51745a5fa551538c9b8347746d6e8"
+    },
+    {
+      "file": "yolo11/aitodv2/tests/test_geometry_and_sampling.py",
+      "size": 6533,
+      "sha256": "e560b87648efc7f0ecb34c2a8d9074e35d3c1eb86e85b0c7ecff6603ae8a44eb"
+    },
+    {
+      "file": "yolo11/aitodv2/train_pair.py",
+      "size": 26132,
+      "sha256": "dca472ba659f1b1c69c6887c0edbe9e76f3d3b80d3aaca56df7d02757b4f9f9c"
+    },
+    {
+      "file": "yolo11/visdrone/bootstrap.py",
+      "size": 375,
+      "sha256": "d72cfb9cef29b709f8dea282061de774119931fb4a13414b0a4c0888fcdd7436"
+    },
+    {
+      "file": "yolo11/visdrone/common.py",
+      "size": 1413,
+      "sha256": "3bac08ec2df7bb68f9e7e00f14003df3a38d10fc3f9284d7246e6c3caf0ff483"
+    },
+    {
+      "file": "yolo11/visdrone/configs/full.yaml",
+      "size": 228,
+      "sha256": "186bc22beeab92ec9f181cfc1838bf80b43c31557a151f15ce3d7cce8ad372a6"
+    },
+    {
+      "file": "yolo11/visdrone/configs/native.yaml",
+      "size": 228,
+      "sha256": "d3b2f8a25f20c710d86861baf0bef9716d7b3fb3a7b97cda3f6d57843e459df7"
+    },
+    {
+      "file": "yolo11/visdrone/data_pipeline.py",
+      "size": 4151,
+      "sha256": "b8f990f957d35d22b12a7ff9cc833c6ff6344b8f3518eb1b4ea5a9188c784164"
+    },
+    {
+      "file": "yolo11/visdrone/eval_visdrone.py",
+      "size": 8421,
+      "sha256": "d36093d07d5848327e2248ff5da300fd0f191b12324e0f64ca6c4e45cfff25ab"
+    },
+    {
+      "file": "yolo11/visdrone/models/__init__.py",
+      "size": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    {
+      "file": "yolo11/visdrone/models/adaptive_residual_relay.py",
+      "size": 2724,
+      "sha256": "f9b7fbe8fa0eb541ffad1dde588222152adf3ba255c985caf51f11340144c0ad"
+    },
+    {
+      "file": "yolo11/visdrone/models/asymmetric_yolo11.py",
+      "size": 7049,
+      "sha256": "fd9eac15a127d17f0a95c92796732b1b39be7f614006ba1c98e3bb337ee374ff"
+    },
+    {
+      "file": "yolo11/visdrone/models/background_referenced_reading.py",
+      "size": 4391,
+      "sha256": "58d16c8a9ea69c4851f3a8055e2cecc6f22ca02406301d69d56826882e11c369"
+    },
+    {
+      "file": "yolo11/visdrone/models/brsa_original.py",
+      "size": 6787,
+      "sha256": "6aaf0d8b21f346582bbb13c275ca0aa71b8f45569ef5bd993935c94982536963"
+    },
+    {
+      "file": "yolo11/visdrone/models/geometry.py",
+      "size": 1299,
+      "sha256": "e7a4a01e9973f393c164c0c97731e3a3099caeb759c260746efefc97a7a546c0"
+    },
+    {
+      "file": "yolo11/visdrone/prepare_visdrone.py",
+      "size": 6597,
+      "sha256": "f53ddd95ca37fcdbc705f870a60cf25e299cb18b4b03ddca68bddc653d087d31"
+    },
+    {
+      "file": "yolo11/visdrone/tests/test_arr.py",
+      "size": 1845,
+      "sha256": "f7cd9907fb58ddb4c7f7c913632c681f378727b96424d202ce4bfd8b332a8d2e"
+    },
+    {
+      "file": "yolo11/visdrone/tests/test_brsa.py",
+      "size": 2675,
+      "sha256": "8217456291a450e352b43b2d828b933346fd7829dd20670a1cfb37dbc9ccb80e"
+    },
+    {
+      "file": "yolo11/visdrone/tests/test_geometry_and_sampling.py",
+      "size": 3641,
+      "sha256": "499e0b003f989b255fed9906cbbd04eb77c26a3e99ada8ec95af43e946547335"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/LICENSE",
+      "size": 1244,
+      "sha256": "187a973ab5b6e8afc6e3eddb21323be92674e51fa9490e9946ff8d5e3267e627"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/README.md",
+      "size": 714,
+      "sha256": "b0e4994ffbc32f7992fea7126c093508afddae4723484b4b33658497ead91d17"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/evaluate.py",
+      "size": 2372,
+      "sha256": "c944294a9fc838394e4e06b1d93644243c69b1bc1da6c2a1df40d63e399421b6"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/requirements.txt",
+      "size": 58,
+      "sha256": "9497eb3db37ef0c4f8cf4dc609080bcc16b01d7e1df7846a365a9e8b299d72a0"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/setup.py",
+      "size": 3420,
+      "sha256": "6ff6734381bffa5297a1676adfecfeab00752c161f81b18a2b751b31161fb207"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/viseval/__init__.py",
+      "size": 60,
+      "sha256": "1833d9c1361060884026cf62a69801f0303f736d2a2cf27784f007c4a2778e83"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/viseval/bbox_overlaps.py",
+      "size": 1740,
+      "sha256": "90abba2314d660025aae22b701bc7bb23b8b726ff1b9493142005bfcc39edaf7"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/viseval/calc_accuracy.py",
+      "size": 5361,
+      "sha256": "5ab09e8f5b7dec71b563eb852d5e0ca805eaacac0a77f87044f8acaa090876ac"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/viseval/drop_objects_in_igr.py",
+      "size": 2274,
+      "sha256": "54ca6a8d6f3270b16a042234da6a6a51d1275696a775cd299a1315edd0745853"
+    },
+    {
+      "file": "yolo11/visdrone/third_party/visdrone_eval/viseval/eval_det.py",
+      "size": 765,
+      "sha256": "7b61eb257d1fab9209389bf6c3ce37b53762cf32580a0e22850801fbf850b8ff"
+    },
+    {
+      "file": "yolo11/visdrone/train_pair.py",
+      "size": 21650,
+      "sha256": "311666c0f8c99c99eaa2a1869e0e025f55c50ef544f1184a285fa7130fc26807"
+    },
+    {
+      "file": "yolov8/brsa.py",
+      "size": 7508,
+      "sha256": "fb978f9a7d61c4425794da21609416ec04c8d08cc4e9d81f25d424317cb6e8d7"
+    },
+    {
+      "file": "yolov8/full_at/__init__.py",
+      "size": 79,
+      "sha256": "c12d9d86b34d43c910c649f1a3ac1d0cc52624cbb9dfb1cda2f7fe001d78bade"
+    },
+    {
+      "file": "yolov8/full_at/adaptive_residual_relay.py",
+      "size": 2913,
+      "sha256": "232ca9f25344bcefa3e94b676dba7fb5771d8a411a2cb380615dce987fa3dae6"
+    },
+    {
+      "file": "yolov8/full_at/asymmetric_yolov8.py",
+      "size": 2214,
+      "sha256": "8e331548ef09363eafb562d1245eaeba28aed60c9189672c20376c66bf9197ba"
+    },
+    {
+      "file": "yolov8/full_at/background_referenced_reading.py",
+      "size": 4791,
+      "sha256": "52282682b09b44d5e1168eb8f9523936c5ac1f3d2d768bb17d319ffd0e06dc56"
+    },
+    {
+      "file": "yolov8/full_at/brsa_original.py",
+      "size": 6873,
+      "sha256": "737578392de68c2551c469277974a39e453f2f2b7cce7f445c90f56d50915cf0"
+    },
+    {
+      "file": "yolov8/full_at/geometry.py",
+      "size": 1299,
+      "sha256": "e7a4a01e9973f393c164c0c97731e3a3099caeb759c260746efefc97a7a546c0"
+    },
+    {
+      "file": "yolov8/model.py",
+      "size": 4986,
+      "sha256": "7773a9847f4a0560fb0f24b299ffe4a7dd24a008362b39cada701fa19b8f3e90"
+    }
+  ]
+}

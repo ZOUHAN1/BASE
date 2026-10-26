@@ -1,0 +1,71 @@
+schema_version: 1
+dataset: DOTA1.0
+task: Task2_HBB
+applies_to:
+- YOLOv8m_baseline
+- YOLOv8m_BRSA
+- RT-DETR_baseline
+- RT-DETR_BRR_BRSA_ARR
+validation:
+  split: official_val_full_scenes
+  scenes: 458
+  interval_epochs: 1
+  prediction_space: original_scene_coordinates
+  ground_truth: original_scene_OBB_polygon_minmax_to_HBB
+scene_merge:
+  slicing:
+    patch_size:
+    - 1024
+    - 1024
+    overlap: 200
+    stride: 824
+    scale_rates:
+    - 1.0
+  training_patch_target_rule:
+    geometry: intersect_original_OBB_polygon_with_patch
+    positive_if_visible_fraction_gte: 0.7
+    otherwise: ignore
+    output_box: HBB_of_clipped_polygon
+  padded_area_rule: discard_detection_if_center_outside_valid_patch_extent
+  offset_restore: true
+  clip_to_scene: true
+  per_class_nms:
+    iou_threshold: 0.5
+    inclusive_plus_one_area: true
+  scene_detection_cap: null
+prediction_by_engine:
+  YOLOv8m:
+    score_threshold: 0.001
+    multi_label: true
+    patch_nms:
+      type: class_aware
+      iou: 0.7
+      pre_topk: 30000
+      max_det: 2000
+    checkpoint_branch: EMA
+  RT-DETR:
+    score_threshold_before_scene_merge: 0.001
+    patch_top_queries: 300
+    patch_nms: none
+    checkpoint_branch: EMA
+metric:
+  name: DOTA_Task2_HBB_VOC07_11_point_mAP50
+  per_class_metric: AP50
+  match_rule: strict_IoU_greater_than_0.5
+  iou_area_convention: inclusive_plus_one
+  difficult_objects: ignored
+  coco_AP_50_95: false
+  yolo_AP_field_aliases_primary_mAP50: true
+  devkit_commit: 99388551054be9a6dabb01c8bb2a7eb562d57b4f
+model_selection:
+  primary_metric: DOTA_Task2_HBB_VOC07_11_point_mAP50
+  comparator: strict_greater_than
+  tie_policy: keep_earlier_epoch
+  selection_split: val
+  official_test_used_for_selection: false
+  yolo_checkpoint_name: best.pt
+  rtdetr_checkpoint_name: best_dota_task2_hbb.pth
+test_time_augmentation:
+  multi_scale: false
+  horizontal_flip: false
+  vertical_flip: false

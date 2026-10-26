@@ -1,0 +1,11 @@
+pair_id: brsa_asym_aitodv2_s0_e100_20261003
+arm: baseline_native
+data_root: ./data/local
+epochs: 100
+output_group: runs
+run_name: baseline_native
+smoke_name: baseline_native
+port: 29671
+devices:
+- 0
+- 1

@@ -1,0 +1,13 @@
+pair_id: brsa_asym_visdrone640_s0_e100_20261003
+arm: baseline_native
+data_root: ./data/visdrone
+epochs: 100
+imgsz: 640
+nc: 10
+output_group: runs
+run_name: baseline_native
+smoke_name: baseline_native
+port: 29771
+devices:
+- 0
+- 1

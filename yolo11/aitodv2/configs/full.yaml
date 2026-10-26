@@ -1,0 +1,11 @@
+pair_id: brsa_asym_aitodv2_s0_e100_20261003
+arm: full_asymmetric
+data_root: ./data/local
+epochs: 100
+output_group: runs
+run_name: full_asymmetric
+smoke_name: full_asymmetric
+port: 29672
+devices:
+- 0
+- 1
