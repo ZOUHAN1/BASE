@@ -1,8 +1,10 @@
-# BRSA-AT Detector Code
+# BASE Detector Code
 
 Source release for YOLOv8m, YOLO11m and RT-DETR-R50-vd baselines and their
-BRSA-family integrations. This repository preserves distinct experimental
-versions rather than silently treating every historical BRSA model as BRSA-AT.
+BASE integrations. BASE is the release name for the full BRR + BRSA + ARR
+method. Historical BRSA-only experiments remain separately identified.
+Internal class names and historical configuration identifiers are preserved
+for checkpoint compatibility and provenance.
 
 ## Included implementations
 
@@ -67,7 +69,7 @@ evaluation. Run commands from the working directories shown there.
 Historical YOLOv8m training configuration is in
 [`configs/historical_yolov8m.yaml`](configs/historical_yolov8m.yaml). It is not
 presented as a complete restored historical training engine, nor as evidence
-of training the full YOLOv8m BRSA-AT architecture port.
+of training the full YOLOv8m BASE architecture port.
 
 ## Validation and provenance
 

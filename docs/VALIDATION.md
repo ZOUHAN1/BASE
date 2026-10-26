@@ -13,13 +13,13 @@ and checks that all returned tensors are finite.
 | --- | ---: |
 | YOLOv8m native, 8 classes | 25,860,952 |
 | YOLOv8m historical BRSA, 8 classes | 25,885,820 |
-| YOLOv8m full BRSA-AT port, 8 classes | 24,515,634 |
+| YOLOv8m full BASE port, 8 classes | 24,515,634 |
 | YOLO11m native, AI-TODv2 8 classes | 20,059,176 |
-| YOLO11m full BRSA-AT, AI-TODv2 8 classes | 17,435,522 |
+| YOLO11m full BASE, AI-TODv2 8 classes | 17,435,522 |
 | YOLO11m native, VisDrone 10 classes | 20,060,718 |
-| YOLO11m full BRSA-AT, VisDrone 10 classes | 17,437,064 |
+| YOLO11m full BASE, VisDrone 10 classes | 17,437,064 |
 | RT-DETR native, DOTA 15 classes | 42,757,797 |
-| RT-DETR full BRSA-AT, DOTA 15 classes | 47,410,175 |
+| RT-DETR full BASE, DOTA 15 classes | 47,410,175 |
 | RT-DETR native, AI-TODv2 8 classes | 42,743,412 |
 | RT-DETR original BRSA, AI-TODv2 8 classes | 42,826,455 |
 
@@ -55,5 +55,5 @@ One third-party setuptools metadata deprecation warning was emitted.
   was repeated during packaging.
 - A passing forward does not establish reproduction of historical AP.
 - The YOLOv8m full port is not interchangeable with its historical BRSA-only model.
-- CI configuration is included; local checks are not claimed to be a completed
-  GitHub Actions run.
+- GitHub Actions passed in a clean Python 3.10 CPU environment after declaring
+  the RT-DETR `transformers` dependency. Local validation uses Python 3.8.

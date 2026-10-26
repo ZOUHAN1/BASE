@@ -12,13 +12,13 @@
     },
     {
       "file": "README.md",
-      "size": 4317,
-      "sha256": "299fa92790324fa4ece930be5f702877f1b30fb8532392c2239375af12ed07f0"
+      "size": 4424,
+      "sha256": "3fc3a782805888f9029f86f48a4ae8949a45c49f9463c49d0dbf22f0b4b74288"
     },
     {
       "file": "SOURCE_MANIFEST.json",
-      "size": 205145,
-      "sha256": "3f6dc185cb0ca958339adb3e8ca9896d2146afc36a6b7e2a00daafb56ee7cc28"
+      "size": 205171,
+      "sha256": "488f247bdd54d428bbd1d470242b242d9f3c8e59f3f9cfd34bbf8904c45de532"
     },
     {
       "file": "THIRD_PARTY_NOTICES.md",
@@ -47,18 +47,18 @@
     },
     {
       "file": "docs/RELEASE_NOTES.md",
-      "size": 2041,
-      "sha256": "38def637f9acabd462bac52106d78aa09f0090af5f22ead96aa26b5621641239"
+      "size": 2265,
+      "sha256": "b0220690460fbbc8b09178e09f529f102dca58ea0588693a03de689bafc85c97"
     },
     {
       "file": "docs/REPRODUCIBILITY.md",
-      "size": 6128,
-      "sha256": "b2b399061c02c2ce8f9b9e1c6317fea73d25d244d2471d2b8d46f2fb3a8824f3"
+      "size": 6125,
+      "sha256": "8e0177bc5ff5e8655b11ddab60c48032797a53b4d09a9edc09fb620a448b46c5"
     },
     {
       "file": "docs/VALIDATION.md",
-      "size": 2198,
-      "sha256": "e94256859538c2dcd5fe8e41146b2511b8339d447d75c320e9e9b0a11ba54d80"
+      "size": 2239,
+      "sha256": "039102ad6fed75e612d179a816f72f7cbb0d3e496a24a156c5837b9b6660cefb"
     },
     {
       "file": "requirements.txt",
@@ -4772,8 +4772,8 @@
     },
     {
       "file": "yolov8/full_at/__init__.py",
-      "size": 79,
-      "sha256": "c12d9d86b34d43c910c649f1a3ac1d0cc52624cbb9dfb1cda2f7fe001d78bade"
+      "size": 76,
+      "sha256": "7902caecdc0012c75b58309d80eedf5c611b0e3e034be1dab053d7baf07119e0"
     },
     {
       "file": "yolov8/full_at/adaptive_residual_relay.py",

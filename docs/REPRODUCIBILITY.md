@@ -6,7 +6,7 @@ This is a source release, not a checkpoint or dataset release. The complete
 historical YOLOv8m training engine was not available in the selected local
 source tree; its restored inference graph and archived recipe are included
 without substituting a newly written trainer for the historical one.
-The full YOLOv8m BRSA-AT port is architecture code, not an accuracy claim.
+The full YOLOv8m BASE port is architecture code, not an accuracy claim.
 
 For retained YOLO11 and RT-DETR experiments, training, auxiliary losses,
 evaluation and model configurations are included. Source packaging has not

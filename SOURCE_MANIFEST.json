@@ -1,4 +1,5 @@
 {
+  "release_name": "BASE",
   "export_date": "2026-10-26",
   "note": "Hashes describe source files before documented packaging edits. No dataset, checkpoint or original git history is included.",
   "files": [

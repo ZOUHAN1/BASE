@@ -1,5 +1,9 @@
 # Release Preparation Notes
 
+The external method abbreviation and repository name are BASE. The original
+BRSA, BRR and ARR symbols and historical experiment IDs are retained; this
+naming change does not alter the architecture or checkpoint state keys.
+
 ## Source groups
 
 | Release directory | Local experiment identifier |
