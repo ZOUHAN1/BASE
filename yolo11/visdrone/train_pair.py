@@ -65,13 +65,16 @@ class PairTrainer(DetectionTrainer):
         self.spec, self.smoke, self.resume_path = spec, smoke, resume
         self.data_root = Path(spec['data_root'])
         self.arm = spec['arm']
+        self.paired_init = Path(spec.get('paired_init', ROOT / 'weights/paired_native_init.pt'))
+        self.pretrained_weights = Path(spec.get('pretrained_weights', ROOT / 'weights/yolo11m.pt'))
         self.imgsz = int(spec['imgsz'])
         self.nc = int(spec['nc'])
         assert self.imgsz == 640 and self.nc == 10
         project, name, epochs = resolve_run_layout(spec, smoke)
-        overrides = dict(TRAIN_DEFAULTS, data=str(self.data_root / 'visdrone.yaml'),
-                         project=str(project), name=name, epochs=epochs, imgsz=self.imgsz,
-                         max_det=500)
+        tunable = {key: value for key, value in spec.items()
+                   if key in TRAIN_DEFAULTS and key != 'epochs'}
+        overrides = dict(TRAIN_DEFAULTS, **tunable, data=str(self.data_root / 'visdrone.yaml'),
+                         project=str(project), name=name, epochs=epochs)
         self.optimizer_steps = 0
         self.optimizer_attempts = 0
         self.saved_best_epoch = None
@@ -92,7 +95,10 @@ class PairTrainer(DetectionTrainer):
 
     def setup_model(self):
         init_seeds(0, deterministic=False)
-        self.model, report = load_paired(self.arm, ROOT / 'weights/paired_native_init.pt')
+        factory = load_paired
+        if self.spec.get('model_family') == 'yolov8m':
+            from yolov8.training import load_paired as factory
+        self.model, report = factory(self.arm, self.paired_init)
         self.expected_fingerprint = self.model.fingerprint()
         if self.resume_path:
             checkpoint = torch.load(self.resume_path, map_location='cpu', weights_only=False)
@@ -194,8 +200,8 @@ class PairTrainer(DetectionTrainer):
                 data=json.loads((self.data_root / 'manifest.json').read_text()),
                 gpu_mapping=self.spec['gpus'], ddp_world_size=2, port=self.spec['port'],
                 physical_batch_per_rank=8, effective_batch=16, accumulation=1,
-                paired_init_sha256=sha256(ROOT / 'weights/paired_native_init.pt'),
-                pretrained_sha256=sha256(ROOT / 'weights/yolo11m.pt'),
+                paired_init_sha256=sha256(self.paired_init),
+                pretrained_sha256=sha256(self.pretrained_weights),
                 grad_clip=10., ema_decay=0.9999, ema_tau=2000,
                 cudnn_benchmark=torch.backends.cudnn.benchmark,
                 tf32_matmul=torch.backends.cuda.matmul.allow_tf32,
@@ -357,11 +363,16 @@ class PairTrainer(DetectionTrainer):
         manifest = json.loads((self.data_root / 'manifest.json').read_text())
         docs = json.loads((self.data_root / 'visdrone_val.json').read_text())
         selected = set(random.Random(0).sample([im['id'] for im in docs['images']], 12))
-        evaluate_model(self.ema.ema, self.data_root / 'visdrone_val.json',
+        val_metrics = evaluate_model(self.ema.ema, self.data_root / 'visdrone_val.json',
                        Path(manifest['splits']['val']['image_dir']),
                        Path(manifest['splits']['val']['annotation_dir']),
                        self.save_dir / 'metrics/val_best_final', diagnostics_ids=selected,
                        imgsz=self.imgsz, nc=self.nc)
+        if self.spec.get('validation_only', False):
+            dump_json(self.save_dir / 'completed.json', dict(best_epoch=checkpoint['best_epoch'],
+                      best_val_AP=checkpoint['best_fitness'], val=val_metrics, test=None,
+                      train_seconds=train_seconds))
+            return
         metrics = evaluate_model(self.ema.ema, self.data_root / 'visdrone_test.json',
                                  Path(manifest['splits']['test']['image_dir']),
                                  Path(manifest['splits']['test']['annotation_dir']),

@@ -53,7 +53,8 @@ class DetSolver(BaseSolver):
                 module, self.criterion, self.postprocessor, self.val_dataloader, base_ds, self.device, self.output_dir
             )
 
-            primary_key = 'dota_task2_hbb' if 'dota_task2_hbb' in test_stats else 'coco_eval_bbox'
+            primary_key = ('native_detection' if 'native_detection' in test_stats else
+                           'dota_task2_hbb' if 'dota_task2_hbb' in test_stats else 'coco_eval_bbox')
             primary_value = test_stats[primary_key][0]
             improved = primary_value > best_stat.get(primary_key, float('-inf'))
             for key, value in test_stats.items():
@@ -111,6 +112,10 @@ class DetSolver(BaseSolver):
                 self.val_dataloader, base_ds, self.device, self.output_dir)
                 
         if self.output_dir:
-            dist.save_on_master(coco_evaluator.coco_eval["bbox"].eval, self.output_dir / "eval.pth")
+            if coco_evaluator is not None:
+                dist.save_on_master(coco_evaluator.coco_eval["bbox"].eval, self.output_dir / "eval.pth")
+            elif dist.is_main_process():
+                with (self.output_dir / 'eval_native.json').open('w') as handle:
+                    json.dump(test_stats, handle, indent=2)
         
         return

@@ -16,6 +16,7 @@ import torch.amp
 
 from src.data import CocoEvaluator
 from src.data.dota_hbb_eval import DotaHBBEvaluator
+from src.data.native_detection_eval import NativeDetectionEvaluator
 from src.misc import (MetricLogger, SmoothedValue, reduce_dict)
 
 
@@ -101,7 +102,8 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
 
     # iou_types = tuple(k for k in ('segm', 'bbox') if k in postprocessors.keys())
     iou_types = postprocessors.iou_types
-    coco_evaluator = CocoEvaluator(base_ds, iou_types)
+    native_evaluator = NativeDetectionEvaluator.maybe_create(data_loader.dataset)
+    coco_evaluator = CocoEvaluator(base_ds, iou_types) if native_evaluator is None else None
     dota_evaluator = DotaHBBEvaluator.maybe_create(data_loader.dataset)
     # coco_evaluator.coco_eval[iou_types[0]].params.iouThrs = [0, 0.1, 0.5, 0.75]
 
@@ -148,6 +150,8 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
             coco_evaluator.update(res)
         if dota_evaluator is not None:
             dota_evaluator.update(res)
+        if native_evaluator is not None:
+            native_evaluator.update(res)
 
         # if panoptic_evaluator is not None:
         #     res_pano = postprocessors["panoptic"](outputs, target_sizes, orig_target_sizes)
@@ -180,6 +184,9 @@ def evaluate(model: torch.nn.Module, criterion: torch.nn.Module, postprocessors,
     #     panoptic_res = panoptic_evaluator.summarize()
     
     stats = {}
+    if native_evaluator is not None:
+        native_metrics = native_evaluator.synchronize_and_evaluate(output_dir)
+        stats['native_detection'] = [native_metrics['AP'], native_metrics['AP50'], native_metrics['AP75']]
     # stats = {k: meter.global_avg for k, meter in metric_logger.meters.items()}
     if coco_evaluator is not None:
         if 'bbox' in iou_types:

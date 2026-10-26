@@ -30,7 +30,15 @@ class AsymmetricYOLOv8(nn.Module):
         self.detect = native.model[-1]
         self.stride = self.detect.stride
 
-    def forward(self, images, pixel_valid=None):
+    def _apply(self, fn):
+        result = super()._apply(fn)
+        self.detect.stride = fn(self.detect.stride)
+        self.detect.anchors = fn(self.detect.anchors)
+        self.detect.strides = fn(self.detect.strides)
+        self.stride = self.detect.stride
+        return result
+
+    def forward(self, images, pixel_valid=None, return_aux=False, diagnostics=False):
         features = {}
         x = images
         for index, layer in enumerate(self.backbone):
@@ -45,8 +53,9 @@ class AsymmetricYOLOv8(nn.Module):
         )
         middle4 = self.brr4(c4, [c5], [mask32])
         top3 = self.brr3(c3, [c4, c5], [mask16, mask32])
-        enhanced3, _ = self.brsa(c2, top3, pixel_valid)
+        enhanced3, aux = self.brsa(c2, top3, pixel_valid, return_aux, diagnostics)
         correction = enhanced3 - top3
         p4 = self.arr4(middle4, correction, mask8)
         p5 = self.arr5(c5, correction, mask8)
-        return self.detect([enhanced3, p4, p5])
+        prediction = self.detect([enhanced3, p4, p5])
+        return (prediction, aux) if return_aux else prediction

@@ -68,6 +68,8 @@ class PairTrainer(DetectionTrainer):
         self.spec, self.smoke, self.resume_path = spec, smoke, resume
         self.data_root = Path(spec['data_root'])
         self.arm = spec['arm']
+        self.paired_init = Path(spec.get('paired_init', ROOT / 'weights/paired_native_init.pt'))
+        self.pretrained_weights = Path(spec.get('pretrained_weights', ROOT / 'weights/yolo11m.pt'))
         self.deployment_variant = str(spec.get('deployment_variant', 'full'))
         if self.arm == 'full_asymmetric' and self.deployment_variant == 'speed_v2':
             self.optimizer_excluded_prefixes = ('brr3', 'arr4', 'brr4.refine', 'arr5.refine')
@@ -114,7 +116,10 @@ class PairTrainer(DetectionTrainer):
 
     def setup_model(self):
         init_seeds(0, deterministic=False)
-        self.model, report = load_paired(self.arm, ROOT / 'weights/paired_native_init.pt')
+        factory = load_paired
+        if self.spec.get('model_family') == 'yolov8m':
+            from yolov8.training import load_paired as factory
+        self.model, report = factory(self.arm, self.paired_init)
         self.model.deployment_variant = self.deployment_variant
         self.expected_fingerprint = self.model.fingerprint()
         if self.resume_path:
@@ -256,8 +261,8 @@ class PairTrainer(DetectionTrainer):
                 data=json.loads((self.data_root / 'manifest.json').read_text()),
                 gpu_mapping=self.spec['gpus'], ddp_world_size=2, port=self.spec['port'],
                 physical_batch_per_rank=8, effective_batch=16, accumulation=1,
-                paired_init_sha256=sha256(ROOT / 'weights/paired_native_init.pt'),
-                pretrained_sha256=sha256(ROOT / 'weights/yolo11m.pt'),
+                paired_init_sha256=sha256(self.paired_init),
+                pretrained_sha256=sha256(self.pretrained_weights),
                 grad_clip=10., ema_decay=0.9999, ema_tau=2000,
                 cudnn_benchmark=torch.backends.cudnn.benchmark,
                 tf32_matmul=torch.backends.cuda.matmul.allow_tf32,

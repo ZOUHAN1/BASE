@@ -2,8 +2,8 @@
   "files": [
     {
       "file": ".github/workflows/source-check.yml",
-      "size": 823,
-      "sha256": "8c495a01651e8629a30bd49572dffbc89af790b55b969d1d7fc05beed68348d7"
+      "size": 985,
+      "sha256": "930aa04b55f74de87c010aa6d02b85d96e1314aff6157c010afd8226fd8b90d4"
     },
     {
       "file": ".gitignore",
@@ -12,8 +12,8 @@
     },
     {
       "file": "README.md",
-      "size": 4424,
-      "sha256": "3fc3a782805888f9029f86f48a4ae8949a45c49f9463c49d0dbf22f0b4b74288"
+      "size": 5184,
+      "sha256": "125f3dabec49099acbf463bee0f0f3dbdeaaadd5bb4ad84e6c37fd2025945cdc"
     },
     {
       "file": "SOURCE_MANIFEST.json",
@@ -42,23 +42,28 @@
     },
     {
       "file": "docs/MODEL_MAP.md",
-      "size": 3033,
-      "sha256": "2fe5051992581ca5c1c5ef130eb099e2c145c0f3a22667464ac444fabf65009c"
+      "size": 3392,
+      "sha256": "ec737e7fbe4fa5cb0f8c9ca26a001adc50d134de2f629d2c7497fa3a125d705b"
     },
     {
       "file": "docs/RELEASE_NOTES.md",
-      "size": 2407,
-      "sha256": "6f00cf005f00f1b42d10d5ed3adf353afc29ecd529c0e3192ecd908db8ffc8e0"
+      "size": 2975,
+      "sha256": "f067fdfb19f2c7f1699377b37cfb1f18d4f237cc6fdc9eb028fbb0bf338f6b76"
     },
     {
       "file": "docs/REPRODUCIBILITY.md",
-      "size": 6125,
-      "sha256": "8e0177bc5ff5e8655b11ddab60c48032797a53b4d09a9edc09fb620a448b46c5"
+      "size": 6311,
+      "sha256": "4e3e1bf88cfad2d8b87e1bd0b42455004316dd5e0bbab8503d33e6159a349ac9"
+    },
+    {
+      "file": "docs/SINGLE_RUN_SUITE.md",
+      "size": 4370,
+      "sha256": "2c5d3e920e9ed59e0977c63dd133b400f5a71b50e1b544dab7eb03edc51def3c"
     },
     {
       "file": "docs/VALIDATION.md",
-      "size": 2528,
-      "sha256": "219b5723548da392eaca8f80636e940ddeeda0eceb2db6df2250b554aa7c7331"
+      "size": 3325,
+      "sha256": "550ac3bc646cb603423b3281e4ee5d36de182ac445413aa3e454fb33da24888e"
     },
     {
       "file": "requirements.txt",
@@ -766,6 +771,11 @@
       "sha256": "ca64c65a7c9d4888afc1a3cf534176562f2223ce3b98704b20591dcf60aa365d"
     },
     {
+      "file": "rtdetr/dota_hbb/src/data/native_detection_eval.py",
+      "size": 5919,
+      "sha256": "d5be18c243ec49b898bff6337b202b2dadc48752a2b4ca8e94ed1d5b04351b37"
+    },
+    {
       "file": "rtdetr/dota_hbb/src/data/transforms.py",
       "size": 6611,
       "sha256": "8d0c911d44780faf2f0e100d77598a74482a6f037332dac3e9bb4c4751c34ae4"
@@ -877,13 +887,13 @@
     },
     {
       "file": "rtdetr/dota_hbb/src/solver/det_engine.py",
-      "size": 7859,
-      "sha256": "d1c017d7a148a696bf0aa9717e288399d4c1f59caa790255da8824ae6819dad3"
+      "size": 8352,
+      "sha256": "20e355345b499b3326a99c45f57b0d3a6f38425db47ce1a5035a11a61686b4fd"
     },
     {
       "file": "rtdetr/dota_hbb/src/solver/det_solver.py",
-      "size": 4793,
-      "sha256": "3fbffb27689a42c22f8f58335ac414aa702dc7286c0e6229754462665a6a8319"
+      "size": 5111,
+      "sha256": "c746b76c76bca6094db21878c581ec9362bd6717fd8eb748aa2ba11ddca4c4d6"
     },
     {
       "file": "rtdetr/dota_hbb/src/solver/solver.py",
@@ -986,14 +996,54 @@
       "sha256": "b6f2d707d3cc9da93e322a13d67ae154024971d52091cefb147196ff2e49019d"
     },
     {
+      "file": "scripts/init_rtdetr_once.py",
+      "size": 2100,
+      "sha256": "b90dec81277f651eea1d08dd0d4f05e3b367b1645bf30bf1393230d9497f0419"
+    },
+    {
       "file": "scripts/launch_yolo11.py",
       "size": 4772,
       "sha256": "2b6f71b94dc9c5f15d1715f046fd2c49969640e0795828f9269f859eefa9cc41"
     },
     {
+      "file": "scripts/preflight_once_suite.py",
+      "size": 5496,
+      "sha256": "a2a707b275a262bf72ebe9ea582d2837a774ddc4ce019195f3ffbd76070123d3"
+    },
+    {
+      "file": "scripts/prepare_once_assets.py",
+      "size": 3475,
+      "sha256": "5bc2bf9c6bdd6248a972382a2c35df47dfb733627642da93cae12ee703c5594b"
+    },
+    {
+      "file": "scripts/prepare_once_suite.py",
+      "size": 10445,
+      "sha256": "2a4c2e3330ee9a5ccace3a0d7a3d328a0891ad9f1dad7fb0ef1b4d0d6a42ddaa"
+    },
+    {
+      "file": "scripts/run_once_suite.py",
+      "size": 6847,
+      "sha256": "c83ae671e0883912c6a80a37bbe3ba81a5a076bb25f0d7e7ced57cbaf8ded594"
+    },
+    {
       "file": "scripts/smoke_models.py",
       "size": 4580,
       "sha256": "ccfb11cab71dc96e3c5a7d45c17f60884b0ba67043f9c1ba3df3bed8a4b1f150"
+    },
+    {
+      "file": "scripts/train_yolo_once.py",
+      "size": 1395,
+      "sha256": "ab8fae7b5ae3f331b35957555b647ff55fb09a52dd2643afbd51172863af4648"
+    },
+    {
+      "file": "scripts/verify_once_data.py",
+      "size": 1449,
+      "sha256": "532fe66c1efa7c68f5c8040e0f83a0aff3c0ca28275173c1df9c938339fd9514"
+    },
+    {
+      "file": "tests/test_full_base_training.py",
+      "size": 2883,
+      "sha256": "33e15e68446ff033c757ca782e4e296b3c38e4008ab25b6fce47999b70b86d27"
     },
     {
       "file": "third_party/cocoapi_aitod/MANIFEST.in",
@@ -4512,8 +4562,8 @@
     },
     {
       "file": "yolo11/aitodv2/bootstrap.py",
-      "size": 432,
-      "sha256": "885e8115a00ed70bf9f541734863f381c9734eb2c27d93d7d1aff54e64c1b127"
+      "size": 597,
+      "sha256": "2eb670555729cf594a2df5b7d675ae5b270eda6f7ba73dbe78e7ab854ad6227f"
     },
     {
       "file": "yolo11/aitodv2/common.py",
@@ -4627,8 +4677,8 @@
     },
     {
       "file": "yolo11/aitodv2/train_pair.py",
-      "size": 26132,
-      "sha256": "dca472ba659f1b1c69c6887c0edbe9e76f3d3b80d3aaca56df7d02757b4f9f9c"
+      "size": 26425,
+      "sha256": "e9199bd60469507a2cda3d8473ca85b3a5bea0c4385127a0fadfcccab33afa3c"
     },
     {
       "file": "yolo11/visdrone/bootstrap.py",
@@ -4762,8 +4812,8 @@
     },
     {
       "file": "yolo11/visdrone/train_pair.py",
-      "size": 21650,
-      "sha256": "311666c0f8c99c99eaa2a1869e0e025f55c50ef544f1184a285fa7130fc26807"
+      "size": 22349,
+      "sha256": "18d8cfeba86427e693cbfd900b10b8958e3152d27e1e1dc3fe534354cf9c89bc"
     },
     {
       "file": "yolov8/brsa.py",
@@ -4782,8 +4832,8 @@
     },
     {
       "file": "yolov8/full_at/asymmetric_yolov8.py",
-      "size": 2214,
-      "sha256": "8e331548ef09363eafb562d1245eaeba28aed60c9189672c20376c66bf9197ba"
+      "size": 2633,
+      "sha256": "3d4b8421d4eec0a8b8554b8150e16bb44d361fbc9f587151d881d6d36a99d259"
     },
     {
       "file": "yolov8/full_at/background_referenced_reading.py",
@@ -4802,8 +4852,13 @@
     },
     {
       "file": "yolov8/model.py",
-      "size": 4986,
-      "sha256": "7773a9847f4a0560fb0f24b299ffe4a7dd24a008362b39cada701fa19b8f3e90"
+      "size": 5025,
+      "sha256": "2d0a3e4716c74845b290f058530647aa8d03a229287356901e610f5cfc0434c6"
+    },
+    {
+      "file": "yolov8/training.py",
+      "size": 4009,
+      "sha256": "7c5675fdac232b7994b84ce693711a06b7a3da8f4963cacfae7a92c66dea01d4"
     }
   ]
 }

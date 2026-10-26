@@ -10,7 +10,7 @@ jobs:
           python-version: '3.10'
       - run: pip install torch==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -r requirements.txt
-      - run: pip wheel --no-deps --no-build-isolation ./third_party/cocoapi_aitod --wheel-dir /tmp/base-evaluator-wheels
+      - run: pip install --no-build-isolation ./third_party/cocoapi_aitod
       - run: python scripts/audit_release.py
       - run: python scripts/smoke_models.py
       - name: Focused CPU module tests
@@ -19,3 +19,8 @@ jobs:
           PYTHONPATH: yolo11/aitodv2:third_party/yolo11_ultralytics
           OMP_NUM_THREADS: '2'
         run: python -m pytest -q yolo11/aitodv2/tests
+      - name: Full BASE training contract and native evaluators
+        env:
+          CUDA_VISIBLE_DEVICES: ''
+          OMP_NUM_THREADS: '2'
+        run: python -m pytest -q tests/test_full_base_training.py

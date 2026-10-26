@@ -42,3 +42,13 @@ were not changed during release preparation. Changes are limited to:
 No speed-oriented structural variants were selected as the default full arm.
 Optional inference optimizations remain in the exported source. No training
 or speed results were fabricated or regenerated for this release.
+
+## Subsequent single-run integration
+
+The [single-run suite](SINGLE_RUN_SUITE.md) adds the full YOLOv8 training
+wrapper, shared full RT-DETR integration for AI-TODv2 and VisDrone, and their
+native validation adapters. Auxiliary YOLOv8 outputs expose existing logits
+without changing the full inference graph. Native and full arms use shared
+fresh COCO-transferred initialization and validation-only model selection.
+These are new runs, not reconstructions of missing historical training logs.
+External data, initialization files and running-job logs remain excluded.

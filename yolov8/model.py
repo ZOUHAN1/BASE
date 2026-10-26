@@ -13,7 +13,10 @@ sys.path.insert(0, str(ROOT.parent / "third_party/yolov8_ultralytics"))
 from ultralytics.nn.modules import Conv  # noqa: E402
 from ultralytics.nn.tasks import DetectionModel  # noqa: E402
 
-from brsa import BRSA  # noqa: E402
+if __package__:
+    from .brsa import BRSA
+else:
+    from brsa import BRSA
 
 
 def _annotate(module, index, source):

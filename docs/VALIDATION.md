@@ -1,7 +1,8 @@
 # Release Validation
 
-Validation date: 2026-10-26. These are source packaging checks, not fresh
-training, AP evaluation or GPU latency measurements.
+Validation date: 2026-10-26. The packaging results below are source checks,
+not dataset AP or GPU latency measurements. The later training integration
+checks are recorded separately below.
 
 ## CPU forward checks
 
@@ -57,8 +58,21 @@ this changes compiler compatibility, not evaluation formulas.
 
 - No dataset or accuracy checkpoint was needed for these checks.
 - No full training, DDP training, GPU fused-kernel validation or speed benchmark
-  was repeated during packaging.
+  was repeated during the initial packaging checks.
 - A passing forward does not establish reproduction of historical AP.
 - The YOLOv8m full port is not interchangeable with its historical BRSA-only model.
 - GitHub Actions passed in a clean Python 3.10 CPU environment after declaring
   the RT-DETR `transformers` dependency. Local validation uses Python 3.8.
+
+## Single-run integration checks
+
+The new `tests/test_full_base_training.py` returned `4 passed`: native/full
+YOLOv8 loss and backward checks, and perfect synthetic detection tests for
+AI-TODv2 and VisDrone native evaluation. Synthetic AP is not dataset accuracy.
+
+All six family/dataset preflights passed for both arms, including finite
+backward gradients and nonzero spectral-modulation gradients for full BASE.
+They perform no optimizer update and are discarded before formal training.
+The first YOLO11m AI-TODv2 formal pair has started on four GPUs; the first
+three actual minibatches on both ranks match between arms. Completion and
+metrics belong in the external experiment directory, not this source report.

@@ -11,10 +11,10 @@ for checkpoint compatibility and provenance.
 | Model | Baseline | Corresponding implementation | Status |
 | --- | --- | --- | --- |
 | YOLOv8m | Native P3/P4/P5 detector | Historical BRSA-only adapter | Restored inference graph; historical training configuration is archived |
-| YOLOv8m | Same native detector | BRR + BRSA + ARR full neck | Architecture port used for cost auditing; not a historical accuracy checkpoint |
+| YOLOv8m | Same native detector | BRR + BRSA + ARR full neck | Full paired training contract and auxiliary loss; no historical accuracy claim |
 | YOLO11m | Native Ultralytics detector | BRR + BRSA + ARR asymmetric neck | AI-TODv2 and VisDrone training/evaluation source |
 | RT-DETR-R50-vd | Native hybrid encoder | Original BRSA integration | AI-TODv2 training/evaluation source |
-| RT-DETR-R50-vd | Native hybrid encoder | BRR + BRSA + ARR asymmetric neck | DOTA1.0 HBB training/evaluation source |
+| RT-DETR-R50-vd | Native hybrid encoder | BRR + BRSA + ARR asymmetric neck | Shared full BASE implementation; AI-TODv2/VisDrone native evaluation and DOTA HBB |
 
 Baseline and modified implementations coexist in the same framework for each
 experiment. Detector heads remain P3/P4/P5; the shallow feature is not an extra
@@ -69,7 +69,20 @@ evaluation. Run commands from the working directories shown there.
 Historical YOLOv8m training configuration is in
 [`configs/historical_yolov8m.yaml`](configs/historical_yolov8m.yaml). It is not
 presented as a complete restored historical training engine, nor as evidence
-of training the full YOLOv8m BASE architecture port.
+of training the full YOLOv8m BASE architecture port in those historical runs.
+
+## Single-run suite
+
+The paper-method training integration is now available for all three detector
+families on AI-TODv2 and VisDrone. It uses the full BRR + BRSA + ARA topology;
+the implementation retains `ARR` class identifiers for compatibility. Native
+heads and losses are retained, with the balanced occupancy loss added only to
+BASE. See [the single-run suite](docs/SINGLE_RUN_SUITE.md).
+
+This suite runs each baseline/BASE combination once at seed 0, not three
+repetitions. It does not claim to reproduce the paper's eight-GPU training
+protocol or three-run averaged results. Historical RT-DETR AI-TODv2 source in
+`rtdetr/aitodv2/` is not the canonical full BASE training entry point.
 
 ## Validation and provenance
 

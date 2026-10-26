@@ -7,6 +7,7 @@
 | Native and historical BRSA model | `yolov8/model.py::build_yolov8m` |
 | Original BRSA inference adapter | `yolov8/brsa.py::BRSA` |
 | Full asymmetric neck port | `yolov8/full_at/asymmetric_yolov8.py::AsymmetricYOLOv8` |
+| Full method training loss / paired weights | `yolov8/training.py::PairedYOLOv8` |
 | BRR / ARR / BRSA / geometry | Sibling files in `yolov8/full_at/` |
 | Native model and loss implementation | `third_party/yolov8_ultralytics/ultralytics/` |
 
@@ -58,3 +59,8 @@ The DOTA full configuration enables `PResNet.expose_c2` and
 feature levels consumed by the original RT-DETR decoder. The AI-TODv2
 experiment is preserved separately because its original BRSA integration is
 not the same full asymmetric neck.
+
+The single-run paper-method suite uses `rtdetr/dota_hbb/` for AI-TODv2 and
+VisDrone as well. Dataset-native evaluation is in
+`src/data/native_detection_eval.py`, and generated configs select the full
+asymmetric neck for the BASE arm. The legacy AI-TODv2 engine is not used.
