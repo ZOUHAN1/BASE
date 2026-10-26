@@ -5,6 +5,7 @@ PyYAML>=6
 Pillow
 opencv-python
 scipy
+transformers==4.46.3
 matplotlib
 pandas
 seaborn

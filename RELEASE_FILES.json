@@ -62,8 +62,8 @@
     },
     {
       "file": "requirements.txt",
-      "size": 295,
-      "sha256": "3e7ab32fc1661659083c8d348078696abb46d5842bd3740e779ed263b030efae"
+      "size": 316,
+      "sha256": "f8f6faaf44e44abce838d98af12c1de9f1aaef86adba51c3bb0d8bfa4ed2830f"
     },
     {
       "file": "rtdetr/aitodv2/LICENSE",
