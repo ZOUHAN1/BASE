@@ -10,6 +10,7 @@ jobs:
           python-version: '3.10'
       - run: pip install torch==2.4.1 torchvision==0.19.1 --index-url https://download.pytorch.org/whl/cpu
       - run: pip install -r requirements.txt
+      - run: pip wheel --no-deps --no-build-isolation ./third_party/cocoapi_aitod --wheel-dir /tmp/base-evaluator-wheels
       - run: python scripts/audit_release.py
       - run: python scripts/smoke_models.py
       - name: Focused CPU module tests

@@ -48,6 +48,11 @@ The corresponding VisDrone geometry/sampling, BRSA and ARR tests also passed:
 CUDA/Triton-specific tests were skipped with `CUDA_VISIBLE_DEVICES` empty.
 One third-party setuptools metadata deprecation warning was emitted.
 
+The included AI-TOD evaluator extension also built successfully into a Linux
+CPython 3.8 wheel in an isolated build environment with NumPy 1.24.4 and
+Cython 3.2.9. The build uses an explicit C99 flag on non-Windows platforms;
+this changes compiler compatibility, not evaluation formulas.
+
 ## Limits
 
 - No dataset or accuracy checkpoint was needed for these checks.

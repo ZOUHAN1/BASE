@@ -1,4 +1,5 @@
 import numpy as np
+import sys
 from setuptools import Extension, setup
 
 # To compile and install locally run "python setup.py build_ext --inplace"
@@ -14,7 +15,7 @@ ext_modules = [
         sources=['common/maskApi.c', 'aitodpycocotools/_mask.pyx'],
         include_dirs=[np.get_include(), 'common'],
         # extra_compile_args=['-Wno-cpp', '-Wno-unused-function', '-std=c99'],
-        extra_compile_args=[],
+        extra_compile_args=[] if sys.platform == 'win32' else ['-std=c99'],
     )
 ]
 

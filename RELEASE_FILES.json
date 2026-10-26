@@ -2,8 +2,8 @@
   "files": [
     {
       "file": ".github/workflows/source-check.yml",
-      "size": 702,
-      "sha256": "9ddde25eb24fd317e69773bb43e1294d562bab5d2736be510a1ec32de587297e"
+      "size": 823,
+      "sha256": "8c495a01651e8629a30bd49572dffbc89af790b55b969d1d7fc05beed68348d7"
     },
     {
       "file": ".gitignore",
@@ -47,8 +47,8 @@
     },
     {
       "file": "docs/RELEASE_NOTES.md",
-      "size": 2265,
-      "sha256": "b0220690460fbbc8b09178e09f529f102dca58ea0588693a03de689bafc85c97"
+      "size": 2407,
+      "sha256": "6f00cf005f00f1b42d10d5ed3adf353afc29ecd529c0e3192ecd908db8ffc8e0"
     },
     {
       "file": "docs/REPRODUCIBILITY.md",
@@ -57,13 +57,13 @@
     },
     {
       "file": "docs/VALIDATION.md",
-      "size": 2239,
-      "sha256": "039102ad6fed75e612d179a816f72f7cbb0d3e496a24a156c5837b9b6660cefb"
+      "size": 2528,
+      "sha256": "219b5723548da392eaca8f80636e940ddeeda0eceb2db6df2250b554aa7c7331"
     },
     {
       "file": "requirements.txt",
-      "size": 316,
-      "sha256": "f8f6faaf44e44abce838d98af12c1de9f1aaef86adba51c3bb0d8bfa4ed2830f"
+      "size": 322,
+      "sha256": "598eebcee7e730ffc37746639a71cacab5da7d16a4462530ddccbf3d1034126b"
     },
     {
       "file": "rtdetr/aitodv2/LICENSE",
@@ -1057,8 +1057,8 @@
     },
     {
       "file": "third_party/cocoapi_aitod/setup.py",
-      "size": 950,
-      "sha256": "c45c3d9f36406856c6bc7e52f183ad252a30edc7ef965dae54fe084ca7e2c77a"
+      "size": 1006,
+      "sha256": "5816529137a5288b5d88aa1c25467340aa6d5b79979fc22b91526efc9e93d8d7"
     },
     {
       "file": "third_party/yolo11_ultralytics/LICENSE",

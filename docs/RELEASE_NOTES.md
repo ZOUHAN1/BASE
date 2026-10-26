@@ -36,6 +36,8 @@ were not changed during release preparation. Changes are limited to:
 - Adding documentation, CPU smoke checks, configuration checks and release manifests.
 - Excluding generated Cython output containing build-machine paths; `_mask.pyx`
   and native C/C++ sources remain available to rebuild the extension.
+- Explicitly enabling C99 for the evaluator extension on non-Windows compilers
+  so modern Cython output also builds with older GCC defaults.
 
 No speed-oriented structural variants were selected as the default full arm.
 Optional inference optimizations remain in the exported source. No training

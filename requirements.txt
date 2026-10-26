@@ -15,6 +15,7 @@ tqdm
 py-cpuinfo
 pycocotools
 cython
+wheel
 pytest
 shapely
 ultralytics-thop
