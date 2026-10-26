@@ -7,8 +7,8 @@
     },
     {
       "file": ".gitignore",
-      "size": 337,
-      "sha256": "11c4a619b2308f98839a02e970aafc04ce6d0110ebbd8bc04092229539575195"
+      "size": 389,
+      "sha256": "06d083468e972f32f7808e1b70dcfa572f548d646f2f2b763d3324a0a424a9ed"
     },
     {
       "file": "README.md",
@@ -982,8 +982,8 @@
     },
     {
       "file": "scripts/audit_release.py",
-      "size": 4286,
-      "sha256": "474e70dcdcb75a3aa20c2a3908ff1305cc1e4d9a11df98118ed89eed6173c11b"
+      "size": 4584,
+      "sha256": "b6f2d707d3cc9da93e322a13d67ae154024971d52091cefb147196ff2e49019d"
     },
     {
       "file": "scripts/launch_yolo11.py",

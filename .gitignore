@@ -36,3 +36,4 @@ artifacts/
 *token.json
 *settings.json
 verification-local/
+/third_party/cocoapi_aitod/aitodpycocotools/_mask.c

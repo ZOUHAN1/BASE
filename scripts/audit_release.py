@@ -14,7 +14,13 @@ IGNORED = {'.git', '__pycache__', '.pytest_cache', 'runtime', 'verification-loca
 
 
 def files():
-    return sorted(path for path in ROOT.rglob('*') if path.is_file() and not any(
+    if (ROOT / '.git').exists():
+        listing = subprocess.check_output(
+            ['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], cwd=ROOT)
+        candidates = {ROOT / item.decode() for item in listing.split(b'\0') if item}
+    else:
+        candidates = ROOT.rglob('*')
+    return sorted(path for path in candidates if path.is_file() and not any(
         part in IGNORED or part.endswith('.egg-info') for part in path.relative_to(ROOT).parts))
 
 
