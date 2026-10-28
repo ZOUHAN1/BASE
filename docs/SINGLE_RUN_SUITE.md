@@ -74,6 +74,13 @@ writes `status.json`. A lock and `queue_started.json` prevent duplicate starts.
 Missing future assets cause waiting rather than training on an incomplete
 dataset. Failed formal jobs are reported, not silently restarted.
 
+`--recover-failed-start` is an explicit operator recovery, not an automatic
+retry. It retains completed jobs, refuses live previous PIDs or nonempty
+partial-training output directories, and archives failed-start logs before
+reloading the same paired initialization. An interrupted startup is recorded
+as an attempt, not reported as another completed seed. Loader worker counts
+may be lowered equally for both arms to fit the host shared-memory budget.
+
 Optional `prepare_once_assets.py` restores missing official VisDrone training
 JPEGs without replacing annotations, initializes RT-DETR and validates method
 contracts. Its logs and all data stay outside the Git source release.

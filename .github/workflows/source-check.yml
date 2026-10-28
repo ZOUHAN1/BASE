@@ -23,4 +23,4 @@ jobs:
         env:
           CUDA_VISIBLE_DEVICES: ''
           OMP_NUM_THREADS: '2'
-        run: python -m pytest -q tests/test_full_base_training.py
+        run: python -m pytest -q tests/test_full_base_training.py tests/test_once_queue_recovery.py

@@ -2,8 +2,8 @@
   "files": [
     {
       "file": ".github/workflows/source-check.yml",
-      "size": 985,
-      "sha256": "930aa04b55f74de87c010aa6d02b85d96e1314aff6157c010afd8226fd8b90d4"
+      "size": 1019,
+      "sha256": "5cd1616f880a66e17f54d568d6c20136225c92a0a3f3a926443cb27002f1d07d"
     },
     {
       "file": ".gitignore",
@@ -57,8 +57,8 @@
     },
     {
       "file": "docs/SINGLE_RUN_SUITE.md",
-      "size": 4370,
-      "sha256": "2c5d3e920e9ed59e0977c63dd133b400f5a71b50e1b544dab7eb03edc51def3c"
+      "size": 4823,
+      "sha256": "c6e74b73768ba97dfbec04561c4bd7d0d07ed8beb312e6ef83d326f360b619f3"
     },
     {
       "file": "docs/VALIDATION.md",
@@ -1022,8 +1022,8 @@
     },
     {
       "file": "scripts/run_once_suite.py",
-      "size": 6847,
-      "sha256": "c83ae671e0883912c6a80a37bbe3ba81a5a076bb25f0d7e7ced57cbaf8ded594"
+      "size": 10215,
+      "sha256": "8b16b09dd06ebb353cafafe02b5922967214dcbdc1d46937a3521034bd4e0a16"
     },
     {
       "file": "scripts/smoke_models.py",
@@ -1044,6 +1044,11 @@
       "file": "tests/test_full_base_training.py",
       "size": 2883,
       "sha256": "33e15e68446ff033c757ca782e4e296b3c38e4008ab25b6fce47999b70b86d27"
+    },
+    {
+      "file": "tests/test_once_queue_recovery.py",
+      "size": 2487,
+      "sha256": "78cbb23cbbcf7526f77db6783a2924b0c91e8ef23c82a49b6f1ff7d51a8e232e"
     },
     {
       "file": "third_party/cocoapi_aitod/MANIFEST.in",
