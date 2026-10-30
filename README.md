@@ -6,6 +6,25 @@ method. Historical BRSA-only experiments remain separately identified.
 Internal class names and historical configuration identifiers are preserved
 for checkpoint compatibility and provenance.
 
+## Pretrained weights
+
+Six BASE checkpoints are available in the [weights release](https://github.com/ZOUHAN1/BASE/releases/tag/weights-20261030).
+
+| Model | Dataset | Input size | Weights |
+| --- | --- | --- | --- |
+| YOLO11m + BASE | AI-TODv2 | 800 × 800 | [Download](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/yolo11m_aitodv2_800_BASE_best.pt) |
+| YOLO11m + BASE | VisDrone | 640 × 640 | [Download](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/yolo11m_visdrone_640_BASE_best.pt) |
+| YOLOv8m + BASE | AI-TODv2 | 800 × 800 | [Download](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/yolov8m_aitodv2_800_BASE_best.pt) |
+| YOLOv8m + BASE | VisDrone | 640 × 640 | [Download](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/yolov8m_visdrone_640_BASE_best.pt) |
+| RT-DETR + BASE | AI-TODv2 | 800 × 800 | [Download](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/rtdetr_aitodv2_800_BASE_best.pth) |
+| RT-DETR + BASE | VisDrone | 640 × 640 | [Download](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/rtdetr_visdrone_640_BASE_best.pth) |
+
+Download [SHA256SUMS.txt](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/SHA256SUMS.txt) and [weights_manifest.json](https://github.com/ZOUHAN1/BASE/releases/download/weights-20261030/weights_manifest.json) for file verification.
+
+```bash
+shasum -a 256 -c SHA256SUMS.txt
+```
+
 ## Included implementations
 
 | Model | Baseline | Corresponding implementation | Status |
@@ -34,8 +53,9 @@ configs/               historical recipes and selection rules
 scripts/               portable launcher and source smoke/audit checks
 ```
 
-Dataset images, annotations, checkpoints, logs, machine credentials, virtual
-environments and prior Git histories are not included.
+Dataset images, annotations, logs, machine credentials, virtual environments
+and prior Git histories are not included in the source tree. Pretrained weights
+are distributed separately through the release linked above.
 
 ## Installation
 
